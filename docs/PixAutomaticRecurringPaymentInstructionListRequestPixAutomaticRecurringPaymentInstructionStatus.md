@@ -4,16 +4,14 @@ Filtrar pelo status da instrução
 
 ## Enum
 
-* `AWAITING_REQUEST` (value: `'AWAITING_REQUEST'`)
+- `AWAITING_REQUEST` (value: `'AWAITING_REQUEST'`)
 
-* `SCHEDULED` (value: `'SCHEDULED'`)
+- `SCHEDULED` (value: `'SCHEDULED'`)
 
-* `DONE` (value: `'DONE'`)
+- `DONE` (value: `'DONE'`)
 
-* `CANCELLED` (value: `'CANCELLED'`)
+- `CANCELLED` (value: `'CANCELLED'`)
 
-* `REFUSED` (value: `'REFUSED'`)
+- `REFUSED` (value: `'REFUSED'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

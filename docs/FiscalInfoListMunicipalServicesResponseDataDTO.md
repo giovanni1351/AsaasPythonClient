@@ -4,11 +4,11 @@ Lista de objetos
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único do serviço | [optional] 
-**description** | **str** | Descrição do serviço | [optional] 
-**iss_tax** | **float** | Taxa percentual do ISS | [optional] 
+| Name            | Type      | Description                    | Notes      |
+| --------------- | --------- | ------------------------------ | ---------- |
+| **id**          | **str**   | Identificador único do serviço | [optional] |
+| **description** | **str**   | Descrição do serviço           | [optional] |
+| **iss_tax**     | **float** | Taxa percentual do ISS         | [optional] |
 
 ## Example
 
@@ -27,6 +27,5 @@ fiscal_info_list_municipal_services_response_data_dto_dict = fiscal_info_list_mu
 # create an instance of FiscalInfoListMunicipalServicesResponseDataDTO from a dict
 fiscal_info_list_municipal_services_response_data_dto_from_dict = FiscalInfoListMunicipalServicesResponseDataDTO.from_dict(fiscal_info_list_municipal_services_response_data_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

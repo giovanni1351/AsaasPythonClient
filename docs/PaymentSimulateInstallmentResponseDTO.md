@@ -4,10 +4,10 @@ Informações de parcelamento
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**payment_net_value** | **float** | Valor líquido | [optional] 
-**payment_value** | **float** | Valor total | [optional] 
+| Name                  | Type      | Description   | Notes      |
+| --------------------- | --------- | ------------- | ---------- |
+| **payment_net_value** | **float** | Valor líquido | [optional] |
+| **payment_value**     | **float** | Valor total   | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ payment_simulate_installment_response_dto_dict = payment_simulate_installment_re
 # create an instance of PaymentSimulateInstallmentResponseDTO from a dict
 payment_simulate_installment_response_dto_from_dict = PaymentSimulateInstallmentResponseDTO.from_dict(payment_simulate_installment_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

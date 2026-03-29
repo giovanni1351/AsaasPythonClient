@@ -4,10 +4,10 @@ Taxas para transferências TED
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**fee_value** | **float** | Taxa por transferência via TED | [optional] 
-**considered_in_monthly_transfers_without_fee** | **bool** | Indica se a quantidade de transações grátis mensais considera TED | [optional] 
+| Name                                            | Type      | Description                                                       | Notes      |
+| ----------------------------------------------- | --------- | ----------------------------------------------------------------- | ---------- |
+| **fee_value**                                   | **float** | Taxa por transferência via TED                                    | [optional] |
+| **considered_in_monthly_transfers_without_fee** | **bool**  | Indica se a quantidade de transações grátis mensais considera TED | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ my_account_get_account_fees_transfer_ted_dto_dict = my_account_get_account_fees_
 # create an instance of MyAccountGetAccountFeesTransferTedDTO from a dict
 my_account_get_account_fees_transfer_ted_dto_from_dict = MyAccountGetAccountFeesTransferTedDTO.from_dict(my_account_get_account_fees_transfer_ted_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

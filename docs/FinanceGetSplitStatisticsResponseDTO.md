@@ -1,12 +1,11 @@
 # FinanceGetSplitStatisticsResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**income** | **float** | Valores a receber | [optional] 
-**value** | **float** | Valores a serem enviados | [optional] 
+| Name       | Type      | Description              | Notes      |
+| ---------- | --------- | ------------------------ | ---------- |
+| **income** | **float** | Valores a receber        | [optional] |
+| **value**  | **float** | Valores a serem enviados | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ finance_get_split_statistics_response_dto_dict = finance_get_split_statistics_re
 # create an instance of FinanceGetSplitStatisticsResponseDTO from a dict
 finance_get_split_statistics_response_dto_from_dict = FinanceGetSplitStatisticsResponseDTO.from_dict(finance_get_split_statistics_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

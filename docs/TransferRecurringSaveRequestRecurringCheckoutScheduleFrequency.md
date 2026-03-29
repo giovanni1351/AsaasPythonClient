@@ -4,10 +4,8 @@ Frequência
 
 ## Enum
 
-* `WEEKLY` (value: `'WEEKLY'`)
+- `WEEKLY` (value: `'WEEKLY'`)
 
-* `MONTHLY` (value: `'MONTHLY'`)
+- `MONTHLY` (value: `'MONTHLY'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

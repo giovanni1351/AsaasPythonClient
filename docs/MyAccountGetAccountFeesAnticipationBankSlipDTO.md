@@ -4,9 +4,9 @@ Tarifa de antecipações em boletos
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**monthly_fee_percentage** | **float** | Taxa ao mês para cobranças em boleto | [optional] 
+| Name                       | Type      | Description                          | Notes      |
+| -------------------------- | --------- | ------------------------------------ | ---------- |
+| **monthly_fee_percentage** | **float** | Taxa ao mês para cobranças em boleto | [optional] |
 
 ## Example
 
@@ -25,6 +25,5 @@ my_account_get_account_fees_anticipation_bank_slip_dto_dict = my_account_get_acc
 # create an instance of MyAccountGetAccountFeesAnticipationBankSlipDTO from a dict
 my_account_get_account_fees_anticipation_bank_slip_dto_from_dict = MyAccountGetAccountFeesAnticipationBankSlipDTO.from_dict(my_account_get_account_fees_anticipation_bank_slip_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

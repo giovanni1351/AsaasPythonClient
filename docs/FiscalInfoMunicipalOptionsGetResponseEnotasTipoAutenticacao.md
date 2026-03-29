@@ -4,12 +4,10 @@ Tipo de autenticação necessária na prefeitura
 
 ## Enum
 
-* `CERTIFICATE` (value: `'CERTIFICATE'`)
+- `CERTIFICATE` (value: `'CERTIFICATE'`)
 
-* `TOKEN` (value: `'TOKEN'`)
+- `TOKEN` (value: `'TOKEN'`)
 
-* `USER_AND_PASSWORD` (value: `'USER_AND_PASSWORD'`)
+- `USER_AND_PASSWORD` (value: `'USER_AND_PASSWORD'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

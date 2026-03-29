@@ -1,14 +1,13 @@
 # PaymentSimulateResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **float** | Valor total do parcelamento ou da cobrança | [optional] 
-**credit_card** | [**PaymentSimulateCreditCardResponseDTO**](PaymentSimulateCreditCardResponseDTO.md) |  | [optional] 
-**bank_slip** | [**PaymentSimulateBankSlipResponseDTO**](PaymentSimulateBankSlipResponseDTO.md) |  | [optional] 
-**pix** | [**PaymentSimulatePixResponseDTO**](PaymentSimulatePixResponseDTO.md) |  | [optional] 
+| Name            | Type                                                                                | Description                                | Notes      |
+| --------------- | ----------------------------------------------------------------------------------- | ------------------------------------------ | ---------- |
+| **value**       | **float**                                                                           | Valor total do parcelamento ou da cobrança | [optional] |
+| **credit_card** | [**PaymentSimulateCreditCardResponseDTO**](PaymentSimulateCreditCardResponseDTO.md) |                                            | [optional] |
+| **bank_slip**   | [**PaymentSimulateBankSlipResponseDTO**](PaymentSimulateBankSlipResponseDTO.md)     |                                            | [optional] |
+| **pix**         | [**PaymentSimulatePixResponseDTO**](PaymentSimulatePixResponseDTO.md)               |                                            | [optional] |
 
 ## Example
 
@@ -27,6 +26,5 @@ payment_simulate_response_dto_dict = payment_simulate_response_dto_instance.to_d
 # create an instance of PaymentSimulateResponseDTO from a dict
 payment_simulate_response_dto_from_dict = PaymentSimulateResponseDTO.from_dict(payment_simulate_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

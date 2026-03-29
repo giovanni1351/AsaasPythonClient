@@ -4,10 +4,10 @@ Tarifa de antecipações em cartão de crédito
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**detached_monthly_fee_value** | **float** | Taxa ao mês para cobranças à vista | [optional] 
-**installment_monthly_fee_value** | **int** | Taxa ao mês para cobranças parceladas | [optional] 
+| Name                              | Type      | Description                           | Notes      |
+| --------------------------------- | --------- | ------------------------------------- | ---------- |
+| **detached_monthly_fee_value**    | **float** | Taxa ao mês para cobranças à vista    | [optional] |
+| **installment_monthly_fee_value** | **int**   | Taxa ao mês para cobranças parceladas | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ my_account_get_account_fees_anticipation_credit_card_dto_dict = my_account_get_a
 # create an instance of MyAccountGetAccountFeesAnticipationCreditCardDTO from a dict
 my_account_get_account_fees_anticipation_credit_card_dto_from_dict = MyAccountGetAccountFeesAnticipationCreditCardDTO.from_dict(my_account_get_account_fees_anticipation_credit_card_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

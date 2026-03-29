@@ -1,12 +1,11 @@
 # InstallmentRefundRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **float** | Valor total a ser estornado | [optional] 
-**split_refunds** | [**List[PaymentRefundSplitRequestDTO]**](PaymentRefundSplitRequestDTO.md) | Estorno de splits | [optional] 
+| Name              | Type                                                                      | Description                 | Notes      |
+| ----------------- | ------------------------------------------------------------------------- | --------------------------- | ---------- |
+| **value**         | **float**                                                                 | Valor total a ser estornado | [optional] |
+| **split_refunds** | [**List[PaymentRefundSplitRequestDTO]**](PaymentRefundSplitRequestDTO.md) | Estorno de splits           | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ installment_refund_request_dto_dict = installment_refund_request_dto_instance.to
 # create an instance of InstallmentRefundRequestDTO from a dict
 installment_refund_request_dto_from_dict = InstallmentRefundRequestDTO.from_dict(installment_refund_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

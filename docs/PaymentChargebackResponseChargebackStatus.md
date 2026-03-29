@@ -4,16 +4,14 @@ Status do chargeback
 
 ## Enum
 
-* `REQUESTED` (value: `'REQUESTED'`)
+- `REQUESTED` (value: `'REQUESTED'`)
 
-* `IN_DISPUTE` (value: `'IN_DISPUTE'`)
+- `IN_DISPUTE` (value: `'IN_DISPUTE'`)
 
-* `DISPUTE_LOST` (value: `'DISPUTE_LOST'`)
+- `DISPUTE_LOST` (value: `'DISPUTE_LOST'`)
 
-* `REVERSED` (value: `'REVERSED'`)
+- `REVERSED` (value: `'REVERSED'`)
 
-* `DONE` (value: `'DONE'`)
+- `DONE` (value: `'DONE'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -4,16 +4,14 @@ Frequência dos pagamentos periódicos
 
 ## Enum
 
-* `WEEKLY` (value: `'WEEKLY'`)
+- `WEEKLY` (value: `'WEEKLY'`)
 
-* `MONTHLY` (value: `'MONTHLY'`)
+- `MONTHLY` (value: `'MONTHLY'`)
 
-* `QUARTERLY` (value: `'QUARTERLY'`)
+- `QUARTERLY` (value: `'QUARTERLY'`)
 
-* `SEMIANNUALLY` (value: `'SEMIANNUALLY'`)
+- `SEMIANNUALLY` (value: `'SEMIANNUALLY'`)
 
-* `ANNUALLY` (value: `'ANNUALLY'`)
+- `ANNUALLY` (value: `'ANNUALLY'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

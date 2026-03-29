@@ -4,10 +4,10 @@ Taxas de consulta Serasa
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**natural_person_fee_value** | **float** | Taxa por consulta Serasa de pessoa física | [optional] 
-**legal_person_fee_value** | **float** | Taxa por consulta Serasa de pessoa jurídica | [optional] 
+| Name                         | Type      | Description                                 | Notes      |
+| ---------------------------- | --------- | ------------------------------------------- | ---------- |
+| **natural_person_fee_value** | **float** | Taxa por consulta Serasa de pessoa física   | [optional] |
+| **legal_person_fee_value**   | **float** | Taxa por consulta Serasa de pessoa jurídica | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ my_account_get_account_fees_credit_bureau_report_dto_dict = my_account_get_accou
 # create an instance of MyAccountGetAccountFeesCreditBureauReportDTO from a dict
 my_account_get_account_fees_credit_bureau_report_dto_from_dict = MyAccountGetAccountFeesCreditBureauReportDTO.from_dict(my_account_get_account_fees_credit_bureau_report_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

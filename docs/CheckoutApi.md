@@ -2,22 +2,20 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**cancelar_um_checkout**](CheckoutApi.md#cancelar_um_checkout) | **POST** /v3/checkouts/{id}/cancel | Cancelar um checkout
-[**criar_novo_checkout**](CheckoutApi.md#criar_novo_checkout) | **POST** /v3/checkouts | Criar novo checkout
-
+| Method                                                          | HTTP request                       | Description          |
+| --------------------------------------------------------------- | ---------------------------------- | -------------------- |
+| [**cancelar_um_checkout**](CheckoutApi.md#cancelar_um_checkout) | **POST** /v3/checkouts/{id}/cancel | Cancelar um checkout |
+| [**criar_novo_checkout**](CheckoutApi.md#criar_novo_checkout)   | **POST** /v3/checkouts             | Criar novo checkout  |
 
 # **cancelar_um_checkout**
+
 > CheckoutSessionResponseDTO cancelar_um_checkout(id, body=body)
 
 Cancelar um checkout
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -58,15 +56,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling CheckoutApi->cancelar_um_checkout: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do checkout no Asaas | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                              | Notes      |
+| -------- | ---------- | ---------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único do checkout no Asaas |
+| **body** | **object** |                                          | [optional] |
 
 ### Return type
 
@@ -74,34 +69,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_novo_checkout**
+
 > CheckoutSessionResponseDTO criar_novo_checkout(checkout_session_save_request_dto=checkout_session_save_request_dto)
 
 Criar novo checkout
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -142,14 +136,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling CheckoutApi->criar_novo_checkout: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **checkout_session_save_request_dto** | [**CheckoutSessionSaveRequestDTO**](CheckoutSessionSaveRequestDTO.md)|  | [optional] 
+| Name                                  | Type                                                                  | Description | Notes      |
+| ------------------------------------- | --------------------------------------------------------------------- | ----------- | ---------- |
+| **checkout_session_save_request_dto** | [**CheckoutSessionSaveRequestDTO**](CheckoutSessionSaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -157,20 +148,19 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

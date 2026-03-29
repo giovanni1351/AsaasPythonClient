@@ -1,13 +1,12 @@
 # PixQrCodeDecodeRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**payload** | **str** | Payload do QRCode | 
-**change_value** | **float** | Valor do troco (para QRCode Troco) | [optional] 
-**expected_payment_date** | **date** | Data prevista para realizar o pagamento | [optional] 
+| Name                      | Type      | Description                             | Notes      |
+| ------------------------- | --------- | --------------------------------------- | ---------- |
+| **payload**               | **str**   | Payload do QRCode                       |
+| **change_value**          | **float** | Valor do troco (para QRCode Troco)      | [optional] |
+| **expected_payment_date** | **date**  | Data prevista para realizar o pagamento | [optional] |
 
 ## Example
 
@@ -26,6 +25,5 @@ pix_qr_code_decode_request_dto_dict = pix_qr_code_decode_request_dto_instance.to
 # create an instance of PixQrCodeDecodeRequestDTO from a dict
 pix_qr_code_decode_request_dto_from_dict = PixQrCodeDecodeRequestDTO.from_dict(pix_qr_code_decode_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

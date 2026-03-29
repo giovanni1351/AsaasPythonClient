@@ -1,12 +1,11 @@
 # PaymentDocumentUpdateRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**available_after_payment** | **bool** | true para disponibilizar o documento apenas após o pagamento | 
-**type** | [**PaymentDocumentUpdateRequestPaymentDocumentType**](PaymentDocumentUpdateRequestPaymentDocumentType.md) |  | 
+| Name                        | Type                                                                                                      | Description                                                  | Notes |
+| --------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----- |
+| **available_after_payment** | **bool**                                                                                                  | true para disponibilizar o documento apenas após o pagamento |
+| **type**                    | [**PaymentDocumentUpdateRequestPaymentDocumentType**](PaymentDocumentUpdateRequestPaymentDocumentType.md) |                                                              |
 
 ## Example
 
@@ -25,6 +24,5 @@ payment_document_update_request_dto_dict = payment_document_update_request_dto_i
 # create an instance of PaymentDocumentUpdateRequestDTO from a dict
 payment_document_update_request_dto_from_dict = PaymentDocumentUpdateRequestDTO.from_dict(payment_document_update_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -4,11 +4,11 @@ Dados da cobrança associada ao split
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**confirmed_date** | **date** | Data de pagamento da cobrança | [optional] 
-**invoice_number** | **str** | Número da fatura | [optional] 
-**external_reference** | **str** | Identificador externo da cobrança | [optional] 
+| Name                   | Type     | Description                       | Notes      |
+| ---------------------- | -------- | --------------------------------- | ---------- |
+| **confirmed_date**     | **date** | Data de pagamento da cobrança     | [optional] |
+| **invoice_number**     | **str**  | Número da fatura                  | [optional] |
+| **external_reference** | **str**  | Identificador externo da cobrança | [optional] |
 
 ## Example
 
@@ -27,6 +27,5 @@ payment_split_payment_info_response_dto_dict = payment_split_payment_info_respon
 # create an instance of PaymentSplitPaymentInfoResponseDTO from a dict
 payment_split_payment_info_response_dto_from_dict = PaymentSplitPaymentInfoResponseDTO.from_dict(payment_split_payment_info_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

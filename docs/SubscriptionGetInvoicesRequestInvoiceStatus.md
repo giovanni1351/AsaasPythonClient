@@ -4,28 +4,26 @@ Filtrar por status da nota fiscal
 
 ## Enum
 
-* `SCHEDULED` (value: `'SCHEDULED'`)
+- `SCHEDULED` (value: `'SCHEDULED'`)
 
-* `WAITING_OVERDUE_PAYMENT` (value: `'WAITING_OVERDUE_PAYMENT'`)
+- `WAITING_OVERDUE_PAYMENT` (value: `'WAITING_OVERDUE_PAYMENT'`)
 
-* `PENDING` (value: `'PENDING'`)
+- `PENDING` (value: `'PENDING'`)
 
-* `SYNCHRONIZED` (value: `'SYNCHRONIZED'`)
+- `SYNCHRONIZED` (value: `'SYNCHRONIZED'`)
 
-* `AUTHORIZED` (value: `'AUTHORIZED'`)
+- `AUTHORIZED` (value: `'AUTHORIZED'`)
 
-* `PROCESSING_CANCELLATION` (value: `'PROCESSING_CANCELLATION'`)
+- `PROCESSING_CANCELLATION` (value: `'PROCESSING_CANCELLATION'`)
 
-* `CANCELLED` (value: `'CANCELLED'`)
+- `CANCELLED` (value: `'CANCELLED'`)
 
-* `CANCELLATION_DENIED` (value: `'CANCELLATION_DENIED'`)
+- `CANCELLATION_DENIED` (value: `'CANCELLATION_DENIED'`)
 
-* `ERROR` (value: `'ERROR'`)
+- `ERROR` (value: `'ERROR'`)
 
-* `NONE` (value: `'NONE'`)
+- `NONE` (value: `'NONE'`)
 
-* `CANCELED` (value: `'CANCELED'`)
+- `CANCELED` (value: `'CANCELED'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

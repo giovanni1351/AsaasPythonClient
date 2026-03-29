@@ -1,17 +1,16 @@
 # PaymentDocumentGetResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**object** | **str** | Tipo do objeto | [optional] 
-**id** | **str** | Identificador único do documento | [optional] 
-**name** | **str** | Nome do documento | [optional] 
-**type** | [**PaymentDocumentGetResponsePaymentDocumentType**](PaymentDocumentGetResponsePaymentDocumentType.md) |  | [optional] 
-**available_after_payment** | **bool** | Disponível somente após o pagamento | [optional] 
-**file** | [**PaymentDocumentFileResponseDTO**](PaymentDocumentFileResponseDTO.md) |  | [optional] 
-**deleted** | **bool** | Indica se o arquivo foi removido | [optional] 
+| Name                        | Type                                                                                                  | Description                         | Notes      |
+| --------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------- | ---------- |
+| **object**                  | **str**                                                                                               | Tipo do objeto                      | [optional] |
+| **id**                      | **str**                                                                                               | Identificador único do documento    | [optional] |
+| **name**                    | **str**                                                                                               | Nome do documento                   | [optional] |
+| **type**                    | [**PaymentDocumentGetResponsePaymentDocumentType**](PaymentDocumentGetResponsePaymentDocumentType.md) |                                     | [optional] |
+| **available_after_payment** | **bool**                                                                                              | Disponível somente após o pagamento | [optional] |
+| **file**                    | [**PaymentDocumentFileResponseDTO**](PaymentDocumentFileResponseDTO.md)                               |                                     | [optional] |
+| **deleted**                 | **bool**                                                                                              | Indica se o arquivo foi removido    | [optional] |
 
 ## Example
 
@@ -30,6 +29,5 @@ payment_document_get_response_dto_dict = payment_document_get_response_dto_insta
 # create an instance of PaymentDocumentGetResponseDTO from a dict
 payment_document_get_response_dto_from_dict = PaymentDocumentGetResponseDTO.from_dict(payment_document_get_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

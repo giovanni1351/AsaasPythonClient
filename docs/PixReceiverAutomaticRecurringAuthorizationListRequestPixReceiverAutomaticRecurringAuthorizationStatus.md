@@ -4,16 +4,14 @@ Filtrar pelo status atual da autorização
 
 ## Enum
 
-* `CREATED` (value: `'CREATED'`)
+- `CREATED` (value: `'CREATED'`)
 
-* `ACTIVE` (value: `'ACTIVE'`)
+- `ACTIVE` (value: `'ACTIVE'`)
 
-* `CANCELLED` (value: `'CANCELLED'`)
+- `CANCELLED` (value: `'CANCELLED'`)
 
-* `REFUSED` (value: `'REFUSED'`)
+- `REFUSED` (value: `'REFUSED'`)
 
-* `EXPIRED` (value: `'EXPIRED'`)
+- `EXPIRED` (value: `'EXPIRED'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -2,26 +2,24 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**cancelar_uma_autorizacao_pix_automatico**](PixAutomticoApi.md#cancelar_uma_autorizacao_pix_automatico) | **DELETE** /v3/pix/automatic/authorizations/{id} | Cancelar uma autorização
-[**criar_uma_autorizacao_pix_automatico**](PixAutomticoApi.md#criar_uma_autorizacao_pix_automatico) | **POST** /v3/pix/automatic/authorizations | Criar uma autorização
-[**listar_autorizacoes_pix_automatico**](PixAutomticoApi.md#listar_autorizacoes_pix_automatico) | **GET** /v3/pix/automatic/authorizations | Listar autorizações
-[**listar_instrucoes_de_pagamento_pix_automatico**](PixAutomticoApi.md#listar_instrucoes_de_pagamento_pix_automatico) | **GET** /v3/pix/automatic/paymentInstructions | Listar instruções de pagamento
-[**recuperar_uma_unica_autorizacao_pix_automatico**](PixAutomticoApi.md#recuperar_uma_unica_autorizacao_pix_automatico) | **GET** /v3/pix/automatic/authorizations/{id} | Recuperar uma única autorização
-[**recuperar_uma_unica_instrucao_de_pagamento_pix_automatico**](PixAutomticoApi.md#recuperar_uma_unica_instrucao_de_pagamento_pix_automatico) | **GET** /v3/pix/automatic/paymentInstructions/{id} | Recuperar uma única instrução de pagamento
-
+| Method                                                                                                                                        | HTTP request                                       | Description                                |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------ |
+| [**cancelar_uma_autorizacao_pix_automatico**](PixAutomticoApi.md#cancelar_uma_autorizacao_pix_automatico)                                     | **DELETE** /v3/pix/automatic/authorizations/{id}   | Cancelar uma autorização                   |
+| [**criar_uma_autorizacao_pix_automatico**](PixAutomticoApi.md#criar_uma_autorizacao_pix_automatico)                                           | **POST** /v3/pix/automatic/authorizations          | Criar uma autorização                      |
+| [**listar_autorizacoes_pix_automatico**](PixAutomticoApi.md#listar_autorizacoes_pix_automatico)                                               | **GET** /v3/pix/automatic/authorizations           | Listar autorizações                        |
+| [**listar_instrucoes_de_pagamento_pix_automatico**](PixAutomticoApi.md#listar_instrucoes_de_pagamento_pix_automatico)                         | **GET** /v3/pix/automatic/paymentInstructions      | Listar instruções de pagamento             |
+| [**recuperar_uma_unica_autorizacao_pix_automatico**](PixAutomticoApi.md#recuperar_uma_unica_autorizacao_pix_automatico)                       | **GET** /v3/pix/automatic/authorizations/{id}      | Recuperar uma única autorização            |
+| [**recuperar_uma_unica_instrucao_de_pagamento_pix_automatico**](PixAutomticoApi.md#recuperar_uma_unica_instrucao_de_pagamento_pix_automatico) | **GET** /v3/pix/automatic/paymentInstructions/{id} | Recuperar uma única instrução de pagamento |
 
 # **cancelar_uma_autorizacao_pix_automatico**
+
 > PixReceiverAutomaticRecurringAuthorizationGetResponseDTO cancelar_uma_autorizacao_pix_automatico(id)
 
 Cancelar uma autorização
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -61,14 +59,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixAutomticoApi->cancelar_uma_autorizacao_pix_automatico: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da autorização de Pix Automático no Asaas | 
+| Name   | Type    | Description                                                   | Notes |
+| ------ | ------- | ------------------------------------------------------------- | ----- |
+| **id** | **str** | Identificador único da autorização de Pix Automático no Asaas |
 
 ### Return type
 
@@ -76,34 +71,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_uma_autorizacao_pix_automatico**
+
 > PixReceiverAutomaticRecurringAuthorizationGetResponseDTO criar_uma_autorizacao_pix_automatico(pix_receiver_automatic_recurring_authorization_save_request_dto=pix_receiver_automatic_recurring_authorization_save_request_dto)
 
 Criar uma autorização
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -144,14 +138,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixAutomticoApi->criar_uma_autorizacao_pix_automatico: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pix_receiver_automatic_recurring_authorization_save_request_dto** | [**PixReceiverAutomaticRecurringAuthorizationSaveRequestDTO**](PixReceiverAutomaticRecurringAuthorizationSaveRequestDTO.md)|  | [optional] 
+| Name                                                                | Type                                                                                                                        | Description | Notes      |
+| ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **pix_receiver_automatic_recurring_authorization_save_request_dto** | [**PixReceiverAutomaticRecurringAuthorizationSaveRequestDTO**](PixReceiverAutomaticRecurringAuthorizationSaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -159,33 +150,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_autorizacoes_pix_automatico**
+
 > PixReceiverAutomaticRecurringAuthorizationListResponseDTO listar_autorizacoes_pix_automatico(offset=offset, limit=limit, status=status, customer_id=customer_id)
 
 Listar autorizações
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -229,17 +219,14 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixAutomticoApi->listar_autorizacoes_pix_automatico: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **status** | [**PixReceiverAutomaticRecurringAuthorizationListRequestPixReceiverAutomaticRecurringAuthorizationStatus**](.md)| Filtrar pelo status atual da autorização | [optional] 
- **customer_id** | **str**| Filtrar pelo identificador único do cliente | [optional] 
+| Name            | Type                                                                                                             | Description                                 | Notes      |
+| --------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ---------- |
+| **offset**      | **int**                                                                                                          | Elemento inicial da lista                   | [optional] |
+| **limit**       | **int**                                                                                                          | Número de elementos da lista (max: 100)     | [optional] |
+| **status**      | [**PixReceiverAutomaticRecurringAuthorizationListRequestPixReceiverAutomaticRecurringAuthorizationStatus**](.md) | Filtrar pelo status atual da autorização    | [optional] |
+| **customer_id** | **str**                                                                                                          | Filtrar pelo identificador único do cliente | [optional] |
 
 ### Return type
 
@@ -247,34 +234,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_instrucoes_de_pagamento_pix_automatico**
+
 > PixAutomaticRecurringPaymentInstructionListResponseDTO listar_instrucoes_de_pagamento_pix_automatico(authorization_id=authorization_id, customer_id=customer_id, payment_id=payment_id, status=status)
 
 Listar instruções de pagamento
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -318,17 +304,14 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixAutomticoApi->listar_instrucoes_de_pagamento_pix_automatico: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization_id** | **str**| Filtrar pelo identificador único da autorização da instrução | [optional] 
- **customer_id** | **str**| Filtrar pelo identificador único do cliente | [optional] 
- **payment_id** | **str**| Filtrar pelo identificador único da cobrança | [optional] 
- **status** | [**PixAutomaticRecurringPaymentInstructionListRequestPixAutomaticRecurringPaymentInstructionStatus**](.md)| Filtrar pelo status da instrução | [optional] 
+| Name                 | Type                                                                                                       | Description                                                  | Notes      |
+| -------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------- |
+| **authorization_id** | **str**                                                                                                    | Filtrar pelo identificador único da autorização da instrução | [optional] |
+| **customer_id**      | **str**                                                                                                    | Filtrar pelo identificador único do cliente                  | [optional] |
+| **payment_id**       | **str**                                                                                                    | Filtrar pelo identificador único da cobrança                 | [optional] |
+| **status**           | [**PixAutomaticRecurringPaymentInstructionListRequestPixAutomaticRecurringPaymentInstructionStatus**](.md) | Filtrar pelo status da instrução                             | [optional] |
 
 ### Return type
 
@@ -336,34 +319,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_uma_unica_autorizacao_pix_automatico**
+
 > PixReceiverAutomaticRecurringAuthorizationGetResponseDTO recuperar_uma_unica_autorizacao_pix_automatico(id)
 
 Recuperar uma única autorização
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -403,14 +385,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixAutomticoApi->recuperar_uma_unica_autorizacao_pix_automatico: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da autorização de Pix Automático no Asaas | 
+| Name   | Type    | Description                                                   | Notes |
+| ------ | ------- | ------------------------------------------------------------- | ----- |
+| **id** | **str** | Identificador único da autorização de Pix Automático no Asaas |
 
 ### Return type
 
@@ -418,35 +397,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_uma_unica_instrucao_de_pagamento_pix_automatico**
+
 > PixAutomaticRecurringPaymentInstructionGetResponseDTO recuperar_uma_unica_instrucao_de_pagamento_pix_automatico(id)
 
 Recuperar uma única instrução de pagamento
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -486,14 +464,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixAutomticoApi->recuperar_uma_unica_instrucao_de_pagamento_pix_automatico: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da instrução de pagamento de Pix Automático no Asaas | 
+| Name   | Type    | Description                                                              | Notes |
+| ------ | ------- | ------------------------------------------------------------------------ | ----- |
+| **id** | **str** | Identificador único da instrução de pagamento de Pix Automático no Asaas |
 
 ### Return type
 
@@ -501,22 +476,21 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

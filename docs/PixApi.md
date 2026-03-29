@@ -2,27 +2,25 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**consulta_de_fichas_disponiveis_no_balde**](PixApi.md#consulta_de_fichas_disponiveis_no_balde) | **GET** /v3/pix/tokenBucket/addressKey | Consulta de fichas disponíveis no balde
-[**criar_qrcode_estatico**](PixApi.md#criar_qrcode_estatico) | **POST** /v3/pix/qrCodes/static | Criar QR Code estático
-[**criar_uma_chave**](PixApi.md#criar_uma_chave) | **POST** /v3/pix/addressKeys | Criar uma chave
-[**deletar_qrcode_estatico**](PixApi.md#deletar_qrcode_estatico) | **DELETE** /v3/pix/qrCodes/static/{id} | Deletar QR Code estático
-[**listar_chaves**](PixApi.md#listar_chaves) | **GET** /v3/pix/addressKeys | Listar chaves
-[**recuperar_uma_unica_chave**](PixApi.md#recuperar_uma_unica_chave) | **GET** /v3/pix/addressKeys/{id} | Recuperar uma única chave
-[**remover_chave**](PixApi.md#remover_chave) | **DELETE** /v3/pix/addressKeys/{id} | Remover chave
-
+| Method                                                                                           | HTTP request                           | Description                             |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------- | --------------------------------------- |
+| [**consulta_de_fichas_disponiveis_no_balde**](PixApi.md#consulta_de_fichas_disponiveis_no_balde) | **GET** /v3/pix/tokenBucket/addressKey | Consulta de fichas disponíveis no balde |
+| [**criar_qrcode_estatico**](PixApi.md#criar_qrcode_estatico)                                     | **POST** /v3/pix/qrCodes/static        | Criar QR Code estático                  |
+| [**criar_uma_chave**](PixApi.md#criar_uma_chave)                                                 | **POST** /v3/pix/addressKeys           | Criar uma chave                         |
+| [**deletar_qrcode_estatico**](PixApi.md#deletar_qrcode_estatico)                                 | **DELETE** /v3/pix/qrCodes/static/{id} | Deletar QR Code estático                |
+| [**listar_chaves**](PixApi.md#listar_chaves)                                                     | **GET** /v3/pix/addressKeys            | Listar chaves                           |
+| [**recuperar_uma_unica_chave**](PixApi.md#recuperar_uma_unica_chave)                             | **GET** /v3/pix/addressKeys/{id}       | Recuperar uma única chave               |
+| [**remover_chave**](PixApi.md#remover_chave)                                                     | **DELETE** /v3/pix/addressKeys/{id}    | Remover chave                           |
 
 # **consulta_de_fichas_disponiveis_no_balde**
+
 > PixTokenBucketGetAddressKeyResponseDTO consulta_de_fichas_disponiveis_no_balde()
 
 Consulta de fichas disponíveis no balde
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -61,8 +59,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixApi->consulta_de_fichas_disponiveis_no_balde: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -73,34 +69,33 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_qrcode_estatico**
+
 > PixQrCodeSaveResponseDTO criar_qrcode_estatico(pix_qr_code_save_request_dto=pix_qr_code_save_request_dto)
 
 Criar QR Code estático
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -141,14 +136,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixApi->criar_qrcode_estatico: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pix_qr_code_save_request_dto** | [**PixQrCodeSaveRequestDTO**](PixQrCodeSaveRequestDTO.md)|  | [optional] 
+| Name                             | Type                                                      | Description | Notes      |
+| -------------------------------- | --------------------------------------------------------- | ----------- | ---------- |
+| **pix_qr_code_save_request_dto** | [**PixQrCodeSaveRequestDTO**](PixQrCodeSaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -156,33 +148,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_uma_chave**
+
 > PixAddressKeyGetResponseDTO criar_uma_chave(pix_address_key_save_request_dto=pix_address_key_save_request_dto)
 
 Criar uma chave
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -223,14 +214,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixApi->criar_uma_chave: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pix_address_key_save_request_dto** | [**PixAddressKeySaveRequestDTO**](PixAddressKeySaveRequestDTO.md)|  | [optional] 
+| Name                                 | Type                                                              | Description | Notes      |
+| ------------------------------------ | ----------------------------------------------------------------- | ----------- | ---------- |
+| **pix_address_key_save_request_dto** | [**PixAddressKeySaveRequestDTO**](PixAddressKeySaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -238,33 +226,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **deletar_qrcode_estatico**
+
 > PixQrCodeDeleteResponseDTO deletar_qrcode_estatico(id)
 
 Deletar QR Code estático
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -304,14 +291,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixApi->deletar_qrcode_estatico: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador do QR Code que será removido. | 
+| Name   | Type    | Description                                 | Notes |
+| ------ | ------- | ------------------------------------------- | ----- |
+| **id** | **str** | Identificador do QR Code que será removido. |
 
 ### Return type
 
@@ -319,34 +303,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_chaves**
+
 > PixAddressKeyListResponseDTO listar_chaves(offset=offset, limit=limit, status=status, status_list=status_list)
 
 Listar chaves
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -390,17 +373,14 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixApi->listar_chaves: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **status** | [**PixAddressKeyListRequestPixAddressKeyStatus**](.md)| Filtrar pelo status atual da chave | [optional] 
- **status_list** | **str**| Filtrar por um ou mais status das chaves | [optional] 
+| Name            | Type                                                   | Description                              | Notes      |
+| --------------- | ------------------------------------------------------ | ---------------------------------------- | ---------- |
+| **offset**      | **int**                                                | Elemento inicial da lista                | [optional] |
+| **limit**       | **int**                                                | Número de elementos da lista (max: 100)  | [optional] |
+| **status**      | [**PixAddressKeyListRequestPixAddressKeyStatus**](.md) | Filtrar pelo status atual da chave       | [optional] |
+| **status_list** | **str**                                                | Filtrar por um ou mais status das chaves | [optional] |
 
 ### Return type
 
@@ -408,34 +388,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_uma_unica_chave**
+
 > PixAddressKeyGetResponseDTO recuperar_uma_unica_chave(id)
 
 Recuperar uma única chave
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -475,14 +454,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixApi->recuperar_uma_unica_chave: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da chave Pix no Asaas | 
+| Name   | Type    | Description                               | Notes |
+| ------ | ------- | ----------------------------------------- | ----- |
+| **id** | **str** | Identificador único da chave Pix no Asaas |
 
 ### Return type
 
@@ -490,35 +466,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **remover_chave**
+
 > PixAddressKeyGetResponseDTO remover_chave(id)
 
 Remover chave
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -558,14 +533,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixApi->remover_chave: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da chave Pix no Asaas | 
+| Name   | Type    | Description                               | Notes |
+| ------ | ------- | ----------------------------------------- | ----- |
+| **id** | **str** | Identificador único da chave Pix no Asaas |
 
 ### Return type
 
@@ -573,21 +545,20 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

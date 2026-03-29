@@ -1,12 +1,11 @@
 # MobilePhoneRechargeSaveRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **float** | Valor da recarga | 
-**phone_number** | **str** | Número do celular | 
+| Name             | Type      | Description       | Notes |
+| ---------------- | --------- | ----------------- | ----- |
+| **value**        | **float** | Valor da recarga  |
+| **phone_number** | **str**   | Número do celular |
 
 ## Example
 
@@ -25,6 +24,5 @@ mobile_phone_recharge_save_request_dto_dict = mobile_phone_recharge_save_request
 # create an instance of MobilePhoneRechargeSaveRequestDTO from a dict
 mobile_phone_recharge_save_request_dto_from_dict = MobilePhoneRechargeSaveRequestDTO.from_dict(mobile_phone_recharge_save_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

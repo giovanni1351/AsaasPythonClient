@@ -1,11 +1,10 @@
 # InstallmentUpdateSplitResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**splits** | [**List[InstallmentSplitGetResponseDTO]**](InstallmentSplitGetResponseDTO.md) | Array de splits | [optional] 
+| Name       | Type                                                                          | Description     | Notes      |
+| ---------- | ----------------------------------------------------------------------------- | --------------- | ---------- |
+| **splits** | [**List[InstallmentSplitGetResponseDTO]**](InstallmentSplitGetResponseDTO.md) | Array de splits | [optional] |
 
 ## Example
 
@@ -24,6 +23,5 @@ installment_update_split_response_dto_dict = installment_update_split_response_d
 # create an instance of InstallmentUpdateSplitResponseDTO from a dict
 installment_update_split_response_dto_from_dict = InstallmentUpdateSplitResponseDTO.from_dict(installment_update_split_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

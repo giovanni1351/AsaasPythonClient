@@ -1,12 +1,11 @@
 # SubscriptionDeleteInvoiceConfigResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**deleted** | **bool** | Informa se as configurações foram removidas | [optional] 
-**id** | **str** | Identificador único da assinatura no Asaas | [optional] 
+| Name        | Type     | Description                                 | Notes      |
+| ----------- | -------- | ------------------------------------------- | ---------- |
+| **deleted** | **bool** | Informa se as configurações foram removidas | [optional] |
+| **id**      | **str**  | Identificador único da assinatura no Asaas  | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ subscription_delete_invoice_config_response_dto_dict = subscription_delete_invoi
 # create an instance of SubscriptionDeleteInvoiceConfigResponseDTO from a dict
 subscription_delete_invoice_config_response_dto_from_dict = SubscriptionDeleteInvoiceConfigResponseDTO.from_dict(subscription_delete_invoice_config_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -2,27 +2,25 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**atualizar_chave_de_api_de_uma_subconta**](SubcontasAsaasApi.md#atualizar_chave_de_api_de_uma_subconta) | **PUT** /v3/accounts/{id}/accessTokens/{accessTokenId} | Atualizar chave de API de uma subconta
-[**criar_chave_de_api_para_uma_subconta**](SubcontasAsaasApi.md#criar_chave_de_api_para_uma_subconta) | **POST** /v3/accounts/{id}/accessTokens | Criar chave de API para uma subconta
-[**criar_subconta**](SubcontasAsaasApi.md#criar_subconta) | **POST** /v3/accounts | Criar subconta
-[**excluir_chave_de_api_de_uma_subconta**](SubcontasAsaasApi.md#excluir_chave_de_api_de_uma_subconta) | **DELETE** /v3/accounts/{id}/accessTokens/{accessTokenId} | Excluir chave de API de uma subconta
-[**listar_chaves_de_api_de_uma_subconta**](SubcontasAsaasApi.md#listar_chaves_de_api_de_uma_subconta) | **GET** /v3/accounts/{id}/accessTokens | Listar chaves de API de uma subconta
-[**listar_subcontas**](SubcontasAsaasApi.md#listar_subcontas) | **GET** /v3/accounts | Listar subcontas
-[**recuperar_uma_unica_subconta**](SubcontasAsaasApi.md#recuperar_uma_unica_subconta) | **GET** /v3/accounts/{id} | Recuperar uma única subconta
-
+| Method                                                                                                    | HTTP request                                              | Description                            |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------- |
+| [**atualizar_chave_de_api_de_uma_subconta**](SubcontasAsaasApi.md#atualizar_chave_de_api_de_uma_subconta) | **PUT** /v3/accounts/{id}/accessTokens/{accessTokenId}    | Atualizar chave de API de uma subconta |
+| [**criar_chave_de_api_para_uma_subconta**](SubcontasAsaasApi.md#criar_chave_de_api_para_uma_subconta)     | **POST** /v3/accounts/{id}/accessTokens                   | Criar chave de API para uma subconta   |
+| [**criar_subconta**](SubcontasAsaasApi.md#criar_subconta)                                                 | **POST** /v3/accounts                                     | Criar subconta                         |
+| [**excluir_chave_de_api_de_uma_subconta**](SubcontasAsaasApi.md#excluir_chave_de_api_de_uma_subconta)     | **DELETE** /v3/accounts/{id}/accessTokens/{accessTokenId} | Excluir chave de API de uma subconta   |
+| [**listar_chaves_de_api_de_uma_subconta**](SubcontasAsaasApi.md#listar_chaves_de_api_de_uma_subconta)     | **GET** /v3/accounts/{id}/accessTokens                    | Listar chaves de API de uma subconta   |
+| [**listar_subcontas**](SubcontasAsaasApi.md#listar_subcontas)                                             | **GET** /v3/accounts                                      | Listar subcontas                       |
+| [**recuperar_uma_unica_subconta**](SubcontasAsaasApi.md#recuperar_uma_unica_subconta)                     | **GET** /v3/accounts/{id}                                 | Recuperar uma única subconta           |
 
 # **atualizar_chave_de_api_de_uma_subconta**
+
 > CustomerApiAccessTokenBaseResponseDTO atualizar_chave_de_api_de_uma_subconta(id, access_token_id, customer_api_access_token_update_request_dto=customer_api_access_token_update_request_dto)
 
 Atualizar chave de API de uma subconta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -65,16 +63,13 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SubcontasAsaasApi->atualizar_chave_de_api_de_uma_subconta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da subconta no Asaas | 
- **access_token_id** | **str**| ID da chave de API | 
- **customer_api_access_token_update_request_dto** | [**CustomerApiAccessTokenUpdateRequestDTO**](CustomerApiAccessTokenUpdateRequestDTO.md)|  | [optional] 
+| Name                                             | Type                                                                                    | Description                              | Notes      |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------- | ---------------------------------------- | ---------- |
+| **id**                                           | **str**                                                                                 | Identificador único da subconta no Asaas |
+| **access_token_id**                              | **str**                                                                                 | ID da chave de API                       |
+| **customer_api_access_token_update_request_dto** | [**CustomerApiAccessTokenUpdateRequestDTO**](CustomerApiAccessTokenUpdateRequestDTO.md) |                                          | [optional] |
 
 ### Return type
 
@@ -82,34 +77,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_chave_de_api_para_uma_subconta**
+
 > CustomerApiAccessTokenSaveResponseDTO criar_chave_de_api_para_uma_subconta(id, customer_api_access_token_save_request_dto=customer_api_access_token_save_request_dto)
 
 Criar chave de API para uma subconta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -151,15 +145,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SubcontasAsaasApi->criar_chave_de_api_para_uma_subconta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da subconta no Asaas | 
- **customer_api_access_token_save_request_dto** | [**CustomerApiAccessTokenSaveRequestDTO**](CustomerApiAccessTokenSaveRequestDTO.md)|  | [optional] 
+| Name                                           | Type                                                                                | Description                              | Notes      |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------- | ---------- |
+| **id**                                         | **str**                                                                             | Identificador único da subconta no Asaas |
+| **customer_api_access_token_save_request_dto** | [**CustomerApiAccessTokenSaveRequestDTO**](CustomerApiAccessTokenSaveRequestDTO.md) |                                          | [optional] |
 
 ### Return type
 
@@ -167,34 +158,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_subconta**
+
 > AccountSaveResponseDTO criar_subconta(account_save_request_dto=account_save_request_dto)
 
 Criar subconta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -235,14 +225,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SubcontasAsaasApi->criar_subconta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account_save_request_dto** | [**AccountSaveRequestDTO**](AccountSaveRequestDTO.md)|  | [optional] 
+| Name                         | Type                                                  | Description | Notes      |
+| ---------------------------- | ----------------------------------------------------- | ----------- | ---------- |
+| **account_save_request_dto** | [**AccountSaveRequestDTO**](AccountSaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -250,33 +237,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **excluir_chave_de_api_de_uma_subconta**
+
 > excluir_chave_de_api_de_uma_subconta(id, access_token_id)
 
 Excluir chave de API de uma subconta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -314,15 +300,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SubcontasAsaasApi->excluir_chave_de_api_de_uma_subconta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da subconta no Asaas | 
- **access_token_id** | **str**| ID da chave de API | 
+| Name                | Type    | Description                              | Notes |
+| ------------------- | ------- | ---------------------------------------- | ----- |
+| **id**              | **str** | Identificador único da subconta no Asaas |
+| **access_token_id** | **str** | ID da chave de API                       |
 
 ### Return type
 
@@ -330,34 +313,33 @@ void (empty response body)
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**204** | No Content |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **204**     | No Content   | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_chaves_de_api_de_uma_subconta**
+
 > CustomerApiAccessTokenListResponseDTO listar_chaves_de_api_de_uma_subconta(id)
 
 Listar chaves de API de uma subconta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -397,14 +379,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SubcontasAsaasApi->listar_chaves_de_api_de_uma_subconta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da subconta no Asaas | 
+| Name   | Type    | Description                              | Notes |
+| ------ | ------- | ---------------------------------------- | ----- |
+| **id** | **str** | Identificador único da subconta no Asaas |
 
 ### Return type
 
@@ -412,35 +391,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_subcontas**
+
 > AccountListResponseDTO listar_subcontas(offset=offset, limit=limit, cpf_cnpj=cpf_cnpj, email=email, name=name, wallet_id=wallet_id)
 
 Listar subcontas
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -485,19 +463,16 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SubcontasAsaasApi->listar_subcontas: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **cpf_cnpj** | **str**| Filtrar pelo cpf ou cnpj da subconta | [optional] 
- **email** | **str**| Filtrar pelo email da subconta | [optional] 
- **name** | **str**| Filtrar pelo nome da subconta | [optional] 
- **wallet_id** | **str**| Filtrar pelo walletId da subconta | [optional] 
+| Name          | Type    | Description                             | Notes      |
+| ------------- | ------- | --------------------------------------- | ---------- |
+| **offset**    | **int** | Elemento inicial da lista               | [optional] |
+| **limit**     | **int** | Número de elementos da lista (max: 100) | [optional] |
+| **cpf_cnpj**  | **str** | Filtrar pelo cpf ou cnpj da subconta    | [optional] |
+| **email**     | **str** | Filtrar pelo email da subconta          | [optional] |
+| **name**      | **str** | Filtrar pelo nome da subconta           | [optional] |
+| **wallet_id** | **str** | Filtrar pelo walletId da subconta       | [optional] |
 
 ### Return type
 
@@ -505,34 +480,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_uma_unica_subconta**
+
 > AccountGetResponseDTO recuperar_uma_unica_subconta(id)
 
 Recuperar uma única subconta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -572,14 +546,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SubcontasAsaasApi->recuperar_uma_unica_subconta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da subconta no Asaas | 
+| Name   | Type    | Description                              | Notes |
+| ------ | ------- | ---------------------------------------- | ----- |
+| **id** | **str** | Identificador único da subconta no Asaas |
 
 ### Return type
 
@@ -587,22 +558,21 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

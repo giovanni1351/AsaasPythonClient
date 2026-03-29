@@ -71,7 +71,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -87,7 +87,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found    | -                |
 | **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **forcar_vencimento**
 
@@ -153,7 +153,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -169,4 +169,4 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found    | -                |
 | **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

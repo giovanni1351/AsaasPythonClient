@@ -4,13 +4,13 @@ Informações básicas da conta de destino
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Nome da conta de destino | [optional] 
-**cpf_cnpj** | **str** | CPF ou CNPJ da conta de destino | [optional] 
-**agency** | **str** | Código da agência da conta de destino | [optional] 
-**account** | **str** | Número da conta de destino | [optional] 
-**account_digit** | **str** | Dígito da conta de destino | [optional] 
+| Name              | Type    | Description                           | Notes      |
+| ----------------- | ------- | ------------------------------------- | ---------- |
+| **name**          | **str** | Nome da conta de destino              | [optional] |
+| **cpf_cnpj**      | **str** | CPF ou CNPJ da conta de destino       | [optional] |
+| **agency**        | **str** | Código da agência da conta de destino | [optional] |
+| **account**       | **str** | Número da conta de destino            | [optional] |
+| **account_digit** | **str** | Dígito da conta de destino            | [optional] |
 
 ## Example
 
@@ -29,6 +29,5 @@ transfer_save_internal_transfer_account_dto_dict = transfer_save_internal_transf
 # create an instance of TransferSaveInternalTransferAccountDTO from a dict
 transfer_save_internal_transfer_account_dto_from_dict = TransferSaveInternalTransferAccountDTO.from_dict(transfer_save_internal_transfer_account_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

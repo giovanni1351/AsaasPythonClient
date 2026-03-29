@@ -4,12 +4,10 @@ Tipos de cobrança
 
 ## Enum
 
-* `DETACHED` (value: `'DETACHED'`)
+- `DETACHED` (value: `'DETACHED'`)
 
-* `RECURRENT` (value: `'RECURRENT'`)
+- `RECURRENT` (value: `'RECURRENT'`)
 
-* `INSTALLMENT` (value: `'INSTALLMENT'`)
+- `INSTALLMENT` (value: `'INSTALLMENT'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

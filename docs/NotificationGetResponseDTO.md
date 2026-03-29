@@ -4,21 +4,21 @@ Lista de informações das notificações
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**object** | **str** | Tipo do objeto | [optional] 
-**id** | **str** | Identificador único da notificação | [optional] 
-**customer** | **str** | Identificador único do cliente | [optional] 
-**enabled** | **bool** | Indica se a notificação está habilitada | [optional] 
-**email_enabled_for_provider** | **bool** | Indica se o e-mail enviado para você está habilitado ou desabilitado | [optional] 
-**sms_enabled_for_provider** | **bool** | Indica se o SMS enviado para você está habilitado ou desabilitado | [optional] 
-**email_enabled_for_customer** | **bool** | Indica se o e-mail enviado para o cliente está habilitado ou desabilitado | [optional] 
-**sms_enabled_for_customer** | **bool** | Indica se o SMS enviado para o cliente está habilitado ou desabilitado | [optional] 
-**phone_call_enabled_for_customer** | **bool** | Indica se notificação por voz para o cliente está habilitada ou desabilitada | [optional] 
-**whatsapp_enabled_for_customer** | **bool** | Indica se a notificação por Whatsapp enviado para o cliente está habilitada ou desabilitada | [optional] 
-**event** | [**NotificationGetResponseNotificationEvent**](NotificationGetResponseNotificationEvent.md) |  | [optional] 
-**schedule_offset** | **int** | Especifica quantos dias antes do vencimento a notificação deve se enviada. Válido para os eventos &#x60;PAYMENT_DUEDATE_WARNING&#x60; e &#x60;PAYMENT_OVERDUE&#x60; | [optional] 
-**deleted** | **bool** | Indica se a notificação foi deletada | [optional] [default to True]
+| Name                                | Type                                                                                        | Description                                                                                                                                                         | Notes                        |
+| ----------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **object**                          | **str**                                                                                     | Tipo do objeto                                                                                                                                                      | [optional]                   |
+| **id**                              | **str**                                                                                     | Identificador único da notificação                                                                                                                                  | [optional]                   |
+| **customer**                        | **str**                                                                                     | Identificador único do cliente                                                                                                                                      | [optional]                   |
+| **enabled**                         | **bool**                                                                                    | Indica se a notificação está habilitada                                                                                                                             | [optional]                   |
+| **email_enabled_for_provider**      | **bool**                                                                                    | Indica se o e-mail enviado para você está habilitado ou desabilitado                                                                                                | [optional]                   |
+| **sms_enabled_for_provider**        | **bool**                                                                                    | Indica se o SMS enviado para você está habilitado ou desabilitado                                                                                                   | [optional]                   |
+| **email_enabled_for_customer**      | **bool**                                                                                    | Indica se o e-mail enviado para o cliente está habilitado ou desabilitado                                                                                           | [optional]                   |
+| **sms_enabled_for_customer**        | **bool**                                                                                    | Indica se o SMS enviado para o cliente está habilitado ou desabilitado                                                                                              | [optional]                   |
+| **phone_call_enabled_for_customer** | **bool**                                                                                    | Indica se notificação por voz para o cliente está habilitada ou desabilitada                                                                                        | [optional]                   |
+| **whatsapp_enabled_for_customer**   | **bool**                                                                                    | Indica se a notificação por Whatsapp enviado para o cliente está habilitada ou desabilitada                                                                         | [optional]                   |
+| **event**                           | [**NotificationGetResponseNotificationEvent**](NotificationGetResponseNotificationEvent.md) |                                                                                                                                                                     | [optional]                   |
+| **schedule_offset**                 | **int**                                                                                     | Especifica quantos dias antes do vencimento a notificação deve se enviada. Válido para os eventos &#x60;PAYMENT_DUEDATE_WARNING&#x60; e &#x60;PAYMENT_OVERDUE&#x60; | [optional]                   |
+| **deleted**                         | **bool**                                                                                    | Indica se a notificação foi deletada                                                                                                                                | [optional] [default to True] |
 
 ## Example
 
@@ -37,6 +37,5 @@ notification_get_response_dto_dict = notification_get_response_dto_instance.to_d
 # create an instance of NotificationGetResponseDTO from a dict
 notification_get_response_dto_from_dict = NotificationGetResponseDTO.from_dict(notification_get_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

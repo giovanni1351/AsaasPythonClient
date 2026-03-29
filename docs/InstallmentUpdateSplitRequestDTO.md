@@ -1,11 +1,10 @@
 # InstallmentUpdateSplitRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**splits** | [**List[InstallmentSplitRequestDTO]**](InstallmentSplitRequestDTO.md) | Dados de split para atualizar | [optional] 
+| Name       | Type                                                                  | Description                   | Notes      |
+| ---------- | --------------------------------------------------------------------- | ----------------------------- | ---------- |
+| **splits** | [**List[InstallmentSplitRequestDTO]**](InstallmentSplitRequestDTO.md) | Dados de split para atualizar | [optional] |
 
 ## Example
 
@@ -24,6 +23,5 @@ installment_update_split_request_dto_dict = installment_update_split_request_dto
 # create an instance of InstallmentUpdateSplitRequestDTO from a dict
 installment_update_split_request_dto_from_dict = InstallmentUpdateSplitRequestDTO.from_dict(installment_update_split_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

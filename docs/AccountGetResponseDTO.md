@@ -48,4 +48,4 @@ account_get_response_dto_dict = account_get_response_dto_instance.to_dict()
 account_get_response_dto_from_dict = AccountGetResponseDTO.from_dict(account_get_response_dto_dict)
 ```
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

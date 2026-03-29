@@ -26,4 +26,4 @@ account_save_or_update_payment_escrow_config_request_dto_dict = account_save_or_
 account_save_or_update_payment_escrow_config_request_dto_from_dict = AccountSaveOrUpdatePaymentEscrowConfigRequestDTO.from_dict(account_save_or_update_payment_escrow_config_request_dto_dict)
 ```
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -4,9 +4,9 @@ Informações de juros para pagamento após o vencimento
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **float** | Percentual de juros *ao mês* sobre o valor da cobrança para pagamento após o vencimento | [optional] 
+| Name      | Type      | Description                                                                             | Notes      |
+| --------- | --------- | --------------------------------------------------------------------------------------- | ---------- |
+| **value** | **float** | Percentual de juros _ao mês_ sobre o valor da cobrança para pagamento após o vencimento | [optional] |
 
 ## Example
 
@@ -25,6 +25,5 @@ payment_interest_request_dto_dict = payment_interest_request_dto_instance.to_dic
 # create an instance of PaymentInterestRequestDTO from a dict
 payment_interest_request_dto_from_dict = PaymentInterestRequestDTO.from_dict(payment_interest_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

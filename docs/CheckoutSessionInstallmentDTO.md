@@ -4,9 +4,9 @@ Detalhes do parcelamento. Caso informado, será obrigatório incluir o chargeTyp
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**max_installment_count** | **int** | Número máximo de parcelas | [optional] 
+| Name                      | Type    | Description               | Notes      |
+| ------------------------- | ------- | ------------------------- | ---------- |
+| **max_installment_count** | **int** | Número máximo de parcelas | [optional] |
 
 ## Example
 
@@ -25,6 +25,5 @@ checkout_session_installment_dto_dict = checkout_session_installment_dto_instanc
 # create an instance of CheckoutSessionInstallmentDTO from a dict
 checkout_session_installment_dto_from_dict = CheckoutSessionInstallmentDTO.from_dict(checkout_session_installment_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

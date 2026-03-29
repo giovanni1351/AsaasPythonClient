@@ -4,10 +4,10 @@ Informações da cobrança imediata
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**conciliation_identifier** | **str** | Identificador de conciliação | [optional] 
-**expiration_date** | **datetime** | Data de expiração da primeira cobrança | [optional] 
+| Name                        | Type         | Description                            | Notes      |
+| --------------------------- | ------------ | -------------------------------------- | ---------- |
+| **conciliation_identifier** | **str**      | Identificador de conciliação           | [optional] |
+| **expiration_date**         | **datetime** | Data de expiração da primeira cobrança | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ pix_receiver_automatic_recurring_authorization_immediate_qr_code_response_dto_di
 # create an instance of PixReceiverAutomaticRecurringAuthorizationImmediateQrCodeResponseDTO from a dict
 pix_receiver_automatic_recurring_authorization_immediate_qr_code_response_dto_from_dict = PixReceiverAutomaticRecurringAuthorizationImmediateQrCodeResponseDTO.from_dict(pix_receiver_automatic_recurring_authorization_immediate_qr_code_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

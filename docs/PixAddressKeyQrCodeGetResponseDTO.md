@@ -4,10 +4,10 @@ QrCode da chave Pix
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**encoded_image** | **str** | Imagem do QrCode em base64 | [optional] 
-**payload** | **str** | Copia e Cola do QrCode | [optional] 
+| Name              | Type    | Description                | Notes      |
+| ----------------- | ------- | -------------------------- | ---------- |
+| **encoded_image** | **str** | Imagem do QrCode em base64 | [optional] |
+| **payload**       | **str** | Copia e Cola do QrCode     | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ pix_address_key_qr_code_get_response_dto_dict = pix_address_key_qr_code_get_resp
 # create an instance of PixAddressKeyQrCodeGetResponseDTO from a dict
 pix_address_key_qr_code_get_response_dto_from_dict = PixAddressKeyQrCodeGetResponseDTO.from_dict(pix_address_key_qr_code_get_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

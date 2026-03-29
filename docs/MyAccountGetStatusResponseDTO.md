@@ -1,15 +1,14 @@
 # MyAccountGetStatusResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único da conta no Asaas | [optional] 
-**commercial_info** | [**MyAccountGetStatusResponseStatus**](MyAccountGetStatusResponseStatus.md) |  | [optional] 
-**bank_account_info** | [**MyAccountGetStatusResponseStatus**](MyAccountGetStatusResponseStatus.md) |  | [optional] 
-**documentation** | [**MyAccountGetStatusResponseStatus**](MyAccountGetStatusResponseStatus.md) |  | [optional] 
-**general** | [**MyAccountGetStatusResponseStatus**](MyAccountGetStatusResponseStatus.md) |  | [optional] 
+| Name                  | Type                                                                        | Description                           | Notes      |
+| --------------------- | --------------------------------------------------------------------------- | ------------------------------------- | ---------- |
+| **id**                | **str**                                                                     | Identificador único da conta no Asaas | [optional] |
+| **commercial_info**   | [**MyAccountGetStatusResponseStatus**](MyAccountGetStatusResponseStatus.md) |                                       | [optional] |
+| **bank_account_info** | [**MyAccountGetStatusResponseStatus**](MyAccountGetStatusResponseStatus.md) |                                       | [optional] |
+| **documentation**     | [**MyAccountGetStatusResponseStatus**](MyAccountGetStatusResponseStatus.md) |                                       | [optional] |
+| **general**           | [**MyAccountGetStatusResponseStatus**](MyAccountGetStatusResponseStatus.md) |                                       | [optional] |
 
 ## Example
 
@@ -28,6 +27,5 @@ my_account_get_status_response_dto_dict = my_account_get_status_response_dto_ins
 # create an instance of MyAccountGetStatusResponseDTO from a dict
 my_account_get_status_response_dto_from_dict = MyAccountGetStatusResponseDTO.from_dict(my_account_get_status_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

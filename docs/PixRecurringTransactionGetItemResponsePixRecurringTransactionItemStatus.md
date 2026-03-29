@@ -4,14 +4,12 @@ Status do item de uma recorrência
 
 ## Enum
 
-* `PENDING` (value: `'PENDING'`)
+- `PENDING` (value: `'PENDING'`)
 
-* `CANCELLED` (value: `'CANCELLED'`)
+- `CANCELLED` (value: `'CANCELLED'`)
 
-* `REFUSED` (value: `'REFUSED'`)
+- `REFUSED` (value: `'REFUSED'`)
 
-* `DONE` (value: `'DONE'`)
+- `DONE` (value: `'DONE'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

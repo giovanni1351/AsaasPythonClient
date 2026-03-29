@@ -4,10 +4,8 @@ Modalidade da transferência. Caso não informado e a instituição recebedora s
 
 ## Enum
 
-* `PIX` (value: `'PIX'`)
+- `PIX` (value: `'PIX'`)
 
-* `TED` (value: `'TED'`)
+- `TED` (value: `'TED'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

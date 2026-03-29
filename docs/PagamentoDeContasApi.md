@@ -2,26 +2,26 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**cancelar_pagamento_de_contas**](PagamentoDeContasApi.md#cancelar_pagamento_de_contas) | **POST** /v3/bill/{id}/cancel | Cancelar pagamento de contas
-[**criar_um_pagamento_de_conta**](PagamentoDeContasApi.md#criar_um_pagamento_de_conta) | **POST** /v3/bill | Criar um pagamento de conta
-[**listar_pagamento_de_contas**](PagamentoDeContasApi.md#listar_pagamento_de_contas) | **GET** /v3/bill | Listar pagamento de contas
-[**recuperar_um_unico_pagamento_de_conta**](PagamentoDeContasApi.md#recuperar_um_unico_pagamento_de_conta) | **GET** /v3/bill/{id} | Recuperar um único pagamento de conta
-[**simular_um_pagamento_de_conta**](PagamentoDeContasApi.md#simular_um_pagamento_de_conta) | **POST** /v3/bill/simulate | Simular um pagamento de conta
-
+| Method                                                                                                     | HTTP request                  | Description                           |
+| ---------------------------------------------------------------------------------------------------------- | ----------------------------- | ------------------------------------- |
+| [**cancelar_pagamento_de_contas**](PagamentoDeContasApi.md#cancelar_pagamento_de_contas)                   | **POST** /v3/bill/{id}/cancel | Cancelar pagamento de contas          |
+| [**criar_um_pagamento_de_conta**](PagamentoDeContasApi.md#criar_um_pagamento_de_conta)                     | **POST** /v3/bill             | Criar um pagamento de conta           |
+| [**listar_pagamento_de_contas**](PagamentoDeContasApi.md#listar_pagamento_de_contas)                       | **GET** /v3/bill              | Listar pagamento de contas            |
+| [**recuperar_um_unico_pagamento_de_conta**](PagamentoDeContasApi.md#recuperar_um_unico_pagamento_de_conta) | **GET** /v3/bill/{id}         | Recuperar um único pagamento de conta |
+| [**simular_um_pagamento_de_conta**](PagamentoDeContasApi.md#simular_um_pagamento_de_conta)                 | **POST** /v3/bill/simulate    | Simular um pagamento de conta         |
 
 # **cancelar_pagamento_de_contas**
+
 > BillGetResponseDTO cancelar_pagamento_de_contas(id, body=body)
 
 Cancelar pagamento de contas
 
-Permite o cancelamento do pagamento de conta. Utilize a propriedade `canBeCancelled` do objeto `bill` para verificar se o pagamento de conta pode ser cancelado. 
+Permite o cancelamento do pagamento de conta. Utilize a propriedade `canBeCancelled` do objeto `bill` para verificar se o pagamento de conta pode ser cancelado.
 Ao ser cancelado o pagamento da conta não será realizado.
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -62,15 +62,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PagamentoDeContasApi->cancelar_pagamento_de_contas: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do pagamento de conta a ser cancelado | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                                               | Notes      |
+| -------- | ---------- | --------------------------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único do pagamento de conta a ser cancelado |
+| **body** | **object** |                                                           | [optional] |
 
 ### Return type
 
@@ -78,34 +75,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_um_pagamento_de_conta**
+
 > BillGetResponseDTO criar_um_pagamento_de_conta(bill_save_request_dto=bill_save_request_dto)
 
 Criar um pagamento de conta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -146,14 +142,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PagamentoDeContasApi->criar_um_pagamento_de_conta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bill_save_request_dto** | [**BillSaveRequestDTO**](BillSaveRequestDTO.md)|  | [optional] 
+| Name                      | Type                                            | Description | Notes      |
+| ------------------------- | ----------------------------------------------- | ----------- | ---------- |
+| **bill_save_request_dto** | [**BillSaveRequestDTO**](BillSaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -161,33 +154,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_pagamento_de_contas**
+
 > BillListResponseDTO listar_pagamento_de_contas(offset=offset, limit=limit)
 
 Listar pagamento de contas
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -228,15 +220,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PagamentoDeContasApi->listar_pagamento_de_contas: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
+| Name       | Type    | Description                             | Notes      |
+| ---------- | ------- | --------------------------------------- | ---------- |
+| **offset** | **int** | Elemento inicial da lista               | [optional] |
+| **limit**  | **int** | Número de elementos da lista (max: 100) | [optional] |
 
 ### Return type
 
@@ -244,34 +233,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_um_unico_pagamento_de_conta**
+
 > BillGetResponseDTO recuperar_um_unico_pagamento_de_conta(id)
 
 Recuperar um único pagamento de conta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -311,14 +299,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PagamentoDeContasApi->recuperar_um_unico_pagamento_de_conta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do pagamento de conta no Asaas | 
+| Name   | Type    | Description                                        | Notes |
+| ------ | ------- | -------------------------------------------------- | ----- |
+| **id** | **str** | Identificador único do pagamento de conta no Asaas |
 
 ### Return type
 
@@ -326,35 +311,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **simular_um_pagamento_de_conta**
+
 > BillSimulateResponseDTO simular_um_pagamento_de_conta(bill_simulate_request_dto=bill_simulate_request_dto)
 
 Simular um pagamento de conta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -395,14 +379,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PagamentoDeContasApi->simular_um_pagamento_de_conta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bill_simulate_request_dto** | [**BillSimulateRequestDTO**](BillSimulateRequestDTO.md)|  | [optional] 
+| Name                          | Type                                                    | Description | Notes      |
+| ----------------------------- | ------------------------------------------------------- | ----------- | ---------- |
+| **bill_simulate_request_dto** | [**BillSimulateRequestDTO**](BillSimulateRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -410,20 +391,19 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

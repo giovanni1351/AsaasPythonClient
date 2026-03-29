@@ -1,12 +1,11 @@
 # CustomerDeleteResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**deleted** | **bool** | Indica se o cliente foi removido | [optional] 
-**id** | **str** | Identificador único do cliente | [optional] 
+| Name        | Type     | Description                      | Notes      |
+| ----------- | -------- | -------------------------------- | ---------- |
+| **deleted** | **bool** | Indica se o cliente foi removido | [optional] |
+| **id**      | **str**  | Identificador único do cliente   | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ customer_delete_response_dto_dict = customer_delete_response_dto_instance.to_dic
 # create an instance of CustomerDeleteResponseDTO from a dict
 customer_delete_response_dto_from_dict = CustomerDeleteResponseDTO.from_dict(customer_delete_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

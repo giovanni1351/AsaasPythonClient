@@ -1,13 +1,12 @@
 # InstallmentDeletePaymentsResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**deleted** | **bool** | Indica se o parcelamento está removido | [optional] 
-**id** | **str** | Identificador único do parcelamento no Asaas | [optional] 
-**deleted_payments** | [**List[InstallmentPaymentDeletedDTO]**](InstallmentPaymentDeletedDTO.md) | Lista das cobranças que foram removidas | [optional] 
+| Name                 | Type                                                                      | Description                                  | Notes      |
+| -------------------- | ------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| **deleted**          | **bool**                                                                  | Indica se o parcelamento está removido       | [optional] |
+| **id**               | **str**                                                                   | Identificador único do parcelamento no Asaas | [optional] |
+| **deleted_payments** | [**List[InstallmentPaymentDeletedDTO]**](InstallmentPaymentDeletedDTO.md) | Lista das cobranças que foram removidas      | [optional] |
 
 ## Example
 
@@ -26,6 +25,5 @@ installment_delete_payments_response_dto_dict = installment_delete_payments_resp
 # create an instance of InstallmentDeletePaymentsResponseDTO from a dict
 installment_delete_payments_response_dto_from_dict = InstallmentDeletePaymentsResponseDTO.from_dict(installment_delete_payments_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

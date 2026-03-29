@@ -4,10 +4,10 @@ Lista de objetos
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** | Código do erro | [optional] 
-**description** | **str** | Descrição do erro | [optional] 
+| Name            | Type    | Description       | Notes      |
+| --------------- | ------- | ----------------- | ---------- |
+| **code**        | **str** | Código do erro    | [optional] |
+| **description** | **str** | Descrição do erro | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ error_response_item_dto_dict = error_response_item_dto_instance.to_dict()
 # create an instance of ErrorResponseItemDTO from a dict
 error_response_item_dto_from_dict = ErrorResponseItemDTO.from_dict(error_response_item_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

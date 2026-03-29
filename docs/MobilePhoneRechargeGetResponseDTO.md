@@ -1,16 +1,15 @@
 # MobilePhoneRechargeGetResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único da recarga de celular no Asaas | [optional] 
-**value** | **float** | Valor da recarga | [optional] 
-**phone_number** | **str** | Número do celular que foi solicitado a recarga | [optional] 
-**status** | [**MobilePhoneRechargeGetResponseMobilePhoneRechargeStatus**](MobilePhoneRechargeGetResponseMobilePhoneRechargeStatus.md) |  | [optional] 
-**can_be_cancelled** | **bool** | Se a recarga pode ser cancelada | [optional] [default to True]
-**operator_name** | **str** | Nome da operadora do celular | [optional] 
+| Name                 | Type                                                                                                                      | Description                                        | Notes                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------- |
+| **id**               | **str**                                                                                                                   | Identificador único da recarga de celular no Asaas | [optional]                   |
+| **value**            | **float**                                                                                                                 | Valor da recarga                                   | [optional]                   |
+| **phone_number**     | **str**                                                                                                                   | Número do celular que foi solicitado a recarga     | [optional]                   |
+| **status**           | [**MobilePhoneRechargeGetResponseMobilePhoneRechargeStatus**](MobilePhoneRechargeGetResponseMobilePhoneRechargeStatus.md) |                                                    | [optional]                   |
+| **can_be_cancelled** | **bool**                                                                                                                  | Se a recarga pode ser cancelada                    | [optional] [default to True] |
+| **operator_name**    | **str**                                                                                                                   | Nome da operadora do celular                       | [optional]                   |
 
 ## Example
 
@@ -29,6 +28,5 @@ mobile_phone_recharge_get_response_dto_dict = mobile_phone_recharge_get_response
 # create an instance of MobilePhoneRechargeGetResponseDTO from a dict
 mobile_phone_recharge_get_response_dto_from_dict = MobilePhoneRechargeGetResponseDTO.from_dict(mobile_phone_recharge_get_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

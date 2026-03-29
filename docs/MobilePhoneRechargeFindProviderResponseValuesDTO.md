@@ -4,13 +4,13 @@ Valores disponíveis para recarga
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Nome do pacote | [optional] 
-**description** | **str** | Descrição do pacote | [optional] 
-**bonus** | **str** | Bônus do pacote | [optional] 
-**min_value** | **float** | Valor mínimo de recarga | [optional] 
-**max_value** | **float** | Valor máximo de recarga | [optional] 
+| Name            | Type      | Description             | Notes      |
+| --------------- | --------- | ----------------------- | ---------- |
+| **name**        | **str**   | Nome do pacote          | [optional] |
+| **description** | **str**   | Descrição do pacote     | [optional] |
+| **bonus**       | **str**   | Bônus do pacote         | [optional] |
+| **min_value**   | **float** | Valor mínimo de recarga | [optional] |
+| **max_value**   | **float** | Valor máximo de recarga | [optional] |
 
 ## Example
 
@@ -29,6 +29,5 @@ mobile_phone_recharge_find_provider_response_values_dto_dict = mobile_phone_rech
 # create an instance of MobilePhoneRechargeFindProviderResponseValuesDTO from a dict
 mobile_phone_recharge_find_provider_response_values_dto_from_dict = MobilePhoneRechargeFindProviderResponseValuesDTO.from_dict(mobile_phone_recharge_find_provider_response_values_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -4,10 +4,10 @@ Lista de objetos
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**nbs_code** | **str** | Código NBS (Nomenclatura Brasileira de Serviços) | [optional] 
-**code_description** | **str** | Código NBS e descrição | [optional] 
+| Name                 | Type    | Description                                      | Notes      |
+| -------------------- | ------- | ------------------------------------------------ | ---------- |
+| **nbs_code**         | **str** | Código NBS (Nomenclatura Brasileira de Serviços) | [optional] |
+| **code_description** | **str** | Código NBS e descrição                           | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ fiscal_info_list_invoice_nbs_codes_response_data_dto_dict = fiscal_info_list_inv
 # create an instance of FiscalInfoListInvoiceNbsCodesResponseDataDTO from a dict
 fiscal_info_list_invoice_nbs_codes_response_data_dto_from_dict = FiscalInfoListInvoiceNbsCodesResponseDataDTO.from_dict(fiscal_info_list_invoice_nbs_codes_response_data_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

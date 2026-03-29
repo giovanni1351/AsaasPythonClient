@@ -1,12 +1,11 @@
 # PaymentLinkDeleteResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**deleted** | **bool** | Indica se o link de pagamento foi removido | [optional] 
-**id** | **str** | Identificador único do seu link de pagamentos no Asaas | [optional] 
+| Name        | Type     | Description                                            | Notes      |
+| ----------- | -------- | ------------------------------------------------------ | ---------- |
+| **deleted** | **bool** | Indica se o link de pagamento foi removido             | [optional] |
+| **id**      | **str**  | Identificador único do seu link de pagamentos no Asaas | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ payment_link_delete_response_dto_dict = payment_link_delete_response_dto_instanc
 # create an instance of PaymentLinkDeleteResponseDTO from a dict
 payment_link_delete_response_dto_from_dict = PaymentLinkDeleteResponseDTO.from_dict(payment_link_delete_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

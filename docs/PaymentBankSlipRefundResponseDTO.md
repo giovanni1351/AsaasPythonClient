@@ -1,11 +1,10 @@
 # PaymentBankSlipRefundResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**request_url** | **str** | Link para informar os dados de estorno | [optional] 
+| Name            | Type    | Description                            | Notes      |
+| --------------- | ------- | -------------------------------------- | ---------- |
+| **request_url** | **str** | Link para informar os dados de estorno | [optional] |
 
 ## Example
 
@@ -24,6 +23,5 @@ payment_bank_slip_refund_response_dto_dict = payment_bank_slip_refund_response_d
 # create an instance of PaymentBankSlipRefundResponseDTO from a dict
 payment_bank_slip_refund_response_dto_from_dict = PaymentBankSlipRefundResponseDTO.from_dict(payment_bank_slip_refund_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

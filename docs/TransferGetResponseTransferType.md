@@ -4,12 +4,10 @@ Modalidade da transferência
 
 ## Enum
 
-* `PIX` (value: `'PIX'`)
+- `PIX` (value: `'PIX'`)
 
-* `TED` (value: `'TED'`)
+- `TED` (value: `'TED'`)
 
-* `INTERNAL` (value: `'INTERNAL'`)
+- `INTERNAL` (value: `'INTERNAL'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

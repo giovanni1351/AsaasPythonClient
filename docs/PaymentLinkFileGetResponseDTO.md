@@ -1,13 +1,12 @@
 # PaymentLinkFileGetResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único da imagem do seu link de pagamentos no Asaas | [optional] 
-**main** | **bool** | Determina se esta é a imagem principal | [optional] 
-**image** | [**PaymentLinkFileImageResponseDTO**](PaymentLinkFileImageResponseDTO.md) |  | [optional] 
+| Name      | Type                                                                      | Description                                                      | Notes      |
+| --------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| **id**    | **str**                                                                   | Identificador único da imagem do seu link de pagamentos no Asaas | [optional] |
+| **main**  | **bool**                                                                  | Determina se esta é a imagem principal                           | [optional] |
+| **image** | [**PaymentLinkFileImageResponseDTO**](PaymentLinkFileImageResponseDTO.md) |                                                                  | [optional] |
 
 ## Example
 
@@ -26,6 +25,5 @@ payment_link_file_get_response_dto_dict = payment_link_file_get_response_dto_ins
 # create an instance of PaymentLinkFileGetResponseDTO from a dict
 payment_link_file_get_response_dto_from_dict = PaymentLinkFileGetResponseDTO.from_dict(payment_link_file_get_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

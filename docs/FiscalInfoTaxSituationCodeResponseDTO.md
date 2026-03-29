@@ -4,13 +4,13 @@ Lista de objetos
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** | Código da situação tributária | [optional] 
-**description** | **str** | Descrição | [optional] 
-**is_subject_to_ibs_cbs_taxation** | **bool** | Define se está sujeito à tributação IBS e CBS | [optional] 
-**is_base_reduction_percent_applicable** | **bool** | Define se a porcentagem de redução da base é aplicável | [optional] 
-**is_deferment_applicable** | **bool** | Define se aplica-se diferimento | [optional] 
+| Name                                     | Type     | Description                                            | Notes      |
+| ---------------------------------------- | -------- | ------------------------------------------------------ | ---------- |
+| **code**                                 | **str**  | Código da situação tributária                          | [optional] |
+| **description**                          | **str**  | Descrição                                              | [optional] |
+| **is_subject_to_ibs_cbs_taxation**       | **bool** | Define se está sujeito à tributação IBS e CBS          | [optional] |
+| **is_base_reduction_percent_applicable** | **bool** | Define se a porcentagem de redução da base é aplicável | [optional] |
+| **is_deferment_applicable**              | **bool** | Define se aplica-se diferimento                        | [optional] |
 
 ## Example
 
@@ -29,6 +29,5 @@ fiscal_info_tax_situation_code_response_dto_dict = fiscal_info_tax_situation_cod
 # create an instance of FiscalInfoTaxSituationCodeResponseDTO from a dict
 fiscal_info_tax_situation_code_response_dto_from_dict = FiscalInfoTaxSituationCodeResponseDTO.from_dict(fiscal_info_tax_situation_code_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

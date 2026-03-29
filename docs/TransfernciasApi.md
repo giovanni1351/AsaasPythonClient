@@ -2,25 +2,23 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**cancelar_uma_transferncia**](TransfernciasApi.md#cancelar_uma_transferncia) | **DELETE** /v3/transfers/{id}/cancel | Cancelar uma transferência
-[**listar_transferencias**](TransfernciasApi.md#listar_transferencias) | **GET** /v3/transfers | Listar transferências
-[**recuperar_uma_unica_transferencia**](TransfernciasApi.md#recuperar_uma_unica_transferencia) | **GET** /v3/transfers/{id} | Recuperar uma única transferência
-[**transferir_para_conta_asaas**](TransfernciasApi.md#transferir_para_conta_asaas) | **POST** /v3/transfers/ | Transferir para conta Asaas
-[**transferir_para_conta_de_outra_instituicao_ou_chave_pix**](TransfernciasApi.md#transferir_para_conta_de_outra_instituicao_ou_chave_pix) | **POST** /v3/transfers | Transferir para conta de outra Instituição ou chave Pix
-
+| Method                                                                                                                                     | HTTP request                         | Description                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------ | ------------------------------------------------------- |
+| [**cancelar_uma_transferncia**](TransfernciasApi.md#cancelar_uma_transferncia)                                                             | **DELETE** /v3/transfers/{id}/cancel | Cancelar uma transferência                              |
+| [**listar_transferencias**](TransfernciasApi.md#listar_transferencias)                                                                     | **GET** /v3/transfers                | Listar transferências                                   |
+| [**recuperar_uma_unica_transferencia**](TransfernciasApi.md#recuperar_uma_unica_transferencia)                                             | **GET** /v3/transfers/{id}           | Recuperar uma única transferência                       |
+| [**transferir_para_conta_asaas**](TransfernciasApi.md#transferir_para_conta_asaas)                                                         | **POST** /v3/transfers/              | Transferir para conta Asaas                             |
+| [**transferir_para_conta_de_outra_instituicao_ou_chave_pix**](TransfernciasApi.md#transferir_para_conta_de_outra_instituicao_ou_chave_pix) | **POST** /v3/transfers               | Transferir para conta de outra Instituição ou chave Pix |
 
 # **cancelar_uma_transferncia**
+
 > TransferGetResponseDTO cancelar_uma_transferncia(id)
 
 Cancelar uma transferência
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -60,14 +58,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling TransfernciasApi->cancelar_uma_transferncia: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da transferência no Asaas | 
+| Name   | Type    | Description                                   | Notes |
+| ------ | ------- | --------------------------------------------- | ----- |
+| **id** | **str** | Identificador único da transferência no Asaas |
 
 ### Return type
 
@@ -75,25 +70,26 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_transferencias**
+
 > TransferListResponseDTO listar_transferencias(date_created_ge=date_created_ge, date_created_le=date_created_le, transfer_date_ge=transfer_date_ge, transfer_date_le=transfer_date_le, type=type)
 
 Listar transferências
@@ -102,7 +98,7 @@ Este método retorna uma lista paginada com todas as transferências para o filt
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -146,18 +142,15 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling TransfernciasApi->listar_transferencias: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **date_created_ge** | **str**| Filtrar pela data de criação inicial | [optional] 
- **date_created_le** | **str**| Filtrar pela data de criação final | [optional] 
- **transfer_date_ge** | **str**| Filtrar pela data inicial de efetivação de transferência | [optional] 
- **transfer_date_le** | **str**| Filtrar pela data final de efetivação de transferência | [optional] 
- **type** | **str**| Filtrar por tipo da transferência | [optional] 
+| Name                 | Type    | Description                                              | Notes      |
+| -------------------- | ------- | -------------------------------------------------------- | ---------- |
+| **date_created_ge**  | **str** | Filtrar pela data de criação inicial                     | [optional] |
+| **date_created_le**  | **str** | Filtrar pela data de criação final                       | [optional] |
+| **transfer_date_ge** | **str** | Filtrar pela data inicial de efetivação de transferência | [optional] |
+| **transfer_date_le** | **str** | Filtrar pela data final de efetivação de transferência   | [optional] |
+| **type**             | **str** | Filtrar por tipo da transferência                        | [optional] |
 
 ### Return type
 
@@ -165,34 +158,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_uma_unica_transferencia**
+
 > TransferGetResponseDTO recuperar_uma_unica_transferencia(id)
 
 Recuperar uma única transferência
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -232,14 +224,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling TransfernciasApi->recuperar_uma_unica_transferencia: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da transferência no Asaas | 
+| Name   | Type    | Description                                   | Notes |
+| ------ | ------- | --------------------------------------------- | ----- |
+| **id** | **str** | Identificador único da transferência no Asaas |
 
 ### Return type
 
@@ -247,35 +236,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **transferir_para_conta_asaas**
+
 > TransferSaveInternalTransferResponseDTO transferir_para_conta_asaas(transfer_save_internal_transfer_request_dto=transfer_save_internal_transfer_request_dto)
 
 Transferir para conta Asaas
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -316,14 +304,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling TransfernciasApi->transferir_para_conta_asaas: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **transfer_save_internal_transfer_request_dto** | [**TransferSaveInternalTransferRequestDTO**](TransferSaveInternalTransferRequestDTO.md)|  | [optional] 
+| Name                                            | Type                                                                                    | Description | Notes      |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **transfer_save_internal_transfer_request_dto** | [**TransferSaveInternalTransferRequestDTO**](TransferSaveInternalTransferRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -331,33 +316,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **transferir_para_conta_de_outra_instituicao_ou_chave_pix**
+
 > TransferGetResponseDTO transferir_para_conta_de_outra_instituicao_ou_chave_pix(transfer_save_request_dto=transfer_save_request_dto)
 
 Transferir para conta de outra Instituição ou chave Pix
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -398,14 +382,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling TransfernciasApi->transferir_para_conta_de_outra_instituicao_ou_chave_pix: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **transfer_save_request_dto** | [**TransferSaveRequestDTO**](TransferSaveRequestDTO.md)|  | [optional] 
+| Name                          | Type                                                    | Description | Notes      |
+| ----------------------------- | ------------------------------------------------------- | ----------- | ---------- |
+| **transfer_save_request_dto** | [**TransferSaveRequestDTO**](TransferSaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -413,20 +394,19 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

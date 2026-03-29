@@ -4,10 +4,10 @@ Opções de regime de apuração tributária pelo Simples Nacional
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**label** | **str** | Nome do regime de apuração tributária pelo Simples Nacional | [optional] 
-**value** | **str** | Identificador do regime de apuração tributária pelo Simples Nacional | [optional] 
+| Name      | Type    | Description                                                          | Notes      |
+| --------- | ------- | -------------------------------------------------------------------- | ---------- |
+| **label** | **str** | Nome do regime de apuração tributária pelo Simples Nacional          | [optional] |
+| **value** | **str** | Identificador do regime de apuração tributária pelo Simples Nacional | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ fiscal_info_municipal_options_national_portal_tax_calculation_regime_dto_dict = 
 # create an instance of FiscalInfoMunicipalOptionsNationalPortalTaxCalculationRegimeDTO from a dict
 fiscal_info_municipal_options_national_portal_tax_calculation_regime_dto_from_dict = FiscalInfoMunicipalOptionsNationalPortalTaxCalculationRegimeDTO.from_dict(fiscal_info_municipal_options_national_portal_tax_calculation_regime_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

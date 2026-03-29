@@ -1,11 +1,10 @@
 # CustomerApiAccessTokenListResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**access_tokens** | [**List[CustomerApiAccessTokenBaseResponseDTO]**](CustomerApiAccessTokenBaseResponseDTO.md) | Lista de chaves de API da subconta | [optional] 
+| Name              | Type                                                                                        | Description                        | Notes      |
+| ----------------- | ------------------------------------------------------------------------------------------- | ---------------------------------- | ---------- |
+| **access_tokens** | [**List[CustomerApiAccessTokenBaseResponseDTO]**](CustomerApiAccessTokenBaseResponseDTO.md) | Lista de chaves de API da subconta | [optional] |
 
 ## Example
 
@@ -24,6 +23,5 @@ customer_api_access_token_list_response_dto_dict = customer_api_access_token_lis
 # create an instance of CustomerApiAccessTokenListResponseDTO from a dict
 customer_api_access_token_list_response_dto_from_dict = CustomerApiAccessTokenListResponseDTO.from_dict(customer_api_access_token_list_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

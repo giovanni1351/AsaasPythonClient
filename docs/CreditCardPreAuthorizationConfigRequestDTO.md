@@ -1,11 +1,10 @@
 # CreditCardPreAuthorizationConfigRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**days_to_expire** | **int** | Quantidade de dias para expiração da pré-autorização | 
+| Name               | Type    | Description                                          | Notes |
+| ------------------ | ------- | ---------------------------------------------------- | ----- |
+| **days_to_expire** | **int** | Quantidade de dias para expiração da pré-autorização |
 
 ## Example
 
@@ -24,6 +23,5 @@ credit_card_pre_authorization_config_request_dto_dict = credit_card_pre_authoriz
 # create an instance of CreditCardPreAuthorizationConfigRequestDTO from a dict
 credit_card_pre_authorization_config_request_dto_from_dict = CreditCardPreAuthorizationConfigRequestDTO.from_dict(credit_card_pre_authorization_config_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -1,13 +1,12 @@
 # TransferSaveInternalTransferRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**value** | **float** | Valor a ser transferido | 
-**wallet_id** | **str** | WalletId da conta destino | 
-**external_reference** | **str** | Identificador da transferência no seu sistema | [optional] 
+| Name                   | Type      | Description                                   | Notes      |
+| ---------------------- | --------- | --------------------------------------------- | ---------- |
+| **value**              | **float** | Valor a ser transferido                       |
+| **wallet_id**          | **str**   | WalletId da conta destino                     |
+| **external_reference** | **str**   | Identificador da transferência no seu sistema | [optional] |
 
 ## Example
 
@@ -26,6 +25,5 @@ transfer_save_internal_transfer_request_dto_dict = transfer_save_internal_transf
 # create an instance of TransferSaveInternalTransferRequestDTO from a dict
 transfer_save_internal_transfer_request_dto_from_dict = TransferSaveInternalTransferRequestDTO.from_dict(transfer_save_internal_transfer_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -1,11 +1,10 @@
 # RecurringPixTransactionListItemsResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**List[PixRecurringTransactionGetItemResponseDTO]**](PixRecurringTransactionGetItemResponseDTO.md) | Lista de objetos | [optional] 
+| Name     | Type                                                                                                | Description      | Notes      |
+| -------- | --------------------------------------------------------------------------------------------------- | ---------------- | ---------- |
+| **data** | [**List[PixRecurringTransactionGetItemResponseDTO]**](PixRecurringTransactionGetItemResponseDTO.md) | Lista de objetos | [optional] |
 
 ## Example
 
@@ -24,6 +23,5 @@ recurring_pix_transaction_list_items_response_dto_dict = recurring_pix_transacti
 # create an instance of RecurringPixTransactionListItemsResponseDTO from a dict
 recurring_pix_transaction_list_items_response_dto_from_dict = RecurringPixTransactionListItemsResponseDTO.from_dict(recurring_pix_transaction_list_items_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

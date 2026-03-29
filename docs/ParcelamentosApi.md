@@ -2,30 +2,28 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**atualizar_splits_do_parcelamento**](ParcelamentosApi.md#atualizar_splits_do_parcelamento) | **PUT** /v3/installments/{id}/splits | Atualizar splits do parcelamento
-[**cancelar_cobrancas_de_um_parcelamento**](ParcelamentosApi.md#cancelar_cobrancas_de_um_parcelamento) | **DELETE** /v3/installments/{id}/payments | Cancelar cobranças de um parcelamento (pendentes e vencidas)
-[**criar_parcelamento**](ParcelamentosApi.md#criar_parcelamento) | **POST** /v3/installments | Criar parcelamento
-[**criar_parcelamento_com_carto_de_crdito**](ParcelamentosApi.md#criar_parcelamento_com_carto_de_crdito) | **POST** /v3/installments/ | Criar parcelamento com cartão de crédito
-[**estornar_parcelamento**](ParcelamentosApi.md#estornar_parcelamento) | **POST** /v3/installments/{id}/refund | Estornar parcelamento
-[**gerar_carne_de_parcelamento**](ParcelamentosApi.md#gerar_carne_de_parcelamento) | **GET** /v3/installments/{id}/paymentBook | Gerar carnê de parcelamento
-[**listar_cobranas_de_um_parcelamento**](ParcelamentosApi.md#listar_cobranas_de_um_parcelamento) | **GET** /v3/installments/{id}/payments | Listar cobranças de um parcelamento
-[**listar_parcelamentos**](ParcelamentosApi.md#listar_parcelamentos) | **GET** /v3/installments | Listar parcelamentos
-[**recuperar_um_unico_parcelamento**](ParcelamentosApi.md#recuperar_um_unico_parcelamento) | **GET** /v3/installments/{id} | Recuperar um único parcelamento
-[**remover_parcelamento**](ParcelamentosApi.md#remover_parcelamento) | **DELETE** /v3/installments/{id} | Remover parcelamento
-
+| Method                                                                                                   | HTTP request                              | Description                                                  |
+| -------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
+| [**atualizar_splits_do_parcelamento**](ParcelamentosApi.md#atualizar_splits_do_parcelamento)             | **PUT** /v3/installments/{id}/splits      | Atualizar splits do parcelamento                             |
+| [**cancelar_cobrancas_de_um_parcelamento**](ParcelamentosApi.md#cancelar_cobrancas_de_um_parcelamento)   | **DELETE** /v3/installments/{id}/payments | Cancelar cobranças de um parcelamento (pendentes e vencidas) |
+| [**criar_parcelamento**](ParcelamentosApi.md#criar_parcelamento)                                         | **POST** /v3/installments                 | Criar parcelamento                                           |
+| [**criar_parcelamento_com_carto_de_crdito**](ParcelamentosApi.md#criar_parcelamento_com_carto_de_crdito) | **POST** /v3/installments/                | Criar parcelamento com cartão de crédito                     |
+| [**estornar_parcelamento**](ParcelamentosApi.md#estornar_parcelamento)                                   | **POST** /v3/installments/{id}/refund     | Estornar parcelamento                                        |
+| [**gerar_carne_de_parcelamento**](ParcelamentosApi.md#gerar_carne_de_parcelamento)                       | **GET** /v3/installments/{id}/paymentBook | Gerar carnê de parcelamento                                  |
+| [**listar_cobranas_de_um_parcelamento**](ParcelamentosApi.md#listar_cobranas_de_um_parcelamento)         | **GET** /v3/installments/{id}/payments    | Listar cobranças de um parcelamento                          |
+| [**listar_parcelamentos**](ParcelamentosApi.md#listar_parcelamentos)                                     | **GET** /v3/installments                  | Listar parcelamentos                                         |
+| [**recuperar_um_unico_parcelamento**](ParcelamentosApi.md#recuperar_um_unico_parcelamento)               | **GET** /v3/installments/{id}             | Recuperar um único parcelamento                              |
+| [**remover_parcelamento**](ParcelamentosApi.md#remover_parcelamento)                                     | **DELETE** /v3/installments/{id}          | Remover parcelamento                                         |
 
 # **atualizar_splits_do_parcelamento**
+
 > InstallmentUpdateSplitResponseDTO atualizar_splits_do_parcelamento(id, installment_update_split_request_dto=installment_update_split_request_dto)
 
 Atualizar splits do parcelamento
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -67,15 +65,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ParcelamentosApi->atualizar_splits_do_parcelamento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| ID do parcelamento | 
- **installment_update_split_request_dto** | [**InstallmentUpdateSplitRequestDTO**](InstallmentUpdateSplitRequestDTO.md)|  | [optional] 
+| Name                                     | Type                                                                        | Description        | Notes      |
+| ---------------------------------------- | --------------------------------------------------------------------------- | ------------------ | ---------- |
+| **id**                                   | **str**                                                                     | ID do parcelamento |
+| **installment_update_split_request_dto** | [**InstallmentUpdateSplitRequestDTO**](InstallmentUpdateSplitRequestDTO.md) |                    | [optional] |
 
 ### Return type
 
@@ -83,34 +78,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **cancelar_cobrancas_de_um_parcelamento**
+
 > InstallmentDeletePaymentsResponseDTO cancelar_cobrancas_de_um_parcelamento(id)
 
 Cancelar cobranças de um parcelamento (pendentes e vencidas)
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -150,14 +144,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ParcelamentosApi->cancelar_cobrancas_de_um_parcelamento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do parcelamento que terá cobranças removidas. | 
+| Name   | Type    | Description                                                       | Notes |
+| ------ | ------- | ----------------------------------------------------------------- | ----- |
+| **id** | **str** | Identificador único do parcelamento que terá cobranças removidas. |
 
 ### Return type
 
@@ -165,34 +156,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_parcelamento**
+
 > InstallmentGetResponseDTO criar_parcelamento(installment_save_request_dto=installment_save_request_dto)
 
 Criar parcelamento
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -233,14 +223,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ParcelamentosApi->criar_parcelamento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **installment_save_request_dto** | [**InstallmentSaveRequestDTO**](InstallmentSaveRequestDTO.md)|  | [optional] 
+| Name                             | Type                                                          | Description | Notes      |
+| -------------------------------- | ------------------------------------------------------------- | ----------- | ---------- |
+| **installment_save_request_dto** | [**InstallmentSaveRequestDTO**](InstallmentSaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -248,33 +235,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_parcelamento_com_carto_de_crdito**
+
 > InstallmentGetResponseDTO criar_parcelamento_com_carto_de_crdito(installment_save_with_credit_card_request_dto=installment_save_with_credit_card_request_dto)
 
 Criar parcelamento com cartão de crédito
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -315,14 +301,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ParcelamentosApi->criar_parcelamento_com_carto_de_crdito: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **installment_save_with_credit_card_request_dto** | [**InstallmentSaveWithCreditCardRequestDTO**](InstallmentSaveWithCreditCardRequestDTO.md)|  | [optional] 
+| Name                                              | Type                                                                                      | Description | Notes      |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **installment_save_with_credit_card_request_dto** | [**InstallmentSaveWithCreditCardRequestDTO**](InstallmentSaveWithCreditCardRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -330,24 +313,25 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **estornar_parcelamento**
+
 > InstallmentGetResponseDTO estornar_parcelamento(id, installment_refund_request_dto=installment_refund_request_dto)
 
 Estornar parcelamento
@@ -358,7 +342,7 @@ Como já ocorre no processo de estorno de uma cobrança avulsa por cartão de cr
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -400,15 +384,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ParcelamentosApi->estornar_parcelamento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do parcelamento a ser estornado. | 
- **installment_refund_request_dto** | [**InstallmentRefundRequestDTO**](InstallmentRefundRequestDTO.md)|  | [optional] 
+| Name                               | Type                                                              | Description                                          | Notes      |
+| ---------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------- | ---------- |
+| **id**                             | **str**                                                           | Identificador único do parcelamento a ser estornado. |
+| **installment_refund_request_dto** | [**InstallmentRefundRequestDTO**](InstallmentRefundRequestDTO.md) |                                                      | [optional] |
 
 ### Return type
 
@@ -416,34 +397,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **gerar_carne_de_parcelamento**
+
 > bytes gerar_carne_de_parcelamento(id, sort=sort, order=order)
 
 Gerar carnê de parcelamento
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -484,16 +464,13 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ParcelamentosApi->gerar_carne_de_parcelamento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do parcelamento no Asaas | 
- **sort** | **str**| Filtrar pelo nome da coluna | [optional] 
- **order** | **str**| Ordenação da coluna | [optional] 
+| Name      | Type    | Description                                  | Notes      |
+| --------- | ------- | -------------------------------------------- | ---------- |
+| **id**    | **str** | Identificador único do parcelamento no Asaas |
+| **sort**  | **str** | Filtrar pelo nome da coluna                  | [optional] |
+| **order** | **str** | Ordenação da coluna                          | [optional] |
 
 ### Return type
 
@@ -501,35 +478,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/pdf, application/json
+- **Content-Type**: Not defined
+- **Accept**: application/pdf, application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_cobranas_de_um_parcelamento**
+
 > PaymentListResponseDTO listar_cobranas_de_um_parcelamento(id, status=status)
 
 Listar cobranças de um parcelamento
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -571,15 +547,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ParcelamentosApi->listar_cobranas_de_um_parcelamento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do parcelamento no Asaas | 
- **status** | [**InstallmentListPaymentsRequestPaymentStatus**](.md)| Filtrar por status das cobranças | [optional] 
+| Name       | Type                                                   | Description                                  | Notes      |
+| ---------- | ------------------------------------------------------ | -------------------------------------------- | ---------- |
+| **id**     | **str**                                                | Identificador único do parcelamento no Asaas |
+| **status** | [**InstallmentListPaymentsRequestPaymentStatus**](.md) | Filtrar por status das cobranças             | [optional] |
 
 ### Return type
 
@@ -587,35 +560,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_parcelamentos**
+
 > InstallmentListResponseDTO listar_parcelamentos(offset=offset, limit=limit)
 
 Listar parcelamentos
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -656,15 +628,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ParcelamentosApi->listar_parcelamentos: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
+| Name       | Type    | Description                             | Notes      |
+| ---------- | ------- | --------------------------------------- | ---------- |
+| **offset** | **int** | Elemento inicial da lista               | [optional] |
+| **limit**  | **int** | Número de elementos da lista (max: 100) | [optional] |
 
 ### Return type
 
@@ -672,34 +641,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_um_unico_parcelamento**
+
 > InstallmentGetResponseDTO recuperar_um_unico_parcelamento(id)
 
 Recuperar um único parcelamento
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -739,14 +707,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ParcelamentosApi->recuperar_um_unico_parcelamento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do parcelamento no Asaas | 
+| Name   | Type    | Description                                  | Notes |
+| ------ | ------- | -------------------------------------------- | ----- |
+| **id** | **str** | Identificador único do parcelamento no Asaas |
 
 ### Return type
 
@@ -754,35 +719,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **remover_parcelamento**
+
 > InstallmentDeleteResponseDTO remover_parcelamento(id)
 
 Remover parcelamento
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -822,14 +786,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ParcelamentosApi->remover_parcelamento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do parcelamento a ser removido. | 
+| Name   | Type    | Description                                         | Notes |
+| ------ | ------- | --------------------------------------------------- | ----- |
+| **id** | **str** | Identificador único do parcelamento a ser removido. |
 
 ### Return type
 
@@ -837,21 +798,20 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

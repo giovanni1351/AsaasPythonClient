@@ -1,11 +1,10 @@
 # MyAccountDisableAccountResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**observations** | **str** | Informações sobre a exclusão | [optional] 
+| Name             | Type    | Description                  | Notes      |
+| ---------------- | ------- | ---------------------------- | ---------- |
+| **observations** | **str** | Informações sobre a exclusão | [optional] |
 
 ## Example
 
@@ -24,6 +23,5 @@ my_account_disable_account_response_dto_dict = my_account_disable_account_respon
 # create an instance of MyAccountDisableAccountResponseDTO from a dict
 my_account_disable_account_response_dto_from_dict = MyAccountDisableAccountResponseDTO.from_dict(my_account_disable_account_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

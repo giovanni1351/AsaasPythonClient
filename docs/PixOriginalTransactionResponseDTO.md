@@ -4,12 +4,12 @@ Informações originais da transação caso tenha ocorrido um estorno
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único da transação | [optional] 
-**end_to_end_identifier** | **str** | Identificador único da transação Pix no Banco Central | [optional] 
-**value** | **float** | Valor original da transação | [optional] 
-**effective_date** | **date** | Data da transação | [optional] 
+| Name                      | Type      | Description                                           | Notes      |
+| ------------------------- | --------- | ----------------------------------------------------- | ---------- |
+| **id**                    | **str**   | Identificador único da transação                      | [optional] |
+| **end_to_end_identifier** | **str**   | Identificador único da transação Pix no Banco Central | [optional] |
+| **value**                 | **float** | Valor original da transação                           | [optional] |
+| **effective_date**        | **date**  | Data da transação                                     | [optional] |
 
 ## Example
 
@@ -28,6 +28,5 @@ pix_original_transaction_response_dto_dict = pix_original_transaction_response_d
 # create an instance of PixOriginalTransactionResponseDTO from a dict
 pix_original_transaction_response_dto_from_dict = PixOriginalTransactionResponseDTO.from_dict(pix_original_transaction_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

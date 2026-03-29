@@ -1,12 +1,11 @@
 # PixTokenBucketGetAddressKeyResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**capacity** | **int** | Capacidade máxima de fichas | [optional] 
-**remaining** | **int** | Quantidade de fichas disponíveis | [optional] 
+| Name          | Type    | Description                      | Notes      |
+| ------------- | ------- | -------------------------------- | ---------- |
+| **capacity**  | **int** | Capacidade máxima de fichas      | [optional] |
+| **remaining** | **int** | Quantidade de fichas disponíveis | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ pix_token_bucket_get_address_key_response_dto_dict = pix_token_bucket_get_addres
 # create an instance of PixTokenBucketGetAddressKeyResponseDTO from a dict
 pix_token_bucket_get_address_key_response_dto_from_dict = PixTokenBucketGetAddressKeyResponseDTO.from_dict(pix_token_bucket_get_address_key_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

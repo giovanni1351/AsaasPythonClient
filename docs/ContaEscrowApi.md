@@ -2,26 +2,24 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**criar_configuracao_padrao_da_conta_escrow_para_todas_as_subcontas**](ContaEscrowApi.md#criar_configuracao_padrao_da_conta_escrow_para_todas_as_subcontas) | **POST** /v3/accounts/escrow | Criar configuração padrão da Conta Escrow para todas as subcontas
-[**encerrar_garantia_da_cobranca_na_conta_escrow**](ContaEscrowApi.md#encerrar_garantia_da_cobranca_na_conta_escrow) | **POST** /v3/escrow/{id}/finish | Encerrar garantia da cobrança na Conta Escrow
-[**recuperar_configuracao_da_conta_escrow_para_a_subconta**](ContaEscrowApi.md#recuperar_configuracao_da_conta_escrow_para_a_subconta) | **GET** /v3/accounts/{id}/escrow | Recuperar configuração da Conta Escrow para a subconta
-[**recuperar_configuracao_padrao_da_conta_escrow**](ContaEscrowApi.md#recuperar_configuracao_padrao_da_conta_escrow) | **GET** /v3/accounts/escrow | Recuperar configuração padrão da Conta Escrow
-[**recuperar_garantia_da_cobranca_na_conta_escrow**](ContaEscrowApi.md#recuperar_garantia_da_cobranca_na_conta_escrow) | **GET** /v3/payments/{id}/escrow | Recuperar garantia da cobrança na Conta Escrow
-[**salvar_ou_atualizar_configuracao_da_conta_escrow_para_a_subconta**](ContaEscrowApi.md#salvar_ou_atualizar_configuracao_da_conta_escrow_para_a_subconta) | **POST** /v3/accounts/{id}/escrow | Salvar ou atualizar configuração da Conta Escrow para a subconta
-
+| Method                                                                                                                                                       | HTTP request                      | Description                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- | ----------------------------------------------------------------- |
+| [**criar_configuracao_padrao_da_conta_escrow_para_todas_as_subcontas**](ContaEscrowApi.md#criar_configuracao_padrao_da_conta_escrow_para_todas_as_subcontas) | **POST** /v3/accounts/escrow      | Criar configuração padrão da Conta Escrow para todas as subcontas |
+| [**encerrar_garantia_da_cobranca_na_conta_escrow**](ContaEscrowApi.md#encerrar_garantia_da_cobranca_na_conta_escrow)                                         | **POST** /v3/escrow/{id}/finish   | Encerrar garantia da cobrança na Conta Escrow                     |
+| [**recuperar_configuracao_da_conta_escrow_para_a_subconta**](ContaEscrowApi.md#recuperar_configuracao_da_conta_escrow_para_a_subconta)                       | **GET** /v3/accounts/{id}/escrow  | Recuperar configuração da Conta Escrow para a subconta            |
+| [**recuperar_configuracao_padrao_da_conta_escrow**](ContaEscrowApi.md#recuperar_configuracao_padrao_da_conta_escrow)                                         | **GET** /v3/accounts/escrow       | Recuperar configuração padrão da Conta Escrow                     |
+| [**recuperar_garantia_da_cobranca_na_conta_escrow**](ContaEscrowApi.md#recuperar_garantia_da_cobranca_na_conta_escrow)                                       | **GET** /v3/payments/{id}/escrow  | Recuperar garantia da cobrança na Conta Escrow                    |
+| [**salvar_ou_atualizar_configuracao_da_conta_escrow_para_a_subconta**](ContaEscrowApi.md#salvar_ou_atualizar_configuracao_da_conta_escrow_para_a_subconta)   | **POST** /v3/accounts/{id}/escrow | Salvar ou atualizar configuração da Conta Escrow para a subconta  |
 
 # **criar_configuracao_padrao_da_conta_escrow_para_todas_as_subcontas**
+
 > AccountPaymentEscrowConfigDTO criar_configuracao_padrao_da_conta_escrow_para_todas_as_subcontas(account_payment_escrow_config_dto=account_payment_escrow_config_dto)
 
 Criar configuração padrão da Conta Escrow para todas as subcontas
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -61,14 +59,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ContaEscrowApi->criar_configuracao_padrao_da_conta_escrow_para_todas_as_subcontas: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account_payment_escrow_config_dto** | [**AccountPaymentEscrowConfigDTO**](AccountPaymentEscrowConfigDTO.md)|  | [optional] 
+| Name                                  | Type                                                                  | Description | Notes      |
+| ------------------------------------- | --------------------------------------------------------------------- | ----------- | ---------- |
+| **account_payment_escrow_config_dto** | [**AccountPaymentEscrowConfigDTO**](AccountPaymentEscrowConfigDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -76,33 +71,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **encerrar_garantia_da_cobranca_na_conta_escrow**
+
 > PaymentGetResponseDTO encerrar_garantia_da_cobranca_na_conta_escrow(id, body=body)
 
 Encerrar garantia da cobrança na Conta Escrow
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -143,15 +137,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ContaEscrowApi->encerrar_garantia_da_cobranca_na_conta_escrow: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da garantia da cobrança na Conta Escrow do Asaas | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                                                          | Notes      |
+| -------- | ---------- | -------------------------------------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único da garantia da cobrança na Conta Escrow do Asaas |
+| **body** | **object** |                                                                      | [optional] |
 
 ### Return type
 
@@ -159,34 +150,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_configuracao_da_conta_escrow_para_a_subconta**
+
 > AccountPaymentEscrowConfigDTO recuperar_configuracao_da_conta_escrow_para_a_subconta(id)
 
 Recuperar configuração da Conta Escrow para a subconta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -226,14 +216,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ContaEscrowApi->recuperar_configuracao_da_conta_escrow_para_a_subconta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da subconta no Asaas | 
+| Name   | Type    | Description                              | Notes |
+| ------ | ------- | ---------------------------------------- | ----- |
+| **id** | **str** | Identificador único da subconta no Asaas |
 
 ### Return type
 
@@ -241,35 +228,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_configuracao_padrao_da_conta_escrow**
+
 > AccountPaymentEscrowConfigDTO recuperar_configuracao_padrao_da_conta_escrow()
 
 Recuperar configuração padrão da Conta Escrow
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -308,8 +294,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ContaEscrowApi->recuperar_configuracao_padrao_da_conta_escrow: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -320,34 +304,33 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_garantia_da_cobranca_na_conta_escrow**
+
 > PaymentEscrowGetResponseDTO recuperar_garantia_da_cobranca_na_conta_escrow(id)
 
 Recuperar garantia da cobrança na Conta Escrow
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -387,14 +370,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ContaEscrowApi->recuperar_garantia_da_cobranca_na_conta_escrow: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da cobrança no Asaas | 
+| Name   | Type    | Description                              | Notes |
+| ------ | ------- | ---------------------------------------- | ----- |
+| **id** | **str** | Identificador único da cobrança no Asaas |
 
 ### Return type
 
@@ -402,35 +382,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **salvar_ou_atualizar_configuracao_da_conta_escrow_para_a_subconta**
+
 > AccountPaymentEscrowConfigDTO salvar_ou_atualizar_configuracao_da_conta_escrow_para_a_subconta(id, account_save_or_update_payment_escrow_config_request_dto=account_save_or_update_payment_escrow_config_request_dto)
 
 Salvar ou atualizar configuração da Conta Escrow para a subconta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -472,15 +451,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ContaEscrowApi->salvar_ou_atualizar_configuracao_da_conta_escrow_para_a_subconta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da subconta no Asaas | 
- **account_save_or_update_payment_escrow_config_request_dto** | [**AccountSaveOrUpdatePaymentEscrowConfigRequestDTO**](AccountSaveOrUpdatePaymentEscrowConfigRequestDTO.md)|  | [optional] 
+| Name                                                         | Type                                                                                                        | Description                              | Notes      |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ---------- |
+| **id**                                                       | **str**                                                                                                     | Identificador único da subconta no Asaas |
+| **account_save_or_update_payment_escrow_config_request_dto** | [**AccountSaveOrUpdatePaymentEscrowConfigRequestDTO**](AccountSaveOrUpdatePaymentEscrowConfigRequestDTO.md) |                                          | [optional] |
 
 ### Return type
 
@@ -488,21 +464,20 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

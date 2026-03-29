@@ -2,22 +2,20 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**estornar_boleto**](EstornosApi.md#estornar_boleto) | **POST** /v3/payments/{id}/bankSlip/refund | Estornar boleto
-[**listar_estornos_de_uma_cobranca**](EstornosApi.md#listar_estornos_de_uma_cobranca) | **GET** /v3/payments/{id}/refunds | Listar estornos de uma cobrança
-
+| Method                                                                                | HTTP request                               | Description                     |
+| ------------------------------------------------------------------------------------- | ------------------------------------------ | ------------------------------- |
+| [**estornar_boleto**](EstornosApi.md#estornar_boleto)                                 | **POST** /v3/payments/{id}/bankSlip/refund | Estornar boleto                 |
+| [**listar_estornos_de_uma_cobranca**](EstornosApi.md#listar_estornos_de_uma_cobranca) | **GET** /v3/payments/{id}/refunds          | Listar estornos de uma cobrança |
 
 # **estornar_boleto**
+
 > PaymentBankSlipRefundResponseDTO estornar_boleto(id, body=body)
 
 Estornar boleto
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -58,15 +56,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling EstornosApi->estornar_boleto: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da cobrança no Asaas | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                              | Notes      |
+| -------- | ---------- | ---------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único da cobrança no Asaas |
+| **body** | **object** |                                          | [optional] |
 
 ### Return type
 
@@ -74,34 +69,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_estornos_de_uma_cobranca**
+
 > PaymentRefundListResponseDTO listar_estornos_de_uma_cobranca(id)
 
 Listar estornos de uma cobrança
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -141,14 +135,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling EstornosApi->listar_estornos_de_uma_cobranca: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da cobrança no Asaas | 
+| Name   | Type    | Description                              | Notes |
+| ------ | ------- | ---------------------------------------- | ----- |
+| **id** | **str** | Identificador único da cobrança no Asaas |
 
 ### Return type
 
@@ -156,22 +147,21 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

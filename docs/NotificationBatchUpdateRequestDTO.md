@@ -1,12 +1,11 @@
 # NotificationBatchUpdateRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**customer** | **str** | Identificador único do cliente no Asaas | 
-**notifications** | [**List[NotificationBatchUpdateItemRequestDTO]**](NotificationBatchUpdateItemRequestDTO.md) | Lista de informações das notificações | [optional] 
+| Name              | Type                                                                                        | Description                             | Notes      |
+| ----------------- | ------------------------------------------------------------------------------------------- | --------------------------------------- | ---------- |
+| **customer**      | **str**                                                                                     | Identificador único do cliente no Asaas |
+| **notifications** | [**List[NotificationBatchUpdateItemRequestDTO]**](NotificationBatchUpdateItemRequestDTO.md) | Lista de informações das notificações   | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ notification_batch_update_request_dto_dict = notification_batch_update_request_d
 # create an instance of NotificationBatchUpdateRequestDTO from a dict
 notification_batch_update_request_dto_from_dict = NotificationBatchUpdateRequestDTO.from_dict(notification_batch_update_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

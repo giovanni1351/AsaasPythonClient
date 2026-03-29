@@ -82,7 +82,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -98,7 +98,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found    | -                |
 | **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **atualizar_cartao_de_credito_assinatura**
 
@@ -165,7 +165,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -181,7 +181,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found    | -                |
 | **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **atualizar_configuracao_para_emissao_de_notas_fiscais**
 
@@ -246,7 +246,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -262,7 +262,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found    | -                |
 | **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_assinatura_com_cartao_de_credito**
 
@@ -325,7 +325,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -340,7 +340,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **401**     | Unauthorized | -                |
 | **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_configuracao_para_emissao_de_notas_fiscais**
 
@@ -405,7 +405,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -421,7 +421,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found    | -                |
 | **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_nova_assinatura**
 
@@ -484,7 +484,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -499,7 +499,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **401**     | Unauthorized | -                |
 | **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **gerar_carne_de_assinatura**
 
@@ -568,7 +568,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -585,7 +585,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found                                                                                                         | -                |
 | **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_assinaturas**
 
@@ -669,7 +669,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -685,7 +685,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
 | **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_cobrancas_de_uma_assinatura**
 
@@ -750,7 +750,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -767,7 +767,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found                                                                                                         | -                |
 | **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_notas_fiscais_das_cobrancas_de_uma_assinatura**
 
@@ -844,7 +844,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -861,7 +861,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found                                                                                                         | -                |
 | **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_configuracao_para_emissao_de_notas_fiscais**
 
@@ -923,7 +923,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -940,7 +940,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found                                                                                                         | -                |
 | **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_uma_unica_assinatura**
 
@@ -1002,7 +1002,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -1019,7 +1019,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found                                                                                                         | -                |
 | **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **remover_assinatura**
 
@@ -1081,7 +1081,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -1097,7 +1097,7 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found    | -                |
 | **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **remover_configuracao_para_emissao_de_notas_fiscais**
 
@@ -1159,7 +1159,7 @@ with asaas.ApiClient(configuration) as api_client:
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
@@ -1175,4 +1175,4 @@ with asaas.ApiClient(configuration) as api_client:
 | **404**     | Not found    | -                |
 | **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

@@ -4,20 +4,18 @@ Tipo de documento
 
 ## Enum
 
-* `INVOICE` (value: `'INVOICE'`)
+- `INVOICE` (value: `'INVOICE'`)
 
-* `CONTRACT` (value: `'CONTRACT'`)
+- `CONTRACT` (value: `'CONTRACT'`)
 
-* `MEDIA` (value: `'MEDIA'`)
+- `MEDIA` (value: `'MEDIA'`)
 
-* `DOCUMENT` (value: `'DOCUMENT'`)
+- `DOCUMENT` (value: `'DOCUMENT'`)
 
-* `SPREADSHEET` (value: `'SPREADSHEET'`)
+- `SPREADSHEET` (value: `'SPREADSHEET'`)
 
-* `PROGRAM` (value: `'PROGRAM'`)
+- `PROGRAM` (value: `'PROGRAM'`)
 
-* `OTHER` (value: `'OTHER'`)
+- `OTHER` (value: `'OTHER'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -4,14 +4,12 @@ Status da negociação
 
 ## Enum
 
-* `IN_NEGOTIATION` (value: `'IN_NEGOTIATION'`)
+- `IN_NEGOTIATION` (value: `'IN_NEGOTIATION'`)
 
-* `NEGOTIATION_FAIL` (value: `'NEGOTIATION_FAIL'`)
+- `NEGOTIATION_FAIL` (value: `'NEGOTIATION_FAIL'`)
 
-* `NEGOTIATED` (value: `'NEGOTIATED'`)
+- `NEGOTIATED` (value: `'NEGOTIATED'`)
 
-* `PAID` (value: `'PAID'`)
+- `PAID` (value: `'PAID'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

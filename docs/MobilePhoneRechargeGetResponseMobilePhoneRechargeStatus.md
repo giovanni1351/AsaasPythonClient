@@ -4,16 +4,14 @@ Status da recarga
 
 ## Enum
 
-* `PENDING` (value: `'PENDING'`)
+- `PENDING` (value: `'PENDING'`)
 
-* `CONFIRMED` (value: `'CONFIRMED'`)
+- `CONFIRMED` (value: `'CONFIRMED'`)
 
-* `CANCELLED` (value: `'CANCELLED'`)
+- `CANCELLED` (value: `'CANCELLED'`)
 
-* `REFUNDED` (value: `'REFUNDED'`)
+- `REFUNDED` (value: `'REFUNDED'`)
 
-* `WAITING_CRITICAL_ACTION` (value: `'WAITING_CRITICAL_ACTION'`)
+- `WAITING_CRITICAL_ACTION` (value: `'WAITING_CRITICAL_ACTION'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

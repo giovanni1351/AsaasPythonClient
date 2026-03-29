@@ -2,21 +2,19 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**recuperar_extrato**](ExtratoApi.md#recuperar_extrato) | **GET** /v3/financialTransactions | Recuperar extrato
-
+| Method                                                   | HTTP request                      | Description       |
+| -------------------------------------------------------- | --------------------------------- | ----------------- |
+| [**recuperar_extrato**](ExtratoApi.md#recuperar_extrato) | **GET** /v3/financialTransactions | Recuperar extrato |
 
 # **recuperar_extrato**
+
 > FinancialTransactionListResponseDTO recuperar_extrato(offset=offset, limit=limit, start_date=start_date, finish_date=finish_date, order=order)
 
 Recuperar extrato
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -60,18 +58,15 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling ExtratoApi->recuperar_extrato: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **start_date** | **str**| Data inicial da lista | [optional] 
- **finish_date** | **str**| Data final da lista | [optional] 
- **order** | **str**| Ordenação do resultado | [optional] 
+| Name            | Type    | Description                             | Notes      |
+| --------------- | ------- | --------------------------------------- | ---------- |
+| **offset**      | **int** | Elemento inicial da lista               | [optional] |
+| **limit**       | **int** | Número de elementos da lista (max: 100) | [optional] |
+| **start_date**  | **str** | Data inicial da lista                   | [optional] |
+| **finish_date** | **str** | Data final da lista                     | [optional] |
+| **order**       | **str** | Ordenação do resultado                  | [optional] |
 
 ### Return type
 
@@ -79,21 +74,20 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

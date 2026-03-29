@@ -4,12 +4,12 @@ Dados do pagamento relacionados a Pix
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**encoded_image** | **str** | Imagem do QrCode em base64 | [optional] 
-**payload** | **str** | Copia e Cola do QrCode | [optional] 
-**expiration_date** | **datetime** | Data de expiração do QrCode | [optional] 
-**description** | **str** | Descrição do QrCode | [optional] 
+| Name                | Type         | Description                 | Notes      |
+| ------------------- | ------------ | --------------------------- | ---------- |
+| **encoded_image**   | **str**      | Imagem do QrCode em base64  | [optional] |
+| **payload**         | **str**      | Copia e Cola do QrCode      | [optional] |
+| **expiration_date** | **datetime** | Data de expiração do QrCode | [optional] |
+| **description**     | **str**      | Descrição do QrCode         | [optional] |
 
 ## Example
 
@@ -28,6 +28,5 @@ payment_pix_qr_code_response_dto_dict = payment_pix_qr_code_response_dto_instanc
 # create an instance of PaymentPixQrCodeResponseDTO from a dict
 payment_pix_qr_code_response_dto_from_dict = PaymentPixQrCodeResponseDTO.from_dict(payment_pix_qr_code_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -4,14 +4,14 @@ Simulação de solicitação de negativação para cada tipo de negativação di
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**PaymentDunningPaymentsAvailableForDunningResponseDataTypeSimulationItemPaymentDunningType**](PaymentDunningPaymentsAvailableForDunningResponseDataTypeSimulationItemPaymentDunningType.md) |  | [optional] 
-**is_allowed** | **bool** | Se é possível solicitar uma negativação deste tipo | [optional] [default to True]
-**not_allowed_reason** | **str** | Motivo por não ser possível solicitar uma negativação para este tipo | [optional] 
-**fee_value** | **float** | Custo e/ou taxa da negativação | [optional] 
-**net_value** | **float** | Valor líquido a ser recuperado | [optional] 
-**start_date** | **str** | Data prevista de inicio da negativação | [optional] 
+| Name                   | Type                                                                                                                                                                                          | Description                                                          | Notes                        |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------- |
+| **type**               | [**PaymentDunningPaymentsAvailableForDunningResponseDataTypeSimulationItemPaymentDunningType**](PaymentDunningPaymentsAvailableForDunningResponseDataTypeSimulationItemPaymentDunningType.md) |                                                                      | [optional]                   |
+| **is_allowed**         | **bool**                                                                                                                                                                                      | Se é possível solicitar uma negativação deste tipo                   | [optional] [default to True] |
+| **not_allowed_reason** | **str**                                                                                                                                                                                       | Motivo por não ser possível solicitar uma negativação para este tipo | [optional]                   |
+| **fee_value**          | **float**                                                                                                                                                                                     | Custo e/ou taxa da negativação                                       | [optional]                   |
+| **net_value**          | **float**                                                                                                                                                                                     | Valor líquido a ser recuperado                                       | [optional]                   |
+| **start_date**         | **str**                                                                                                                                                                                       | Data prevista de inicio da negativação                               | [optional]                   |
 
 ## Example
 
@@ -30,6 +30,5 @@ payment_dunning_payments_available_for_dunning_response_data_type_simulation_ite
 # create an instance of PaymentDunningPaymentsAvailableForDunningResponseDataTypeSimulationItemDTO from a dict
 payment_dunning_payments_available_for_dunning_response_data_type_simulation_item_dto_from_dict = PaymentDunningPaymentsAvailableForDunningResponseDataTypeSimulationItemDTO.from_dict(payment_dunning_payments_available_for_dunning_response_data_type_simulation_item_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

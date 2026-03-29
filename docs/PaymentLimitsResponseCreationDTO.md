@@ -4,9 +4,9 @@ Limites de criação
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**daily** | [**PaymentLimitsResponseCreationDailyDTO**](PaymentLimitsResponseCreationDailyDTO.md) |  | [optional] 
+| Name      | Type                                                                                  | Description | Notes      |
+| --------- | ------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **daily** | [**PaymentLimitsResponseCreationDailyDTO**](PaymentLimitsResponseCreationDailyDTO.md) |             | [optional] |
 
 ## Example
 
@@ -25,6 +25,5 @@ payment_limits_response_creation_dto_dict = payment_limits_response_creation_dto
 # create an instance of PaymentLimitsResponseCreationDTO from a dict
 payment_limits_response_creation_dto_from_dict = PaymentLimitsResponseCreationDTO.from_dict(payment_limits_response_creation_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -1,12 +1,11 @@
 # WebhookConfigDeleteResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**deleted** | **bool** | Indica se o Webhook foi removido | [optional] 
-**id** | **str** | Identificador único do webhook removido | [optional] 
+| Name        | Type     | Description                             | Notes      |
+| ----------- | -------- | --------------------------------------- | ---------- |
+| **deleted** | **bool** | Indica se o Webhook foi removido        | [optional] |
+| **id**      | **str**  | Identificador único do webhook removido | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ webhook_config_delete_response_dto_dict = webhook_config_delete_response_dto_ins
 # create an instance of WebhookConfigDeleteResponseDTO from a dict
 webhook_config_delete_response_dto_from_dict = WebhookConfigDeleteResponseDTO.from_dict(webhook_config_delete_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

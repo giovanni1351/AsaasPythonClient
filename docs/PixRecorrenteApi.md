@@ -2,25 +2,23 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**cancelar_item_de_uma_recorrencia**](PixRecorrenteApi.md#cancelar_item_de_uma_recorrencia) | **POST** /v3/pix/transactions/recurrings/items/{id}/cancel | Cancelar item de uma recorrência
-[**cancelar_uma_recorrencia**](PixRecorrenteApi.md#cancelar_uma_recorrencia) | **POST** /v3/pix/transactions/recurrings/{id}/cancel | Cancelar uma recorrência
-[**listar_itens_de_uma_recorrencia**](PixRecorrenteApi.md#listar_itens_de_uma_recorrencia) | **GET** /v3/pix/transactions/recurrings/{id}/items | Listar itens de uma recorrência
-[**listar_recorrencias**](PixRecorrenteApi.md#listar_recorrencias) | **GET** /v3/pix/transactions/recurrings | Listar recorrências
-[**recuperar_uma_unica_recorrencia**](PixRecorrenteApi.md#recuperar_uma_unica_recorrencia) | **GET** /v3/pix/transactions/recurrings/{id} | Recuperar uma única recorrência
-
+| Method                                                                                       | HTTP request                                               | Description                      |
+| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------- |
+| [**cancelar_item_de_uma_recorrencia**](PixRecorrenteApi.md#cancelar_item_de_uma_recorrencia) | **POST** /v3/pix/transactions/recurrings/items/{id}/cancel | Cancelar item de uma recorrência |
+| [**cancelar_uma_recorrencia**](PixRecorrenteApi.md#cancelar_uma_recorrencia)                 | **POST** /v3/pix/transactions/recurrings/{id}/cancel       | Cancelar uma recorrência         |
+| [**listar_itens_de_uma_recorrencia**](PixRecorrenteApi.md#listar_itens_de_uma_recorrencia)   | **GET** /v3/pix/transactions/recurrings/{id}/items         | Listar itens de uma recorrência  |
+| [**listar_recorrencias**](PixRecorrenteApi.md#listar_recorrencias)                           | **GET** /v3/pix/transactions/recurrings                    | Listar recorrências              |
+| [**recuperar_uma_unica_recorrencia**](PixRecorrenteApi.md#recuperar_uma_unica_recorrencia)   | **GET** /v3/pix/transactions/recurrings/{id}               | Recuperar uma única recorrência  |
 
 # **cancelar_item_de_uma_recorrencia**
+
 > PixRecurringTransactionGetItemResponseDTO cancelar_item_de_uma_recorrencia(id, body=body)
 
 Cancelar item de uma recorrência
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -61,15 +59,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixRecorrenteApi->cancelar_item_de_uma_recorrencia: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do item de uma recorrência no Asaas | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                                             | Notes      |
+| -------- | ---------- | ------------------------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único do item de uma recorrência no Asaas |
+| **body** | **object** |                                                         | [optional] |
 
 ### Return type
 
@@ -77,34 +72,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **cancelar_uma_recorrencia**
+
 > PixRecurringTransactionGetResponseDTO cancelar_uma_recorrencia(id, body=body)
 
 Cancelar uma recorrência
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -145,15 +139,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixRecorrenteApi->cancelar_uma_recorrencia: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da recorrência no Asaas | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                                 | Notes      |
+| -------- | ---------- | ------------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único da recorrência no Asaas |
+| **body** | **object** |                                             | [optional] |
 
 ### Return type
 
@@ -161,34 +152,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_itens_de_uma_recorrencia**
+
 > RecurringPixTransactionListItemsResponseDTO listar_itens_de_uma_recorrencia(id, offset=offset, limit=limit)
 
 Listar itens de uma recorrência
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -230,16 +220,13 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixRecorrenteApi->listar_itens_de_uma_recorrencia: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da recorrência no Asaas | 
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
+| Name       | Type    | Description                                 | Notes      |
+| ---------- | ------- | ------------------------------------------- | ---------- |
+| **id**     | **str** | Identificador único da recorrência no Asaas |
+| **offset** | **int** | Elemento inicial da lista                   | [optional] |
+| **limit**  | **int** | Número de elementos da lista (max: 100)     | [optional] |
 
 ### Return type
 
@@ -247,35 +234,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_recorrencias**
+
 > PixRecurringTransactionListResponseDTO listar_recorrencias(offset=offset, limit=limit, status=status, value=value, search_text=search_text)
 
 Listar recorrências
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -320,18 +306,15 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixRecorrenteApi->listar_recorrencias: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **status** | [**RecurringPixTransactionListRequestPixRecurringTransactionStatus**](.md)| Filtrar pelo status da recorrência | [optional] 
- **value** | **float**| Filtrar pelo valor da recorrência | [optional] 
- **search_text** | **str**| Filtrar pelo nome do recebedor | [optional] 
+| Name            | Type                                                                       | Description                             | Notes      |
+| --------------- | -------------------------------------------------------------------------- | --------------------------------------- | ---------- |
+| **offset**      | **int**                                                                    | Elemento inicial da lista               | [optional] |
+| **limit**       | **int**                                                                    | Número de elementos da lista (max: 100) | [optional] |
+| **status**      | [**RecurringPixTransactionListRequestPixRecurringTransactionStatus**](.md) | Filtrar pelo status da recorrência      | [optional] |
+| **value**       | **float**                                                                  | Filtrar pelo valor da recorrência       | [optional] |
+| **search_text** | **str**                                                                    | Filtrar pelo nome do recebedor          | [optional] |
 
 ### Return type
 
@@ -339,34 +322,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_uma_unica_recorrencia**
+
 > PixRecurringTransactionGetResponseDTO recuperar_uma_unica_recorrencia(id)
 
 Recuperar uma única recorrência
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -406,14 +388,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling PixRecorrenteApi->recuperar_uma_unica_recorrencia: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da recorrência no Asaas | 
+| Name   | Type    | Description                                 | Notes |
+| ------ | ------- | ------------------------------------------- | ----- |
+| **id** | **str** | Identificador único da recorrência no Asaas |
 
 ### Return type
 
@@ -421,22 +400,21 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

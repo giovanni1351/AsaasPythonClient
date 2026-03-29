@@ -4,9 +4,9 @@ Taxas de negativação Serasa
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**fee_value** | **float** | Taxa por cobrança | [optional] 
+| Name          | Type      | Description       | Notes      |
+| ------------- | --------- | ----------------- | ---------- |
+| **fee_value** | **float** | Taxa por cobrança | [optional] |
 
 ## Example
 
@@ -25,6 +25,5 @@ my_account_get_account_fees_payment_dunning_dto_dict = my_account_get_account_fe
 # create an instance of MyAccountGetAccountFeesPaymentDunningDTO from a dict
 my_account_get_account_fees_payment_dunning_dto_from_dict = MyAccountGetAccountFeesPaymentDunningDTO.from_dict(my_account_get_account_fees_payment_dunning_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

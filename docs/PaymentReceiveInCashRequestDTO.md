@@ -1,13 +1,12 @@
 # PaymentReceiveInCashRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**payment_date** | **date** | Data em que o cliente efetuou o pagamento | [optional] 
-**value** | **float** | Valor pago pelo cliente | [optional] 
-**notify_customer** | **bool** | Enviar ou não notificação de pagamento confirmado para o cliente | [optional] 
+| Name                | Type      | Description                                                      | Notes      |
+| ------------------- | --------- | ---------------------------------------------------------------- | ---------- |
+| **payment_date**    | **date**  | Data em que o cliente efetuou o pagamento                        | [optional] |
+| **value**           | **float** | Valor pago pelo cliente                                          | [optional] |
+| **notify_customer** | **bool**  | Enviar ou não notificação de pagamento confirmado para o cliente | [optional] |
 
 ## Example
 
@@ -26,6 +25,5 @@ payment_receive_in_cash_request_dto_dict = payment_receive_in_cash_request_dto_i
 # create an instance of PaymentReceiveInCashRequestDTO from a dict
 payment_receive_in_cash_request_dto_from_dict = PaymentReceiveInCashRequestDTO.from_dict(payment_receive_in_cash_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

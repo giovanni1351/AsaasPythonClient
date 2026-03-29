@@ -2,22 +2,20 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**atualizar_notificacao_existente**](NotificaesApi.md#atualizar_notificacao_existente) | **PUT** /v3/notifications/{id} | Atualizar notificação existente
-[**atualizar_notificacoes_existentes_em_lote**](NotificaesApi.md#atualizar_notificacoes_existentes_em_lote) | **PUT** /v3/notifications/batch | Atualizar notificações existentes em lote
-
+| Method                                                                                                      | HTTP request                    | Description                               |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------- |
+| [**atualizar_notificacao_existente**](NotificaesApi.md#atualizar_notificacao_existente)                     | **PUT** /v3/notifications/{id}  | Atualizar notificação existente           |
+| [**atualizar_notificacoes_existentes_em_lote**](NotificaesApi.md#atualizar_notificacoes_existentes_em_lote) | **PUT** /v3/notifications/batch | Atualizar notificações existentes em lote |
 
 # **atualizar_notificacao_existente**
+
 > NotificationGetResponseDTO atualizar_notificacao_existente(id, notification_update_request_dto=notification_update_request_dto)
 
 Atualizar notificação existente
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -59,15 +57,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NotificaesApi->atualizar_notificacao_existente: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da notificação a ser atualizada | 
- **notification_update_request_dto** | [**NotificationUpdateRequestDTO**](NotificationUpdateRequestDTO.md)|  | [optional] 
+| Name                                | Type                                                                | Description                                         | Notes      |
+| ----------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------- | ---------- |
+| **id**                              | **str**                                                             | Identificador único da notificação a ser atualizada |
+| **notification_update_request_dto** | [**NotificationUpdateRequestDTO**](NotificationUpdateRequestDTO.md) |                                                     | [optional] |
 
 ### Return type
 
@@ -75,25 +70,26 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **atualizar_notificacoes_existentes_em_lote**
+
 > NotificationBatchUpdateResponseDTO atualizar_notificacoes_existentes_em_lote(notification_batch_update_request_dto=notification_batch_update_request_dto)
 
 Atualizar notificações existentes em lote
@@ -102,7 +98,7 @@ Atualizar notificações existentes em lote
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -143,14 +139,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NotificaesApi->atualizar_notificacoes_existentes_em_lote: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **notification_batch_update_request_dto** | [**NotificationBatchUpdateRequestDTO**](NotificationBatchUpdateRequestDTO.md)|  | [optional] 
+| Name                                      | Type                                                                          | Description | Notes      |
+| ----------------------------------------- | ----------------------------------------------------------------------------- | ----------- | ---------- |
+| **notification_batch_update_request_dto** | [**NotificationBatchUpdateRequestDTO**](NotificationBatchUpdateRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -158,20 +151,19 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

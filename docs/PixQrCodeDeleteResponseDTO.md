@@ -1,12 +1,11 @@
 # PixQrCodeDeleteResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador do QrCode | [optional] 
-**deleted** | **bool** | Indica se o QR Code foi removido | [optional] 
+| Name        | Type     | Description                      | Notes      |
+| ----------- | -------- | -------------------------------- | ---------- |
+| **id**      | **str**  | Identificador do QrCode          | [optional] |
+| **deleted** | **bool** | Indica se o QR Code foi removido | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ pix_qr_code_delete_response_dto_dict = pix_qr_code_delete_response_dto_instance.
 # create an instance of PixQrCodeDeleteResponseDTO from a dict
 pix_qr_code_delete_response_dto_from_dict = PixQrCodeDeleteResponseDTO.from_dict(pix_qr_code_delete_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

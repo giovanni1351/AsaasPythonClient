@@ -1,13 +1,12 @@
 # CreditCardTokenizeResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**credit_card_number** | **str** | Últimos 4 dígitos do cartão utilizado | [optional] 
-**credit_card_brand** | [**CreditCardTokenizeResponseCreditCardBrand**](CreditCardTokenizeResponseCreditCardBrand.md) |  | [optional] 
-**credit_card_token** | **str** | Token do cartão de crédito que poderá ser enviado nas próximas transações sem a necessidade de informar novamente os dados de cartão e do titular | [optional] 
+| Name                   | Type                                                                                          | Description                                                                                                                                       | Notes      |
+| ---------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **credit_card_number** | **str**                                                                                       | Últimos 4 dígitos do cartão utilizado                                                                                                             | [optional] |
+| **credit_card_brand**  | [**CreditCardTokenizeResponseCreditCardBrand**](CreditCardTokenizeResponseCreditCardBrand.md) |                                                                                                                                                   | [optional] |
+| **credit_card_token**  | **str**                                                                                       | Token do cartão de crédito que poderá ser enviado nas próximas transações sem a necessidade de informar novamente os dados de cartão e do titular | [optional] |
 
 ## Example
 
@@ -26,6 +25,5 @@ credit_card_tokenize_response_dto_dict = credit_card_tokenize_response_dto_insta
 # create an instance of CreditCardTokenizeResponseDTO from a dict
 credit_card_tokenize_response_dto_from_dict = CreditCardTokenizeResponseDTO.from_dict(credit_card_tokenize_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

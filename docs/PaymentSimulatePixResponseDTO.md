@@ -4,12 +4,12 @@ Taxas de PIX
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**net_value** | **float** | Valor liquido | [optional] 
-**fee_percentage** | **float** | Taxa em porcentagem | [optional] 
-**fee_value** | **float** | Valor da taxa | [optional] 
-**installment** | [**PaymentSimulateInstallmentResponseDTO**](PaymentSimulateInstallmentResponseDTO.md) |  | [optional] 
+| Name               | Type                                                                                  | Description         | Notes      |
+| ------------------ | ------------------------------------------------------------------------------------- | ------------------- | ---------- |
+| **net_value**      | **float**                                                                             | Valor liquido       | [optional] |
+| **fee_percentage** | **float**                                                                             | Taxa em porcentagem | [optional] |
+| **fee_value**      | **float**                                                                             | Valor da taxa       | [optional] |
+| **installment**    | [**PaymentSimulateInstallmentResponseDTO**](PaymentSimulateInstallmentResponseDTO.md) |                     | [optional] |
 
 ## Example
 
@@ -28,6 +28,5 @@ payment_simulate_pix_response_dto_dict = payment_simulate_pix_response_dto_insta
 # create an instance of PaymentSimulatePixResponseDTO from a dict
 payment_simulate_pix_response_dto_from_dict = PaymentSimulatePixResponseDTO.from_dict(payment_simulate_pix_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

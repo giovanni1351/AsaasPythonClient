@@ -2,23 +2,21 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**recuperar_configuracao_de_pre_autorizacao**](CartoDeCrditoApi.md#recuperar_configuracao_de_pre_autorizacao) | **GET** /v3/creditCard/preAuthorization/config | Recuperar configuração da pré-autorização
-[**salvar_ou_atualizar_configuracao_de_pre_autorizacao**](CartoDeCrditoApi.md#salvar_ou_atualizar_configuracao_de_pre_autorizacao) | **POST** /v3/creditCard/preAuthorization/config | Salvar ou atualizar configuração da pré-autorização
-[**tokenizacao_de_cartao_de_credito**](CartoDeCrditoApi.md#tokenizacao_de_cartao_de_credito) | **POST** /v3/creditCard/tokenizeCreditCard | Tokenização de cartão de crédito
-
+| Method                                                                                                                             | HTTP request                                    | Description                                         |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------- |
+| [**recuperar_configuracao_de_pre_autorizacao**](CartoDeCrditoApi.md#recuperar_configuracao_de_pre_autorizacao)                     | **GET** /v3/creditCard/preAuthorization/config  | Recuperar configuração da pré-autorização           |
+| [**salvar_ou_atualizar_configuracao_de_pre_autorizacao**](CartoDeCrditoApi.md#salvar_ou_atualizar_configuracao_de_pre_autorizacao) | **POST** /v3/creditCard/preAuthorization/config | Salvar ou atualizar configuração da pré-autorização |
+| [**tokenizacao_de_cartao_de_credito**](CartoDeCrditoApi.md#tokenizacao_de_cartao_de_credito)                                       | **POST** /v3/creditCard/tokenizeCreditCard      | Tokenização de cartão de crédito                    |
 
 # **recuperar_configuracao_de_pre_autorizacao**
+
 > CreditCardPreAuthorizationConfigResponseDTO recuperar_configuracao_de_pre_autorizacao()
 
 Recuperar configuração da pré-autorização
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -57,8 +55,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling CartoDeCrditoApi->recuperar_configuracao_de_pre_autorizacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -69,34 +65,33 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **salvar_ou_atualizar_configuracao_de_pre_autorizacao**
+
 > CreditCardPreAuthorizationConfigResponseDTO salvar_ou_atualizar_configuracao_de_pre_autorizacao(credit_card_pre_authorization_config_request_dto=credit_card_pre_authorization_config_request_dto)
 
 Salvar ou atualizar configuração da pré-autorização
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -137,14 +132,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling CartoDeCrditoApi->salvar_ou_atualizar_configuracao_de_pre_autorizacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **credit_card_pre_authorization_config_request_dto** | [**CreditCardPreAuthorizationConfigRequestDTO**](CreditCardPreAuthorizationConfigRequestDTO.md)|  | [optional] 
+| Name                                                 | Type                                                                                            | Description | Notes      |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **credit_card_pre_authorization_config_request_dto** | [**CreditCardPreAuthorizationConfigRequestDTO**](CreditCardPreAuthorizationConfigRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -152,33 +144,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **tokenizacao_de_cartao_de_credito**
+
 > CreditCardTokenizeResponseDTO tokenizacao_de_cartao_de_credito(credit_card_tokenize_request_dto=credit_card_tokenize_request_dto)
 
 Tokenização de cartão de crédito
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -219,14 +210,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling CartoDeCrditoApi->tokenizacao_de_cartao_de_credito: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **credit_card_tokenize_request_dto** | [**CreditCardTokenizeRequestDTO**](CreditCardTokenizeRequestDTO.md)|  | [optional] 
+| Name                                 | Type                                                                | Description | Notes      |
+| ------------------------------------ | ------------------------------------------------------------------- | ----------- | ---------- |
+| **credit_card_tokenize_request_dto** | [**CreditCardTokenizeRequestDTO**](CreditCardTokenizeRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -234,20 +222,19 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

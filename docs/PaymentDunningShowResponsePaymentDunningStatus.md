@@ -4,22 +4,20 @@ Status da negativação
 
 ## Enum
 
-* `PENDING` (value: `'PENDING'`)
+- `PENDING` (value: `'PENDING'`)
 
-* `AWAITING_APPROVAL` (value: `'AWAITING_APPROVAL'`)
+- `AWAITING_APPROVAL` (value: `'AWAITING_APPROVAL'`)
 
-* `AWAITING_CANCELLATION` (value: `'AWAITING_CANCELLATION'`)
+- `AWAITING_CANCELLATION` (value: `'AWAITING_CANCELLATION'`)
 
-* `PROCESSED` (value: `'PROCESSED'`)
+- `PROCESSED` (value: `'PROCESSED'`)
 
-* `PAID` (value: `'PAID'`)
+- `PAID` (value: `'PAID'`)
 
-* `PARTIALLY_PAID` (value: `'PARTIALLY_PAID'`)
+- `PARTIALLY_PAID` (value: `'PARTIALLY_PAID'`)
 
-* `DENIED` (value: `'DENIED'`)
+- `DENIED` (value: `'DENIED'`)
 
-* `CANCELLED` (value: `'CANCELLED'`)
+- `CANCELLED` (value: `'CANCELLED'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

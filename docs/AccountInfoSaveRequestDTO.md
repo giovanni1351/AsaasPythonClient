@@ -38,4 +38,4 @@ account_info_save_request_dto_dict = account_info_save_request_dto_instance.to_d
 account_info_save_request_dto_from_dict = AccountInfoSaveRequestDTO.from_dict(account_info_save_request_dto_dict)
 ```
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

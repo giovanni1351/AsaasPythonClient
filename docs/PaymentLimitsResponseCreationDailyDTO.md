@@ -4,11 +4,11 @@ Limites diários
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**limit** | **int** | Limite total | [optional] 
-**used** | **int** | Limite usado | [optional] 
-**was_reached** | **bool** | Indica se o limite foi atingido | [optional] 
+| Name            | Type     | Description                     | Notes      |
+| --------------- | -------- | ------------------------------- | ---------- |
+| **limit**       | **int**  | Limite total                    | [optional] |
+| **used**        | **int**  | Limite usado                    | [optional] |
+| **was_reached** | **bool** | Indica se o limite foi atingido | [optional] |
 
 ## Example
 
@@ -27,6 +27,5 @@ payment_limits_response_creation_daily_dto_dict = payment_limits_response_creati
 # create an instance of PaymentLimitsResponseCreationDailyDTO from a dict
 payment_limits_response_creation_daily_dto_from_dict = PaymentLimitsResponseCreationDailyDTO.from_dict(payment_limits_response_creation_daily_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -1,20 +1,19 @@
 # CheckoutSessionResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**billing_types** | [**List[CheckoutSessionResponseBillingType]**](CheckoutSessionResponseBillingType.md) | Formas de pagamento | [optional] 
-**charge_types** | [**List[CheckoutSessionResponseChargeType]**](CheckoutSessionResponseChargeType.md) | Tipos de cobrança | [optional] 
-**minutes_to_expire** | **int** | Tempo em minutos para expiração do checkout | [optional] 
-**external_reference** | **str** | Identificador do checkout no seu sistema | [optional] 
-**callback** | [**CheckoutSessionCallbackDTO**](CheckoutSessionCallbackDTO.md) |  | [optional] 
-**items** | [**List[CheckoutSessionItemsDTO]**](CheckoutSessionItemsDTO.md) | Lista de itens no checkout | [optional] 
-**customer_data** | [**CheckoutSessionCustomerDataDTO**](CheckoutSessionCustomerDataDTO.md) |  | [optional] 
-**subscription** | [**CheckoutSessionSubscriptionDTO**](CheckoutSessionSubscriptionDTO.md) |  | [optional] 
-**installment** | [**CheckoutSessionInstallmentDTO**](CheckoutSessionInstallmentDTO.md) |  | [optional] 
-**split** | [**List[CheckoutSessionSplitDTO]**](CheckoutSessionSplitDTO.md) | Configurações do split | [optional] 
+| Name                   | Type                                                                                  | Description                                 | Notes      |
+| ---------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------- | ---------- |
+| **billing_types**      | [**List[CheckoutSessionResponseBillingType]**](CheckoutSessionResponseBillingType.md) | Formas de pagamento                         | [optional] |
+| **charge_types**       | [**List[CheckoutSessionResponseChargeType]**](CheckoutSessionResponseChargeType.md)   | Tipos de cobrança                           | [optional] |
+| **minutes_to_expire**  | **int**                                                                               | Tempo em minutos para expiração do checkout | [optional] |
+| **external_reference** | **str**                                                                               | Identificador do checkout no seu sistema    | [optional] |
+| **callback**           | [**CheckoutSessionCallbackDTO**](CheckoutSessionCallbackDTO.md)                       |                                             | [optional] |
+| **items**              | [**List[CheckoutSessionItemsDTO]**](CheckoutSessionItemsDTO.md)                       | Lista de itens no checkout                  | [optional] |
+| **customer_data**      | [**CheckoutSessionCustomerDataDTO**](CheckoutSessionCustomerDataDTO.md)               |                                             | [optional] |
+| **subscription**       | [**CheckoutSessionSubscriptionDTO**](CheckoutSessionSubscriptionDTO.md)               |                                             | [optional] |
+| **installment**        | [**CheckoutSessionInstallmentDTO**](CheckoutSessionInstallmentDTO.md)                 |                                             | [optional] |
+| **split**              | [**List[CheckoutSessionSplitDTO]**](CheckoutSessionSplitDTO.md)                       | Configurações do split                      | [optional] |
 
 ## Example
 
@@ -33,6 +32,5 @@ checkout_session_response_dto_dict = checkout_session_response_dto_instance.to_d
 # create an instance of CheckoutSessionResponseDTO from a dict
 checkout_session_response_dto_from_dict = CheckoutSessionResponseDTO.from_dict(checkout_session_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

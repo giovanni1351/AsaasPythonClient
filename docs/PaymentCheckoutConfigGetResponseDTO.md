@@ -1,18 +1,17 @@
 # PaymentCheckoutConfigGetResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**object** | **str** | Tipo de objeto | [optional] 
-**logo_background_color** | **str** | Cor de fundo do logo | [optional] 
-**info_background_color** | **str** | Cor de fundo das suas informações | [optional] 
-**font_color** | **str** | Cor da fonte das suas informações | [optional] 
-**enabled** | **bool** | Indica se a personalização está habilitada | [optional] [default to True]
-**logo_url** | **str** | Link para download da logo | [optional] 
-**observations** | **str** | Observações da análise de personalização da fatura | [optional] 
-**status** | [**PaymentCheckoutConfigGetResponseInvoiceConfigStatus**](PaymentCheckoutConfigGetResponseInvoiceConfigStatus.md) |  | [optional] 
+| Name                      | Type                                                                                                              | Description                                        | Notes                        |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------- |
+| **object**                | **str**                                                                                                           | Tipo de objeto                                     | [optional]                   |
+| **logo_background_color** | **str**                                                                                                           | Cor de fundo do logo                               | [optional]                   |
+| **info_background_color** | **str**                                                                                                           | Cor de fundo das suas informações                  | [optional]                   |
+| **font_color**            | **str**                                                                                                           | Cor da fonte das suas informações                  | [optional]                   |
+| **enabled**               | **bool**                                                                                                          | Indica se a personalização está habilitada         | [optional] [default to True] |
+| **logo_url**              | **str**                                                                                                           | Link para download da logo                         | [optional]                   |
+| **observations**          | **str**                                                                                                           | Observações da análise de personalização da fatura | [optional]                   |
+| **status**                | [**PaymentCheckoutConfigGetResponseInvoiceConfigStatus**](PaymentCheckoutConfigGetResponseInvoiceConfigStatus.md) |                                                    | [optional]                   |
 
 ## Example
 
@@ -31,6 +30,5 @@ payment_checkout_config_get_response_dto_dict = payment_checkout_config_get_resp
 # create an instance of PaymentCheckoutConfigGetResponseDTO from a dict
 payment_checkout_config_get_response_dto_from_dict = PaymentCheckoutConfigGetResponseDTO.from_dict(payment_checkout_config_get_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

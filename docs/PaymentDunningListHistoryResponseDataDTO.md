@@ -4,11 +4,11 @@ Lista de objetos
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**status** | [**PaymentDunningListHistoryResponseDataPaymentDunningHistoryStatus**](PaymentDunningListHistoryResponseDataPaymentDunningHistoryStatus.md) |  | [optional] 
-**description** | **str** | Descrição do evento | [optional] 
-**event_date** | **str** | Data em que ocorreu o evento | [optional] 
+| Name            | Type                                                                                                                                        | Description                  | Notes      |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ---------- |
+| **status**      | [**PaymentDunningListHistoryResponseDataPaymentDunningHistoryStatus**](PaymentDunningListHistoryResponseDataPaymentDunningHistoryStatus.md) |                              | [optional] |
+| **description** | **str**                                                                                                                                     | Descrição do evento          | [optional] |
+| **event_date**  | **str**                                                                                                                                     | Data em que ocorreu o evento | [optional] |
 
 ## Example
 
@@ -27,6 +27,5 @@ payment_dunning_list_history_response_data_dto_dict = payment_dunning_list_histo
 # create an instance of PaymentDunningListHistoryResponseDataDTO from a dict
 payment_dunning_list_history_response_data_dto_from_dict = PaymentDunningListHistoryResponseDataDTO.from_dict(payment_dunning_list_history_response_data_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

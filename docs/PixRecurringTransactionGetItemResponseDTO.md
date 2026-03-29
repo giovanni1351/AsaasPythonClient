@@ -1,19 +1,18 @@
 # PixRecurringTransactionGetItemResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único do item de uma recorrência no Asaas | [optional] 
-**status** | [**PixRecurringTransactionGetItemResponsePixRecurringTransactionItemStatus**](PixRecurringTransactionGetItemResponsePixRecurringTransactionItemStatus.md) |  | [optional] 
-**scheduled_date** | **date** | Data de agendamento do item de uma recorrência | [optional] 
-**can_be_cancelled** | **bool** | Indica se o item de uma recorrência pode ser cancelado | [optional] 
-**recurrence_number** | **int** | Número da recorrência | [optional] 
-**quantity** | **int** | Quantidade de repetições | [optional] 
-**value** | **float** | Valor da recorrência | [optional] 
-**refusal_reason_description** | **str** | Motivo pelo qual o item de uma recorrência foi recusado | [optional] 
-**external_account** | [**PixRecurringTransactionExternalAccountDTO**](PixRecurringTransactionExternalAccountDTO.md) |  | [optional] 
+| Name                           | Type                                                                                                                                                      | Description                                             | Notes      |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ---------- |
+| **id**                         | **str**                                                                                                                                                   | Identificador único do item de uma recorrência no Asaas | [optional] |
+| **status**                     | [**PixRecurringTransactionGetItemResponsePixRecurringTransactionItemStatus**](PixRecurringTransactionGetItemResponsePixRecurringTransactionItemStatus.md) |                                                         | [optional] |
+| **scheduled_date**             | **date**                                                                                                                                                  | Data de agendamento do item de uma recorrência          | [optional] |
+| **can_be_cancelled**           | **bool**                                                                                                                                                  | Indica se o item de uma recorrência pode ser cancelado  | [optional] |
+| **recurrence_number**          | **int**                                                                                                                                                   | Número da recorrência                                   | [optional] |
+| **quantity**                   | **int**                                                                                                                                                   | Quantidade de repetições                                | [optional] |
+| **value**                      | **float**                                                                                                                                                 | Valor da recorrência                                    | [optional] |
+| **refusal_reason_description** | **str**                                                                                                                                                   | Motivo pelo qual o item de uma recorrência foi recusado | [optional] |
+| **external_account**           | [**PixRecurringTransactionExternalAccountDTO**](PixRecurringTransactionExternalAccountDTO.md)                                                             |                                                         | [optional] |
 
 ## Example
 
@@ -32,6 +31,5 @@ pix_recurring_transaction_get_item_response_dto_dict = pix_recurring_transaction
 # create an instance of PixRecurringTransactionGetItemResponseDTO from a dict
 pix_recurring_transaction_get_item_response_dto_from_dict = PixRecurringTransactionGetItemResponseDTO.from_dict(pix_recurring_transaction_get_item_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -2,26 +2,24 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**agendar_nota_fiscal**](NotasFiscaisApi.md#agendar_nota_fiscal) | **POST** /v3/invoices | Agendar nota fiscal
-[**atualizar_nota_fiscal**](NotasFiscaisApi.md#atualizar_nota_fiscal) | **PUT** /v3/invoices/{id} | Atualizar nota fiscal
-[**cancelar_uma_nota_fiscal**](NotasFiscaisApi.md#cancelar_uma_nota_fiscal) | **POST** /v3/invoices/{id}/cancel | Cancelar uma nota fiscal
-[**emitir_uma_nota_fiscal**](NotasFiscaisApi.md#emitir_uma_nota_fiscal) | **POST** /v3/invoices/{id}/authorize | Emitir uma nota fiscal
-[**listar_notas_fiscais**](NotasFiscaisApi.md#listar_notas_fiscais) | **GET** /v3/invoices | Listar notas fiscais
-[**recuperar_uma_nota_fiscal**](NotasFiscaisApi.md#recuperar_uma_nota_fiscal) | **GET** /v3/invoices/{id} | Recuperar uma única nota fiscal
-
+| Method                                                                        | HTTP request                         | Description                     |
+| ----------------------------------------------------------------------------- | ------------------------------------ | ------------------------------- |
+| [**agendar_nota_fiscal**](NotasFiscaisApi.md#agendar_nota_fiscal)             | **POST** /v3/invoices                | Agendar nota fiscal             |
+| [**atualizar_nota_fiscal**](NotasFiscaisApi.md#atualizar_nota_fiscal)         | **PUT** /v3/invoices/{id}            | Atualizar nota fiscal           |
+| [**cancelar_uma_nota_fiscal**](NotasFiscaisApi.md#cancelar_uma_nota_fiscal)   | **POST** /v3/invoices/{id}/cancel    | Cancelar uma nota fiscal        |
+| [**emitir_uma_nota_fiscal**](NotasFiscaisApi.md#emitir_uma_nota_fiscal)       | **POST** /v3/invoices/{id}/authorize | Emitir uma nota fiscal          |
+| [**listar_notas_fiscais**](NotasFiscaisApi.md#listar_notas_fiscais)           | **GET** /v3/invoices                 | Listar notas fiscais            |
+| [**recuperar_uma_nota_fiscal**](NotasFiscaisApi.md#recuperar_uma_nota_fiscal) | **GET** /v3/invoices/{id}            | Recuperar uma única nota fiscal |
 
 # **agendar_nota_fiscal**
+
 > InvoiceGetResponseDTO agendar_nota_fiscal(invoice_save_request_dto=invoice_save_request_dto)
 
 Agendar nota fiscal
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -62,14 +60,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NotasFiscaisApi->agendar_nota_fiscal: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **invoice_save_request_dto** | [**InvoiceSaveRequestDTO**](InvoiceSaveRequestDTO.md)|  | [optional] 
+| Name                         | Type                                                  | Description | Notes      |
+| ---------------------------- | ----------------------------------------------------- | ----------- | ---------- |
+| **invoice_save_request_dto** | [**InvoiceSaveRequestDTO**](InvoiceSaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -77,33 +72,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **atualizar_nota_fiscal**
+
 > InvoiceGetResponseDTO atualizar_nota_fiscal(id, invoice_update_request_dto=invoice_update_request_dto)
 
 Atualizar nota fiscal
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -145,15 +139,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NotasFiscaisApi->atualizar_nota_fiscal: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da nota fiscal no Asaas | 
- **invoice_update_request_dto** | [**InvoiceUpdateRequestDTO**](InvoiceUpdateRequestDTO.md)|  | [optional] 
+| Name                           | Type                                                      | Description                                 | Notes      |
+| ------------------------------ | --------------------------------------------------------- | ------------------------------------------- | ---------- |
+| **id**                         | **str**                                                   | Identificador único da nota fiscal no Asaas |
+| **invoice_update_request_dto** | [**InvoiceUpdateRequestDTO**](InvoiceUpdateRequestDTO.md) |                                             | [optional] |
 
 ### Return type
 
@@ -161,34 +152,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **cancelar_uma_nota_fiscal**
+
 > InvoiceGetResponseDTO cancelar_uma_nota_fiscal(id, invoice_cancel_request_dto=invoice_cancel_request_dto)
 
 Cancelar uma nota fiscal
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -230,15 +220,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NotasFiscaisApi->cancelar_uma_nota_fiscal: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da nota fiscal no Asaas | 
- **invoice_cancel_request_dto** | [**InvoiceCancelRequestDTO**](InvoiceCancelRequestDTO.md)|  | [optional] 
+| Name                           | Type                                                      | Description                                 | Notes      |
+| ------------------------------ | --------------------------------------------------------- | ------------------------------------------- | ---------- |
+| **id**                         | **str**                                                   | Identificador único da nota fiscal no Asaas |
+| **invoice_cancel_request_dto** | [**InvoiceCancelRequestDTO**](InvoiceCancelRequestDTO.md) |                                             | [optional] |
 
 ### Return type
 
@@ -246,34 +233,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **emitir_uma_nota_fiscal**
+
 > InvoiceGetResponseDTO emitir_uma_nota_fiscal(id, body=body)
 
 Emitir uma nota fiscal
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -314,15 +300,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NotasFiscaisApi->emitir_uma_nota_fiscal: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da nota fiscal no Asaas | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                                 | Notes      |
+| -------- | ---------- | ------------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único da nota fiscal no Asaas |
+| **body** | **object** |                                             | [optional] |
 
 ### Return type
 
@@ -330,34 +313,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_notas_fiscais**
+
 > InvoiceListResponseDTO listar_notas_fiscais(offset=offset, limit=limit, effective_date_ge=effective_date_ge, effective_date_le=effective_date_le, payment=payment, installment=installment, external_reference=external_reference, status=status, customer=customer)
 
 Listar notas fiscais
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -406,22 +388,19 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NotasFiscaisApi->listar_notas_fiscais: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **effective_date_ge** | **str**| Filtrar a partir de uma data de emissão | [optional] 
- **effective_date_le** | **str**| Filtrar até uma data de emissão | [optional] 
- **payment** | **str**| Filtrar pelo identificador único da cobrança | [optional] 
- **installment** | **str**| Filtrar pelo identificador único do parcelamento | [optional] 
- **external_reference** | **str**| Filtrar pelo identificador da nota fiscal no seu sistema | [optional] 
- **status** | [**InvoiceListRequestInvoiceStatus**](.md)| Filtrar por situação | [optional] 
- **customer** | **str**| Filtrar pelo identificador único do cliente | [optional] 
+| Name                   | Type                                       | Description                                              | Notes      |
+| ---------------------- | ------------------------------------------ | -------------------------------------------------------- | ---------- |
+| **offset**             | **int**                                    | Elemento inicial da lista                                | [optional] |
+| **limit**              | **int**                                    | Número de elementos da lista (max: 100)                  | [optional] |
+| **effective_date_ge**  | **str**                                    | Filtrar a partir de uma data de emissão                  | [optional] |
+| **effective_date_le**  | **str**                                    | Filtrar até uma data de emissão                          | [optional] |
+| **payment**            | **str**                                    | Filtrar pelo identificador único da cobrança             | [optional] |
+| **installment**        | **str**                                    | Filtrar pelo identificador único do parcelamento         | [optional] |
+| **external_reference** | **str**                                    | Filtrar pelo identificador da nota fiscal no seu sistema | [optional] |
+| **status**             | [**InvoiceListRequestInvoiceStatus**](.md) | Filtrar por situação                                     | [optional] |
+| **customer**           | **str**                                    | Filtrar pelo identificador único do cliente              | [optional] |
 
 ### Return type
 
@@ -429,34 +408,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_uma_nota_fiscal**
+
 > InvoiceGetResponseDTO recuperar_uma_nota_fiscal(id)
 
 Recuperar uma única nota fiscal
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -496,14 +474,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NotasFiscaisApi->recuperar_uma_nota_fiscal: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da nota fiscal no Asaas | 
+| Name   | Type    | Description                                 | Notes |
+| ------ | ------- | ------------------------------------------- | ----- |
+| **id** | **str** | Identificador único da nota fiscal no Asaas |
 
 ### Return type
 
@@ -511,22 +486,21 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

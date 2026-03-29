@@ -4,26 +4,24 @@ Forma de pagamento
 
 ## Enum
 
-* `UNDEFINED` (value: `'UNDEFINED'`)
+- `UNDEFINED` (value: `'UNDEFINED'`)
 
-* `BOLETO` (value: `'BOLETO'`)
+- `BOLETO` (value: `'BOLETO'`)
 
-* `CREDIT_CARD` (value: `'CREDIT_CARD'`)
+- `CREDIT_CARD` (value: `'CREDIT_CARD'`)
 
-* `MUNDIPAGG_CIELO` (value: `'MUNDIPAGG_CIELO'`)
+- `MUNDIPAGG_CIELO` (value: `'MUNDIPAGG_CIELO'`)
 
-* `TRANSFER` (value: `'TRANSFER'`)
+- `TRANSFER` (value: `'TRANSFER'`)
 
-* `DEPOSIT` (value: `'DEPOSIT'`)
+- `DEPOSIT` (value: `'DEPOSIT'`)
 
-* `DEBIT_CARD` (value: `'DEBIT_CARD'`)
+- `DEBIT_CARD` (value: `'DEBIT_CARD'`)
 
-* `PIX` (value: `'PIX'`)
+- `PIX` (value: `'PIX'`)
 
-* `VOUCHER_CARD` (value: `'VOUCHER_CARD'`)
+- `VOUCHER_CARD` (value: `'VOUCHER_CARD'`)
 
-* `ASAAS_MONEY` (value: `'ASAAS_MONEY'`)
+- `ASAAS_MONEY` (value: `'ASAAS_MONEY'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

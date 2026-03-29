@@ -2,25 +2,23 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**atualizar_documento_enviado**](EnvioDeDocumentosWhiteLabelApi.md#atualizar_documento_enviado) | **POST** /v3/myAccount/documents/files/{id} | Atualizar documento enviado
-[**enviar_documentos**](EnvioDeDocumentosWhiteLabelApi.md#enviar_documentos) | **POST** /v3/myAccount/documents/{id} | Enviar documentos
-[**remover_documento_enviado**](EnvioDeDocumentosWhiteLabelApi.md#remover_documento_enviado) | **DELETE** /v3/myAccount/documents/files/{id} | Remover documento enviado
-[**verificar_documentos_pendentes**](EnvioDeDocumentosWhiteLabelApi.md#verificar_documentos_pendentes) | **GET** /v3/myAccount/documents | Verificar documentos pendentes
-[**visualizar_documento_enviado**](EnvioDeDocumentosWhiteLabelApi.md#visualizar_documento_enviado) | **GET** /v3/myAccount/documents/files/{id} | Visualizar documento enviado
-
+| Method                                                                                                 | HTTP request                                  | Description                    |
+| ------------------------------------------------------------------------------------------------------ | --------------------------------------------- | ------------------------------ |
+| [**atualizar_documento_enviado**](EnvioDeDocumentosWhiteLabelApi.md#atualizar_documento_enviado)       | **POST** /v3/myAccount/documents/files/{id}   | Atualizar documento enviado    |
+| [**enviar_documentos**](EnvioDeDocumentosWhiteLabelApi.md#enviar_documentos)                           | **POST** /v3/myAccount/documents/{id}         | Enviar documentos              |
+| [**remover_documento_enviado**](EnvioDeDocumentosWhiteLabelApi.md#remover_documento_enviado)           | **DELETE** /v3/myAccount/documents/files/{id} | Remover documento enviado      |
+| [**verificar_documentos_pendentes**](EnvioDeDocumentosWhiteLabelApi.md#verificar_documentos_pendentes) | **GET** /v3/myAccount/documents               | Verificar documentos pendentes |
+| [**visualizar_documento_enviado**](EnvioDeDocumentosWhiteLabelApi.md#visualizar_documento_enviado)     | **GET** /v3/myAccount/documents/files/{id}    | Visualizar documento enviado   |
 
 # **atualizar_documento_enviado**
+
 > AccountDocumentGetResponseDTO atualizar_documento_enviado(id, document_file)
 
 Atualizar documento enviado
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -61,15 +59,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling EnvioDeDocumentosWhiteLabelApi->atualizar_documento_enviado: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do documento no Asaas | 
- **document_file** | **bytes**| Arquivo | 
+| Name              | Type      | Description                               | Notes |
+| ----------------- | --------- | ----------------------------------------- | ----- |
+| **id**            | **str**   | Identificador único do documento no Asaas |
+| **document_file** | **bytes** | Arquivo                                   |
 
 ### Return type
 
@@ -77,34 +72,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
- - **Accept**: application/json
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **enviar_documentos**
+
 > AccountDocumentGetResponseDTO enviar_documentos(id, document_file=document_file, type=type)
 
 Enviar documentos
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -147,16 +141,13 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling EnvioDeDocumentosWhiteLabelApi->enviar_documentos: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do documento no Asaas | 
- **document_file** | **bytes**| Arquivo | [optional] 
- **type** | [**AccountDocumentSaveRequestAccountDocumentType**](AccountDocumentSaveRequestAccountDocumentType.md)|  | [optional] 
+| Name              | Type                                                                                                  | Description                               | Notes      |
+| ----------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------- |
+| **id**            | **str**                                                                                               | Identificador único do documento no Asaas |
+| **document_file** | **bytes**                                                                                             | Arquivo                                   | [optional] |
+| **type**          | [**AccountDocumentSaveRequestAccountDocumentType**](AccountDocumentSaveRequestAccountDocumentType.md) |                                           | [optional] |
 
 ### Return type
 
@@ -164,34 +155,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
- - **Accept**: application/json
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **remover_documento_enviado**
+
 > AccountDocumentDeleteResponseDTO remover_documento_enviado(id)
 
 Remover documento enviado
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -231,14 +221,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling EnvioDeDocumentosWhiteLabelApi->remover_documento_enviado: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do documento no Asaas | 
+| Name   | Type    | Description                               | Notes |
+| ------ | ------- | ----------------------------------------- | ----- |
+| **id** | **str** | Identificador único do documento no Asaas |
 
 ### Return type
 
@@ -246,34 +233,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **verificar_documentos_pendentes**
+
 > AccountDocumentShowResponseDTO verificar_documentos_pendentes()
 
 Verificar documentos pendentes
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -312,8 +298,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling EnvioDeDocumentosWhiteLabelApi->verificar_documentos_pendentes: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -324,34 +308,33 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **visualizar_documento_enviado**
+
 > AccountDocumentGetResponseDTO visualizar_documento_enviado(id)
 
 Visualizar documento enviado
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -391,14 +374,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling EnvioDeDocumentosWhiteLabelApi->visualizar_documento_enviado: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do documento no Asaas | 
+| Name   | Type    | Description                               | Notes |
+| ------ | ------- | ----------------------------------------- | ----- |
+| **id** | **str** | Identificador único do documento no Asaas |
 
 ### Return type
 
@@ -406,22 +386,21 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

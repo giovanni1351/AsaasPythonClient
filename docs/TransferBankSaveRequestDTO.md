@@ -4,9 +4,9 @@ Dados do banco de destino
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** | Código de compensação do banco no sistema bancário | 
+| Name     | Type    | Description                                        | Notes |
+| -------- | ------- | -------------------------------------------------- | ----- |
+| **code** | **str** | Código de compensação do banco no sistema bancário |
 
 ## Example
 
@@ -25,6 +25,5 @@ transfer_bank_save_request_dto_dict = transfer_bank_save_request_dto_instance.to
 # create an instance of TransferBankSaveRequestDTO from a dict
 transfer_bank_save_request_dto_from_dict = TransferBankSaveRequestDTO.from_dict(transfer_bank_save_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

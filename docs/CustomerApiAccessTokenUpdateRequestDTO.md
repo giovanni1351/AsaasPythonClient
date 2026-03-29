@@ -1,13 +1,12 @@
 # CustomerApiAccessTokenUpdateRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Nome da chave de API | 
-**enabled** | **bool** | Indica se a chave de API está habilitada | 
-**expiration_date** | **datetime** | Data de expiração da chave de API | 
+| Name                | Type         | Description                              | Notes |
+| ------------------- | ------------ | ---------------------------------------- | ----- |
+| **name**            | **str**      | Nome da chave de API                     |
+| **enabled**         | **bool**     | Indica se a chave de API está habilitada |
+| **expiration_date** | **datetime** | Data de expiração da chave de API        |
 
 ## Example
 
@@ -26,6 +25,5 @@ customer_api_access_token_update_request_dto_dict = customer_api_access_token_up
 # create an instance of CustomerApiAccessTokenUpdateRequestDTO from a dict
 customer_api_access_token_update_request_dto_from_dict = CustomerApiAccessTokenUpdateRequestDTO.from_dict(customer_api_access_token_update_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

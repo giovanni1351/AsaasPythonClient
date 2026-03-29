@@ -4,10 +4,10 @@ Lista de objetos
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **str** | Código do indicador da operação | [optional] 
-**description** | **str** | Descrição | [optional] 
+| Name            | Type    | Description                     | Notes      |
+| --------------- | ------- | ------------------------------- | ---------- |
+| **code**        | **str** | Código do indicador da operação | [optional] |
+| **description** | **str** | Descrição                       | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ fiscal_info_operation_indicator_code_response_dto_dict = fiscal_info_operation_i
 # create an instance of FiscalInfoOperationIndicatorCodeResponseDTO from a dict
 fiscal_info_operation_indicator_code_response_dto_from_dict = FiscalInfoOperationIndicatorCodeResponseDTO.from_dict(fiscal_info_operation_indicator_code_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

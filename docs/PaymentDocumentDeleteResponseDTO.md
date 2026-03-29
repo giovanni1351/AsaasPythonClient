@@ -1,12 +1,11 @@
 # PaymentDocumentDeleteResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**deleted** | **bool** | Indica se o arquivo foi removido | [optional] 
-**id** | **str** | Identificador único do documento | [optional] 
+| Name        | Type     | Description                      | Notes      |
+| ----------- | -------- | -------------------------------- | ---------- |
+| **deleted** | **bool** | Indica se o arquivo foi removido | [optional] |
+| **id**      | **str**  | Identificador único do documento | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ payment_document_delete_response_dto_dict = payment_document_delete_response_dto
 # create an instance of PaymentDocumentDeleteResponseDTO from a dict
 payment_document_delete_response_dto_from_dict = PaymentDocumentDeleteResponseDTO.from_dict(payment_document_delete_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

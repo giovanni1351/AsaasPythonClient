@@ -4,13 +4,13 @@ Informações da imagem do link de pagamentos
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**original_name** | **str** | Nome original da imagem | [optional] 
-**size** | **int** | Tamanho da imagem | [optional] 
-**extension** | **str** | Extensão da imagem | [optional] 
-**preview_url** | **str** | Link para download do preview da imagem | [optional] 
-**download_url** | **str** | Link para download da imagem | [optional] 
+| Name              | Type    | Description                             | Notes      |
+| ----------------- | ------- | --------------------------------------- | ---------- |
+| **original_name** | **str** | Nome original da imagem                 | [optional] |
+| **size**          | **int** | Tamanho da imagem                       | [optional] |
+| **extension**     | **str** | Extensão da imagem                      | [optional] |
+| **preview_url**   | **str** | Link para download do preview da imagem | [optional] |
+| **download_url**  | **str** | Link para download da imagem            | [optional] |
 
 ## Example
 
@@ -29,6 +29,5 @@ payment_link_file_image_response_dto_dict = payment_link_file_image_response_dto
 # create an instance of PaymentLinkFileImageResponseDTO from a dict
 payment_link_file_image_response_dto_from_dict = PaymentLinkFileImageResponseDTO.from_dict(payment_link_file_image_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

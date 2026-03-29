@@ -1,20 +1,19 @@
 # PixRecurringTransactionGetResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único da recorrência no Asaas | [optional] 
-**status** | [**PixRecurringTransactionGetResponsePixRecurringTransactionStatus**](PixRecurringTransactionGetResponsePixRecurringTransactionStatus.md) |  | [optional] 
-**origin** | [**PixRecurringTransactionGetResponsePixRecurringTransactionOrigin**](PixRecurringTransactionGetResponsePixRecurringTransactionOrigin.md) |  | [optional] 
-**value** | **float** | Valor da recorrência | [optional] 
-**frequency** | [**PixRecurringTransactionGetResponsePixRecurringTransactionFrequency**](PixRecurringTransactionGetResponsePixRecurringTransactionFrequency.md) |  | [optional] 
-**quantity** | **int** | Quantidade de repetições | [optional] 
-**start_date** | **date** | Data inicial da recorrência | [optional] 
-**finish_date** | **date** | Data final da recorrência | [optional] 
-**can_be_cancelled** | **bool** | Indica se a recorrência pode ser cancelada | [optional] 
-**external_account** | [**PixRecurringTransactionExternalAccountDTO**](PixRecurringTransactionExternalAccountDTO.md) |  | [optional] 
+| Name                 | Type                                                                                                                                            | Description                                 | Notes      |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ---------- |
+| **id**               | **str**                                                                                                                                         | Identificador único da recorrência no Asaas | [optional] |
+| **status**           | [**PixRecurringTransactionGetResponsePixRecurringTransactionStatus**](PixRecurringTransactionGetResponsePixRecurringTransactionStatus.md)       |                                             | [optional] |
+| **origin**           | [**PixRecurringTransactionGetResponsePixRecurringTransactionOrigin**](PixRecurringTransactionGetResponsePixRecurringTransactionOrigin.md)       |                                             | [optional] |
+| **value**            | **float**                                                                                                                                       | Valor da recorrência                        | [optional] |
+| **frequency**        | [**PixRecurringTransactionGetResponsePixRecurringTransactionFrequency**](PixRecurringTransactionGetResponsePixRecurringTransactionFrequency.md) |                                             | [optional] |
+| **quantity**         | **int**                                                                                                                                         | Quantidade de repetições                    | [optional] |
+| **start_date**       | **date**                                                                                                                                        | Data inicial da recorrência                 | [optional] |
+| **finish_date**      | **date**                                                                                                                                        | Data final da recorrência                   | [optional] |
+| **can_be_cancelled** | **bool**                                                                                                                                        | Indica se a recorrência pode ser cancelada  | [optional] |
+| **external_account** | [**PixRecurringTransactionExternalAccountDTO**](PixRecurringTransactionExternalAccountDTO.md)                                                   |                                             | [optional] |
 
 ## Example
 
@@ -33,6 +32,5 @@ pix_recurring_transaction_get_response_dto_dict = pix_recurring_transaction_get_
 # create an instance of PixRecurringTransactionGetResponseDTO from a dict
 pix_recurring_transaction_get_response_dto_from_dict = PixRecurringTransactionGetResponseDTO.from_dict(pix_recurring_transaction_get_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

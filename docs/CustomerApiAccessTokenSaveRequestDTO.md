@@ -1,12 +1,11 @@
 # CustomerApiAccessTokenSaveRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Nome da chave de API | [optional] 
-**expiration_date** | **datetime** | Data de expiração da chave de API | [optional] 
+| Name                | Type         | Description                       | Notes      |
+| ------------------- | ------------ | --------------------------------- | ---------- |
+| **name**            | **str**      | Nome da chave de API              | [optional] |
+| **expiration_date** | **datetime** | Data de expiração da chave de API | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ customer_api_access_token_save_request_dto_dict = customer_api_access_token_save
 # create an instance of CustomerApiAccessTokenSaveRequestDTO from a dict
 customer_api_access_token_save_request_dto_from_dict = CustomerApiAccessTokenSaveRequestDTO.from_dict(customer_api_access_token_save_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

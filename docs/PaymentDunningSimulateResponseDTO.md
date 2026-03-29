@@ -1,13 +1,12 @@
 # PaymentDunningSimulateResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**payment** | **str** | Identificador único da cobrança a ser recuperada no Asaas | [optional] 
-**value** | **float** | Valor da cobrança | [optional] 
-**type_simulations** | [**List[PaymentDunningSimulateResponseTypeSimulationItemDTO]**](PaymentDunningSimulateResponseTypeSimulationItemDTO.md) | Simulação de solicitação de negativação para cada tipo de negativação disponível | [optional] 
+| Name                 | Type                                                                                                                    | Description                                                                      | Notes      |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ---------- |
+| **payment**          | **str**                                                                                                                 | Identificador único da cobrança a ser recuperada no Asaas                        | [optional] |
+| **value**            | **float**                                                                                                               | Valor da cobrança                                                                | [optional] |
+| **type_simulations** | [**List[PaymentDunningSimulateResponseTypeSimulationItemDTO]**](PaymentDunningSimulateResponseTypeSimulationItemDTO.md) | Simulação de solicitação de negativação para cada tipo de negativação disponível | [optional] |
 
 ## Example
 
@@ -26,6 +25,5 @@ payment_dunning_simulate_response_dto_dict = payment_dunning_simulate_response_d
 # create an instance of PaymentDunningSimulateResponseDTO from a dict
 payment_dunning_simulate_response_dto_from_dict = PaymentDunningSimulateResponseDTO.from_dict(payment_dunning_simulate_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

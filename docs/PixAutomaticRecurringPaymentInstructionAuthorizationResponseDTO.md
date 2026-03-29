@@ -4,11 +4,11 @@ Autorização do Pix Automático vinculada
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único da autorização do Pix Automático vinculada | [optional] 
-**end_to_end_identifier** | **str** | Identificador fim a fim da autorização do Pix Automático vinculada | [optional] 
-**customer_id** | **str** | Identificador único do cliente | [optional] 
+| Name                      | Type    | Description                                                        | Notes      |
+| ------------------------- | ------- | ------------------------------------------------------------------ | ---------- |
+| **id**                    | **str** | Identificador único da autorização do Pix Automático vinculada     | [optional] |
+| **end_to_end_identifier** | **str** | Identificador fim a fim da autorização do Pix Automático vinculada | [optional] |
+| **customer_id**           | **str** | Identificador único do cliente                                     | [optional] |
 
 ## Example
 
@@ -27,6 +27,5 @@ pix_automatic_recurring_payment_instruction_authorization_response_dto_dict = pi
 # create an instance of PixAutomaticRecurringPaymentInstructionAuthorizationResponseDTO from a dict
 pix_automatic_recurring_payment_instruction_authorization_response_dto_from_dict = PixAutomaticRecurringPaymentInstructionAuthorizationResponseDTO.from_dict(pix_automatic_recurring_payment_instruction_authorization_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

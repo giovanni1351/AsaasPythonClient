@@ -4,10 +4,10 @@ Estorno de splits
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único do split no Asaas | 
-**value** | **float** | Valor a ser estornado do split | 
+| Name      | Type      | Description                           | Notes |
+| --------- | --------- | ------------------------------------- | ----- |
+| **id**    | **str**   | Identificador único do split no Asaas |
+| **value** | **float** | Valor a ser estornado do split        |
 
 ## Example
 
@@ -26,6 +26,5 @@ payment_refund_split_request_dto_dict = payment_refund_split_request_dto_instanc
 # create an instance of PaymentRefundSplitRequestDTO from a dict
 payment_refund_split_request_dto_from_dict = PaymentRefundSplitRequestDTO.from_dict(payment_refund_split_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -1,12 +1,11 @@
 # InstallmentDeleteResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**deleted** | **bool** | Indica se o parcelamento está removido | [optional] 
-**id** | **str** | Identificador único do parcelamento no Asaas | [optional] 
+| Name        | Type     | Description                                  | Notes      |
+| ----------- | -------- | -------------------------------------------- | ---------- |
+| **deleted** | **bool** | Indica se o parcelamento está removido       | [optional] |
+| **id**      | **str**  | Identificador único do parcelamento no Asaas | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ installment_delete_response_dto_dict = installment_delete_response_dto_instance.
 # create an instance of InstallmentDeleteResponseDTO from a dict
 installment_delete_response_dto_from_dict = InstallmentDeleteResponseDTO.from_dict(installment_delete_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

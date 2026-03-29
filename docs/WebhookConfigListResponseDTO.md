@@ -1,16 +1,15 @@
 # WebhookConfigListResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**object** | **str** | Tipo de objeto | [optional] 
-**has_more** | **bool** | Indica se há mais uma página a ser buscada | [optional] 
-**total_count** | **int** | Quantidade total de itens para os filtros informados | [optional] 
-**limit** | **int** | Quantidade de objetos por página | [optional] 
-**offset** | **int** | Posição do objeto a partir do qual a página deve ser carregada | [optional] 
-**data** | [**List[WebhookConfigGetResponseDTO]**](WebhookConfigGetResponseDTO.md) | Lista de objetos | [optional] 
+| Name            | Type                                                                    | Description                                                    | Notes      |
+| --------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------- | ---------- |
+| **object**      | **str**                                                                 | Tipo de objeto                                                 | [optional] |
+| **has_more**    | **bool**                                                                | Indica se há mais uma página a ser buscada                     | [optional] |
+| **total_count** | **int**                                                                 | Quantidade total de itens para os filtros informados           | [optional] |
+| **limit**       | **int**                                                                 | Quantidade de objetos por página                               | [optional] |
+| **offset**      | **int**                                                                 | Posição do objeto a partir do qual a página deve ser carregada | [optional] |
+| **data**        | [**List[WebhookConfigGetResponseDTO]**](WebhookConfigGetResponseDTO.md) | Lista de objetos                                               | [optional] |
 
 ## Example
 
@@ -29,6 +28,5 @@ webhook_config_list_response_dto_dict = webhook_config_list_response_dto_instanc
 # create an instance of WebhookConfigListResponseDTO from a dict
 webhook_config_list_response_dto_from_dict = WebhookConfigListResponseDTO.from_dict(webhook_config_list_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

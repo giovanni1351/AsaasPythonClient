@@ -2,21 +2,21 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**aprovar_conta**](InformaesEPersonalizaoDaContaApi.md#aprovar_conta) | **POST** /v3/sandbox/myAccount/approve | (Apenas Sandbox) Aprovar conta
-[**atualizar_dados_comerciais**](InformaesEPersonalizaoDaContaApi.md#atualizar_dados_comerciais) | **POST** /v3/myAccount/commercialInfo/ | Atualizar dados comerciais
-[**consultar_situacao_cadastral_da_conta**](InformaesEPersonalizaoDaContaApi.md#consultar_situacao_cadastral_da_conta) | **GET** /v3/myAccount/status/ | Consultar situação cadastral da conta
-[**excluir_subconta_white_label**](InformaesEPersonalizaoDaContaApi.md#excluir_subconta_white_label) | **DELETE** /v3/myAccount/ | Excluir subconta White Label
-[**recuperar_configuracoes_de_personalizacao**](InformaesEPersonalizaoDaContaApi.md#recuperar_configuracoes_de_personalizacao) | **GET** /v3/myAccount/paymentCheckoutConfig/ | Recuperar configurações de personalização
-[**recuperar_dados_comerciais**](InformaesEPersonalizaoDaContaApi.md#recuperar_dados_comerciais) | **GET** /v3/myAccount/commercialInfo/ | Recuperar dados comerciais
-[**recuperar_numero_de_conta_no_asaas**](InformaesEPersonalizaoDaContaApi.md#recuperar_numero_de_conta_no_asaas) | **GET** /v3/myAccount/accountNumber | Recuperar número de conta no Asaas
-[**recuperar_taxas_da_conta**](InformaesEPersonalizaoDaContaApi.md#recuperar_taxas_da_conta) | **GET** /v3/myAccount/fees/ | Recuperar taxas da conta
-[**recuperar_walletid**](InformaesEPersonalizaoDaContaApi.md#recuperar_walletid) | **GET** /v3/wallets/ | Recuperar WalletId
-[**salvar_personalizacao_da_fatura**](InformaesEPersonalizaoDaContaApi.md#salvar_personalizacao_da_fatura) | **POST** /v3/myAccount/paymentCheckoutConfig/ | Salvar personalização da fatura
-
+| Method                                                                                                                         | HTTP request                                  | Description                               |
+| ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- | ----------------------------------------- |
+| [**aprovar_conta**](InformaesEPersonalizaoDaContaApi.md#aprovar_conta)                                                         | **POST** /v3/sandbox/myAccount/approve        | (Apenas Sandbox) Aprovar conta            |
+| [**atualizar_dados_comerciais**](InformaesEPersonalizaoDaContaApi.md#atualizar_dados_comerciais)                               | **POST** /v3/myAccount/commercialInfo/        | Atualizar dados comerciais                |
+| [**consultar_situacao_cadastral_da_conta**](InformaesEPersonalizaoDaContaApi.md#consultar_situacao_cadastral_da_conta)         | **GET** /v3/myAccount/status/                 | Consultar situação cadastral da conta     |
+| [**excluir_subconta_white_label**](InformaesEPersonalizaoDaContaApi.md#excluir_subconta_white_label)                           | **DELETE** /v3/myAccount/                     | Excluir subconta White Label              |
+| [**recuperar_configuracoes_de_personalizacao**](InformaesEPersonalizaoDaContaApi.md#recuperar_configuracoes_de_personalizacao) | **GET** /v3/myAccount/paymentCheckoutConfig/  | Recuperar configurações de personalização |
+| [**recuperar_dados_comerciais**](InformaesEPersonalizaoDaContaApi.md#recuperar_dados_comerciais)                               | **GET** /v3/myAccount/commercialInfo/         | Recuperar dados comerciais                |
+| [**recuperar_numero_de_conta_no_asaas**](InformaesEPersonalizaoDaContaApi.md#recuperar_numero_de_conta_no_asaas)               | **GET** /v3/myAccount/accountNumber           | Recuperar número de conta no Asaas        |
+| [**recuperar_taxas_da_conta**](InformaesEPersonalizaoDaContaApi.md#recuperar_taxas_da_conta)                                   | **GET** /v3/myAccount/fees/                   | Recuperar taxas da conta                  |
+| [**recuperar_walletid**](InformaesEPersonalizaoDaContaApi.md#recuperar_walletid)                                               | **GET** /v3/wallets/                          | Recuperar WalletId                        |
+| [**salvar_personalizacao_da_fatura**](InformaesEPersonalizaoDaContaApi.md#salvar_personalizacao_da_fatura)                     | **POST** /v3/myAccount/paymentCheckoutConfig/ | Salvar personalização da fatura           |
 
 # **aprovar_conta**
+
 > MyAccountGetStatusResponseDTO aprovar_conta(body=body)
 
 (Apenas Sandbox) Aprovar conta
@@ -25,7 +25,7 @@ Este endpoint aprova a sua conta no ambiente sandbox.
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -65,14 +65,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling InformaesEPersonalizaoDaContaApi->aprovar_conta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description | Notes      |
+| -------- | ---------- | ----------- | ---------- |
+| **body** | **object** |             | [optional] |
 
 ### Return type
 
@@ -80,33 +77,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **atualizar_dados_comerciais**
+
 > AccountInfoGetResponseDTO atualizar_dados_comerciais(account_info_save_request_dto=account_info_save_request_dto)
 
 Atualizar dados comerciais
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -147,14 +143,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling InformaesEPersonalizaoDaContaApi->atualizar_dados_comerciais: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account_info_save_request_dto** | [**AccountInfoSaveRequestDTO**](AccountInfoSaveRequestDTO.md)|  | [optional] 
+| Name                              | Type                                                          | Description | Notes      |
+| --------------------------------- | ------------------------------------------------------------- | ----------- | ---------- |
+| **account_info_save_request_dto** | [**AccountInfoSaveRequestDTO**](AccountInfoSaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -162,33 +155,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **consultar_situacao_cadastral_da_conta**
+
 > MyAccountGetStatusResponseDTO consultar_situacao_cadastral_da_conta()
 
 Consultar situação cadastral da conta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -227,8 +219,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling InformaesEPersonalizaoDaContaApi->consultar_situacao_cadastral_da_conta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -239,34 +229,33 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **excluir_subconta_white_label**
+
 > MyAccountDisableAccountResponseDTO excluir_subconta_white_label(remove_reason=remove_reason)
 
 Excluir subconta White Label
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -306,14 +295,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling InformaesEPersonalizaoDaContaApi->excluir_subconta_white_label: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **remove_reason** | **str**| Motivo da remoção | [optional] 
+| Name              | Type    | Description       | Notes      |
+| ----------------- | ------- | ----------------- | ---------- |
+| **remove_reason** | **str** | Motivo da remoção | [optional] |
 
 ### Return type
 
@@ -321,33 +307,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_configuracoes_de_personalizacao**
+
 > PaymentCheckoutConfigGetResponseDTO recuperar_configuracoes_de_personalizacao()
 
 Recuperar configurações de personalização
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -386,8 +371,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling InformaesEPersonalizaoDaContaApi->recuperar_configuracoes_de_personalizacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -398,34 +381,33 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_dados_comerciais**
+
 > AccountInfoGetResponseDTO recuperar_dados_comerciais()
 
 Recuperar dados comerciais
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -464,8 +446,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling InformaesEPersonalizaoDaContaApi->recuperar_dados_comerciais: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -476,34 +456,33 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_numero_de_conta_no_asaas**
+
 > MyAccountGetAccountNumberResponseDTO recuperar_numero_de_conta_no_asaas()
 
 Recuperar número de conta no Asaas
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -542,8 +521,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling InformaesEPersonalizaoDaContaApi->recuperar_numero_de_conta_no_asaas: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -554,34 +531,33 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_taxas_da_conta**
+
 > MyAccountGetAccountFeesResponseDTO recuperar_taxas_da_conta()
 
 Recuperar taxas da conta
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -620,8 +596,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling InformaesEPersonalizaoDaContaApi->recuperar_taxas_da_conta: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -632,34 +606,33 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_walletid**
+
 > WalletShowResponseDTO recuperar_walletid()
 
 Recuperar WalletId
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -698,8 +671,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling InformaesEPersonalizaoDaContaApi->recuperar_walletid: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -710,34 +681,33 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **salvar_personalizacao_da_fatura**
+
 > PaymentCheckoutConfigGetResponseDTO salvar_personalizacao_da_fatura(logo_background_color, info_background_color, font_color, enabled=enabled, logo_file=logo_file)
 
 Salvar personalização da fatura
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -781,18 +751,15 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling InformaesEPersonalizaoDaContaApi->salvar_personalizacao_da_fatura: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **logo_background_color** | **str**| Cor de fundo do logo | 
- **info_background_color** | **str**| Cor de fundo das suas informações | 
- **font_color** | **str**| Cor da fonte das suas informações | 
- **enabled** | **bool**| Indica se a personalização está habilitada | [optional] 
- **logo_file** | **bytes**| Arquivo | [optional] 
+| Name                      | Type      | Description                                | Notes      |
+| ------------------------- | --------- | ------------------------------------------ | ---------- |
+| **logo_background_color** | **str**   | Cor de fundo do logo                       |
+| **info_background_color** | **str**   | Cor de fundo das suas informações          |
+| **font_color**            | **str**   | Cor da fonte das suas informações          |
+| **enabled**               | **bool**  | Indica se a personalização está habilitada | [optional] |
+| **logo_file**             | **bytes** | Arquivo                                    | [optional] |
 
 ### Return type
 
@@ -800,20 +767,19 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
- - **Accept**: application/json
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

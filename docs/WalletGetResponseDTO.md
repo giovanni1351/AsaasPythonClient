@@ -4,10 +4,10 @@ Lista de objetos
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**object** | **str** | Tipo de objeto | [optional] 
-**id** | **str** | Identificador da carteira | [optional] 
+| Name       | Type    | Description               | Notes      |
+| ---------- | ------- | ------------------------- | ---------- |
+| **object** | **str** | Tipo de objeto            | [optional] |
+| **id**     | **str** | Identificador da carteira | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ wallet_get_response_dto_dict = wallet_get_response_dto_instance.to_dict()
 # create an instance of WalletGetResponseDTO from a dict
 wallet_get_response_dto_from_dict = WalletGetResponseDTO.from_dict(wallet_get_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

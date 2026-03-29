@@ -1,11 +1,10 @@
 # FiscalInfoUpdateUseNationalPortalRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**enabled** | **bool** | Indica se a emissão de notas fiscais pelo portal nacional deve ser habilitada ou não. | 
+| Name        | Type     | Description                                                                           | Notes |
+| ----------- | -------- | ------------------------------------------------------------------------------------- | ----- |
+| **enabled** | **bool** | Indica se a emissão de notas fiscais pelo portal nacional deve ser habilitada ou não. |
 
 ## Example
 
@@ -24,6 +23,5 @@ fiscal_info_update_use_national_portal_request_dto_dict = fiscal_info_update_use
 # create an instance of FiscalInfoUpdateUseNationalPortalRequestDTO from a dict
 fiscal_info_update_use_national_portal_request_dto_from_dict = FiscalInfoUpdateUseNationalPortalRequestDTO.from_dict(fiscal_info_update_use_national_portal_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

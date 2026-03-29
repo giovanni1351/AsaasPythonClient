@@ -4,10 +4,10 @@ Opções de regime especial de tributação
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**label** | **str** | Nome do regime especial de tributação | [optional] 
-**value** | **str** | Identificador do regime especial de tributação | [optional] 
+| Name      | Type    | Description                                    | Notes      |
+| --------- | ------- | ---------------------------------------------- | ---------- |
+| **label** | **str** | Nome do regime especial de tributação          | [optional] |
+| **value** | **str** | Identificador do regime especial de tributação | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ fiscal_info_municipal_options_special_tax_regimes_dto_dict = fiscal_info_municip
 # create an instance of FiscalInfoMunicipalOptionsSpecialTaxRegimesDTO from a dict
 fiscal_info_municipal_options_special_tax_regimes_dto_from_dict = FiscalInfoMunicipalOptionsSpecialTaxRegimesDTO.from_dict(fiscal_info_municipal_options_special_tax_regimes_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

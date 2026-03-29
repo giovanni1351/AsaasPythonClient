@@ -4,12 +4,12 @@ Taxas para transferências Pix
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**fee_value** | **float** | Taxa por envio de transferências via Pix | [optional] 
-**discount_value** | **float** | Taxa promocional (Se houver) | [optional] 
-**expiration_date** | **datetime** | Data de expiração da taxa promocional (Se houver) | [optional] 
-**considered_in_monthly_transfers_without_fee** | **bool** | Indica se a quantidade de transações grátis mensais considera Pix | [optional] 
+| Name                                            | Type         | Description                                                       | Notes      |
+| ----------------------------------------------- | ------------ | ----------------------------------------------------------------- | ---------- |
+| **fee_value**                                   | **float**    | Taxa por envio de transferências via Pix                          | [optional] |
+| **discount_value**                              | **float**    | Taxa promocional (Se houver)                                      | [optional] |
+| **expiration_date**                             | **datetime** | Data de expiração da taxa promocional (Se houver)                 | [optional] |
+| **considered_in_monthly_transfers_without_fee** | **bool**     | Indica se a quantidade de transações grátis mensais considera Pix | [optional] |
 
 ## Example
 
@@ -28,6 +28,5 @@ my_account_get_account_fees_transfer_pix_dto_dict = my_account_get_account_fees_
 # create an instance of MyAccountGetAccountFeesTransferPixDTO from a dict
 my_account_get_account_fees_transfer_pix_dto_from_dict = MyAccountGetAccountFeesTransferPixDTO.from_dict(my_account_get_account_fees_transfer_pix_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

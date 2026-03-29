@@ -1,16 +1,15 @@
 # CreditBureauReportGetResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único da consulta no Asaas | [optional] 
-**date_created** | **date** | Data da realização da consulta | [optional] 
-**cpf_cnpj** | **str** | CPF ou CNPJ consultado manualmente | [optional] 
-**customer** | **str** | Identificador único do cliente no Asaas | [optional] 
-**download_url** | **str** | Url para download da consulta. Disponível até as 23:59 do dia da consulta. | [optional] 
-**report_file** | **str** | PDF da consulta realizada em Base64 (este campo apenas é retornado no momento da criação da consulta) | [optional] 
+| Name             | Type     | Description                                                                                           | Notes      |
+| ---------------- | -------- | ----------------------------------------------------------------------------------------------------- | ---------- |
+| **id**           | **str**  | Identificador único da consulta no Asaas                                                              | [optional] |
+| **date_created** | **date** | Data da realização da consulta                                                                        | [optional] |
+| **cpf_cnpj**     | **str**  | CPF ou CNPJ consultado manualmente                                                                    | [optional] |
+| **customer**     | **str**  | Identificador único do cliente no Asaas                                                               | [optional] |
+| **download_url** | **str**  | Url para download da consulta. Disponível até as 23:59 do dia da consulta.                            | [optional] |
+| **report_file**  | **str**  | PDF da consulta realizada em Base64 (este campo apenas é retornado no momento da criação da consulta) | [optional] |
 
 ## Example
 
@@ -29,6 +28,5 @@ credit_bureau_report_get_response_dto_dict = credit_bureau_report_get_response_d
 # create an instance of CreditBureauReportGetResponseDTO from a dict
 credit_bureau_report_get_response_dto_from_dict = CreditBureauReportGetResponseDTO.from_dict(credit_bureau_report_get_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -1,12 +1,11 @@
 # PaymentViewingInfoResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**invoice_viewed_date** | **datetime** | Data e hora da visualização da fatura | [optional] 
-**boleto_viewed_date** | **datetime** | Data e hora da visualização do boleto | [optional] 
+| Name                    | Type         | Description                           | Notes      |
+| ----------------------- | ------------ | ------------------------------------- | ---------- |
+| **invoice_viewed_date** | **datetime** | Data e hora da visualização da fatura | [optional] |
+| **boleto_viewed_date**  | **datetime** | Data e hora da visualização do boleto | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ payment_viewing_info_response_dto_dict = payment_viewing_info_response_dto_insta
 # create an instance of PaymentViewingInfoResponseDTO from a dict
 payment_viewing_info_response_dto_from_dict = PaymentViewingInfoResponseDTO.from_dict(payment_viewing_info_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

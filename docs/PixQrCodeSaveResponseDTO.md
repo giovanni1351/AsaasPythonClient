@@ -1,17 +1,16 @@
 # PixQrCodeSaveResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Imagem do qrCode em base64 | [optional] 
-**encoded_image** | **str** | Identificador do QrCode | [optional] 
-**payload** | **str** | Copia e Cola do QrCode | [optional] 
-**allows_multiple_payments** | **bool** | Indica se permite múltiplos pagamentos | [optional] 
-**expiration_date** | **datetime** | Data/Hora de expiração do QrCode, após desta data todos os pagamentos serão recusados | [optional] 
-**external_reference** | **str** | Campo livre para busca | [optional] 
-**description** | **str** | Descrição do QrCode | [optional] 
+| Name                         | Type         | Description                                                                           | Notes      |
+| ---------------------------- | ------------ | ------------------------------------------------------------------------------------- | ---------- |
+| **id**                       | **str**      | Imagem do qrCode em base64                                                            | [optional] |
+| **encoded_image**            | **str**      | Identificador do QrCode                                                               | [optional] |
+| **payload**                  | **str**      | Copia e Cola do QrCode                                                                | [optional] |
+| **allows_multiple_payments** | **bool**     | Indica se permite múltiplos pagamentos                                                | [optional] |
+| **expiration_date**          | **datetime** | Data/Hora de expiração do QrCode, após desta data todos os pagamentos serão recusados | [optional] |
+| **external_reference**       | **str**      | Campo livre para busca                                                                | [optional] |
+| **description**              | **str**      | Descrição do QrCode                                                                   | [optional] |
 
 ## Example
 
@@ -30,6 +29,5 @@ pix_qr_code_save_response_dto_dict = pix_qr_code_save_response_dto_instance.to_d
 # create an instance of PixQrCodeSaveResponseDTO from a dict
 pix_qr_code_save_response_dto_from_dict = PixQrCodeSaveResponseDTO.from_dict(pix_qr_code_save_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -4,11 +4,11 @@ Taxas de notificação
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**phone_call_fee_value** | **float** | Taxas por ligação de robô de voz | [optional] 
-**whats_app_fee_value** | **float** | Taxas por notificações via WhatsApp | [optional] 
-**messaging_fee_value** | **float** | Taxas por envio de e-mails e SMS | [optional] 
+| Name                     | Type      | Description                         | Notes      |
+| ------------------------ | --------- | ----------------------------------- | ---------- |
+| **phone_call_fee_value** | **float** | Taxas por ligação de robô de voz    | [optional] |
+| **whats_app_fee_value**  | **float** | Taxas por notificações via WhatsApp | [optional] |
+| **messaging_fee_value**  | **float** | Taxas por envio de e-mails e SMS    | [optional] |
 
 ## Example
 
@@ -27,6 +27,5 @@ my_account_get_account_fees_notification_dto_dict = my_account_get_account_fees_
 # create an instance of MyAccountGetAccountFeesNotificationDTO from a dict
 my_account_get_account_fees_notification_dto_from_dict = MyAccountGetAccountFeesNotificationDTO.from_dict(my_account_get_account_fees_notification_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

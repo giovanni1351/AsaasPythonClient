@@ -1,14 +1,13 @@
 # PixTransactionSaveRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**qr_code** | [**PixTransactionQrCodeSaveRequestDTO**](PixTransactionQrCodeSaveRequestDTO.md) |  | 
-**value** | **float** | Valor a ser pago | 
-**description** | **str** | Descrição do pagamento | [optional] 
-**schedule_date** | **date** | Utilizada para realizar agendamento do pagamento | [optional] 
+| Name              | Type                                                                            | Description                                      | Notes      |
+| ----------------- | ------------------------------------------------------------------------------- | ------------------------------------------------ | ---------- |
+| **qr_code**       | [**PixTransactionQrCodeSaveRequestDTO**](PixTransactionQrCodeSaveRequestDTO.md) |                                                  |
+| **value**         | **float**                                                                       | Valor a ser pago                                 |
+| **description**   | **str**                                                                         | Descrição do pagamento                           | [optional] |
+| **schedule_date** | **date**                                                                        | Utilizada para realizar agendamento do pagamento | [optional] |
 
 ## Example
 
@@ -27,6 +26,5 @@ pix_transaction_save_request_dto_dict = pix_transaction_save_request_dto_instanc
 # create an instance of PixTransactionSaveRequestDTO from a dict
 pix_transaction_save_request_dto_from_dict = PixTransactionSaveRequestDTO.from_dict(pix_transaction_save_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

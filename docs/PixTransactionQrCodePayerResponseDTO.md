@@ -4,10 +4,10 @@ Informações sobre o pagador
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Nome do pagador | [optional] 
-**cpf_cnpj** | **str** | CPF ou CNPJ do pagador | [optional] 
+| Name         | Type    | Description            | Notes      |
+| ------------ | ------- | ---------------------- | ---------- |
+| **name**     | **str** | Nome do pagador        | [optional] |
+| **cpf_cnpj** | **str** | CPF ou CNPJ do pagador | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ pix_transaction_qr_code_payer_response_dto_dict = pix_transaction_qr_code_payer_
 # create an instance of PixTransactionQrCodePayerResponseDTO from a dict
 pix_transaction_qr_code_payer_response_dto_from_dict = PixTransactionQrCodePayerResponseDTO.from_dict(pix_transaction_qr_code_payer_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -2,24 +2,22 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**listar_splits_pagos**](SplitsApi.md#listar_splits_pagos) | **GET** /v3/payments/splits/paid | Listar splits pagos
-[**listar_splits_recebidos**](SplitsApi.md#listar_splits_recebidos) | **GET** /v3/payments/splits/received | Listar splits recebidos
-[**recuperar_um_unico_split_pago**](SplitsApi.md#recuperar_um_unico_split_pago) | **GET** /v3/payments/splits/paid/{id} | Recuperar um único split pago
-[**recuperar_um_unico_split_recebido**](SplitsApi.md#recuperar_um_unico_split_recebido) | **GET** /v3/payments/splits/received/{id} | Recuperar um único split recebido
-
+| Method                                                                                  | HTTP request                              | Description                       |
+| --------------------------------------------------------------------------------------- | ----------------------------------------- | --------------------------------- |
+| [**listar_splits_pagos**](SplitsApi.md#listar_splits_pagos)                             | **GET** /v3/payments/splits/paid          | Listar splits pagos               |
+| [**listar_splits_recebidos**](SplitsApi.md#listar_splits_recebidos)                     | **GET** /v3/payments/splits/received      | Listar splits recebidos           |
+| [**recuperar_um_unico_split_pago**](SplitsApi.md#recuperar_um_unico_split_pago)         | **GET** /v3/payments/splits/paid/{id}     | Recuperar um único split pago     |
+| [**recuperar_um_unico_split_recebido**](SplitsApi.md#recuperar_um_unico_split_recebido) | **GET** /v3/payments/splits/received/{id} | Recuperar um único split recebido |
 
 # **listar_splits_pagos**
+
 > PaymentSplitListResponseDTO listar_splits_pagos(offset=offset, limit=limit, payment_id=payment_id, status=status, payment_confirmed_date_ge=payment_confirmed_date_ge, payment_confirmed_date_le=payment_confirmed_date_le, credit_date_ge=credit_date_ge, credit_date_le=credit_date_le)
 
 Listar splits pagos
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -67,21 +65,18 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SplitsApi->listar_splits_pagos: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **payment_id** | **str**| Filtrar pelo ID da cobrança | [optional] 
- **status** | [**PaymentSplitListPaidRequestPaymentSplitStatus**](.md)| Filtrar por status | [optional] 
- **payment_confirmed_date_ge** | **str**| Filtrar a partir da data de confirmação da cobrança inicial | [optional] 
- **payment_confirmed_date_le** | **str**| Filtrar a partir da data de confirmação da cobrança final | [optional] 
- **credit_date_ge** | **str**| Filtrar a partir da data de envio do split inicial | [optional] 
- **credit_date_le** | **str**| Filtrar a partir da data de envio do split final | [optional] 
+| Name                          | Type                                                     | Description                                                 | Notes      |
+| ----------------------------- | -------------------------------------------------------- | ----------------------------------------------------------- | ---------- |
+| **offset**                    | **int**                                                  | Elemento inicial da lista                                   | [optional] |
+| **limit**                     | **int**                                                  | Número de elementos da lista (max: 100)                     | [optional] |
+| **payment_id**                | **str**                                                  | Filtrar pelo ID da cobrança                                 | [optional] |
+| **status**                    | [**PaymentSplitListPaidRequestPaymentSplitStatus**](.md) | Filtrar por status                                          | [optional] |
+| **payment_confirmed_date_ge** | **str**                                                  | Filtrar a partir da data de confirmação da cobrança inicial | [optional] |
+| **payment_confirmed_date_le** | **str**                                                  | Filtrar a partir da data de confirmação da cobrança final   | [optional] |
+| **credit_date_ge**            | **str**                                                  | Filtrar a partir da data de envio do split inicial          | [optional] |
+| **credit_date_le**            | **str**                                                  | Filtrar a partir da data de envio do split final            | [optional] |
 
 ### Return type
 
@@ -89,34 +84,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_splits_recebidos**
+
 > PaymentSplitListResponseDTO listar_splits_recebidos(offset=offset, limit=limit, payment_id=payment_id, status=status, payment_confirmed_date_ge=payment_confirmed_date_ge, payment_confirmed_date_le=payment_confirmed_date_le, credit_date_ge=credit_date_ge, credit_date_le=credit_date_le)
 
 Listar splits recebidos
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -164,21 +158,18 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SplitsApi->listar_splits_recebidos: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **payment_id** | **str**| Filtrar pelo ID da cobrança | [optional] 
- **status** | [**PaymentSplitListReceivedRequestPaymentSplitStatus**](.md)| Filtrar por status | [optional] 
- **payment_confirmed_date_ge** | **str**| Filtrar a partir da data de confirmação da cobrança inicial | [optional] 
- **payment_confirmed_date_le** | **str**| Filtrar a partir da data de confirmação da cobrança final | [optional] 
- **credit_date_ge** | **str**| Filtrar a partir da data de recebimento do split inicial | [optional] 
- **credit_date_le** | **str**| Filtrar a partir da data de recebimento do split final | [optional] 
+| Name                          | Type                                                         | Description                                                 | Notes      |
+| ----------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------- | ---------- |
+| **offset**                    | **int**                                                      | Elemento inicial da lista                                   | [optional] |
+| **limit**                     | **int**                                                      | Número de elementos da lista (max: 100)                     | [optional] |
+| **payment_id**                | **str**                                                      | Filtrar pelo ID da cobrança                                 | [optional] |
+| **status**                    | [**PaymentSplitListReceivedRequestPaymentSplitStatus**](.md) | Filtrar por status                                          | [optional] |
+| **payment_confirmed_date_ge** | **str**                                                      | Filtrar a partir da data de confirmação da cobrança inicial | [optional] |
+| **payment_confirmed_date_le** | **str**                                                      | Filtrar a partir da data de confirmação da cobrança final   | [optional] |
+| **credit_date_ge**            | **str**                                                      | Filtrar a partir da data de recebimento do split inicial    | [optional] |
+| **credit_date_le**            | **str**                                                      | Filtrar a partir da data de recebimento do split final      | [optional] |
 
 ### Return type
 
@@ -186,34 +177,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_um_unico_split_pago**
+
 > PaymentSplitGetFullResponseDTO recuperar_um_unico_split_pago(id)
 
 Recuperar um único split pago
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -253,14 +243,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SplitsApi->recuperar_um_unico_split_pago: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do split pago no Asaas | 
+| Name   | Type    | Description                                | Notes |
+| ------ | ------- | ------------------------------------------ | ----- |
+| **id** | **str** | Identificador único do split pago no Asaas |
 
 ### Return type
 
@@ -268,35 +255,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_um_unico_split_recebido**
+
 > PaymentSplitGetFullResponseDTO recuperar_um_unico_split_recebido(id)
 
 Recuperar um único split recebido
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -336,14 +322,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling SplitsApi->recuperar_um_unico_split_recebido: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único do split pago no Asaas | 
+| Name   | Type    | Description                                | Notes |
+| ------ | ------- | ------------------------------------------ | ----- |
+| **id** | **str** | Identificador único do split pago no Asaas |
 
 ### Return type
 
@@ -351,22 +334,21 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

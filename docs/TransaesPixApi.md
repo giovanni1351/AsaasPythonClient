@@ -2,25 +2,23 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**cancelar_uma_transacao_agendada**](TransaesPixApi.md#cancelar_uma_transacao_agendada) | **POST** /v3/pix/transactions/{id}/cancel | Cancelar uma transação agendada
-[**decodificar_um_qrcode_para_pagamento**](TransaesPixApi.md#decodificar_um_qrcode_para_pagamento) | **POST** /v3/pix/qrCodes/decode | Decodificar um QRCode para pagamento
-[**listar_transacoes**](TransaesPixApi.md#listar_transacoes) | **GET** /v3/pix/transactions | Listar transações
-[**pagar_um_qrcode**](TransaesPixApi.md#pagar_um_qrcode) | **POST** /v3/pix/qrCodes/pay | Pagar um QRCode
-[**recuperar_uma_unica_transacao**](TransaesPixApi.md#recuperar_uma_unica_transacao) | **GET** /v3/pix/transactions/{id} | Recuperar uma única transação
-
+| Method                                                                                             | HTTP request                              | Description                          |
+| -------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------ |
+| [**cancelar_uma_transacao_agendada**](TransaesPixApi.md#cancelar_uma_transacao_agendada)           | **POST** /v3/pix/transactions/{id}/cancel | Cancelar uma transação agendada      |
+| [**decodificar_um_qrcode_para_pagamento**](TransaesPixApi.md#decodificar_um_qrcode_para_pagamento) | **POST** /v3/pix/qrCodes/decode           | Decodificar um QRCode para pagamento |
+| [**listar_transacoes**](TransaesPixApi.md#listar_transacoes)                                       | **GET** /v3/pix/transactions              | Listar transações                    |
+| [**pagar_um_qrcode**](TransaesPixApi.md#pagar_um_qrcode)                                           | **POST** /v3/pix/qrCodes/pay              | Pagar um QRCode                      |
+| [**recuperar_uma_unica_transacao**](TransaesPixApi.md#recuperar_uma_unica_transacao)               | **GET** /v3/pix/transactions/{id}         | Recuperar uma única transação        |
 
 # **cancelar_uma_transacao_agendada**
+
 > PixTransactionGetResponseDTO cancelar_uma_transacao_agendada(id, body=body)
 
 Cancelar uma transação agendada
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -61,15 +59,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling TransaesPixApi->cancelar_uma_transacao_agendada: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da transação Pix agendada a ser cancelada. | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                                                    | Notes      |
+| -------- | ---------- | -------------------------------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único da transação Pix agendada a ser cancelada. |
+| **body** | **object** |                                                                | [optional] |
 
 ### Return type
 
@@ -77,34 +72,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **decodificar_um_qrcode_para_pagamento**
+
 > PixQrCodeDecodeResponseDTO decodificar_um_qrcode_para_pagamento(pix_qr_code_decode_request_dto=pix_qr_code_decode_request_dto)
 
 Decodificar um QRCode para pagamento
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -145,14 +139,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling TransaesPixApi->decodificar_um_qrcode_para_pagamento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pix_qr_code_decode_request_dto** | [**PixQrCodeDecodeRequestDTO**](PixQrCodeDecodeRequestDTO.md)|  | [optional] 
+| Name                               | Type                                                          | Description | Notes      |
+| ---------------------------------- | ------------------------------------------------------------- | ----------- | ---------- |
+| **pix_qr_code_decode_request_dto** | [**PixQrCodeDecodeRequestDTO**](PixQrCodeDecodeRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -160,33 +151,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_transacoes**
+
 > PixTransactionListResponseDTO listar_transacoes(offset=offset, limit=limit, status=status, type=type, end_to_end_identifier=end_to_end_identifier)
 
 Listar transações
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -232,18 +222,15 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling TransaesPixApi->listar_transacoes: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **status** | [**PixTransactionListRequestPixTransactionStatus**](.md)| Filtrar por status da transação | [optional] 
- **type** | [**PixTransactionListRequestPixTransactionType**](.md)| Filtrar por tipo da transação | [optional] 
- **end_to_end_identifier** | **str**| Filtrar pelo identificador da transação Pix no Banco Central | [optional] 
+| Name                      | Type                                                     | Description                                                  | Notes      |
+| ------------------------- | -------------------------------------------------------- | ------------------------------------------------------------ | ---------- |
+| **offset**                | **int**                                                  | Elemento inicial da lista                                    | [optional] |
+| **limit**                 | **int**                                                  | Número de elementos da lista (max: 100)                      | [optional] |
+| **status**                | [**PixTransactionListRequestPixTransactionStatus**](.md) | Filtrar por status da transação                              | [optional] |
+| **type**                  | [**PixTransactionListRequestPixTransactionType**](.md)   | Filtrar por tipo da transação                                | [optional] |
+| **end_to_end_identifier** | **str**                                                  | Filtrar pelo identificador da transação Pix no Banco Central | [optional] |
 
 ### Return type
 
@@ -251,34 +238,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **pagar_um_qrcode**
+
 > PixTransactionGetResponseDTO pagar_um_qrcode(pix_transaction_save_request_dto=pix_transaction_save_request_dto)
 
 Pagar um QRCode
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -319,14 +305,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling TransaesPixApi->pagar_um_qrcode: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **pix_transaction_save_request_dto** | [**PixTransactionSaveRequestDTO**](PixTransactionSaveRequestDTO.md)|  | [optional] 
+| Name                                 | Type                                                                | Description | Notes      |
+| ------------------------------------ | ------------------------------------------------------------------- | ----------- | ---------- |
+| **pix_transaction_save_request_dto** | [**PixTransactionSaveRequestDTO**](PixTransactionSaveRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -334,33 +317,32 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_uma_unica_transacao**
+
 > PixTransactionGetResponseDTO recuperar_uma_unica_transacao(id)
 
 Recuperar uma única transação
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -400,14 +382,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling TransaesPixApi->recuperar_uma_unica_transacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da transação Pix no Asaas | 
+| Name   | Type    | Description                                   | Notes |
+| ------ | ------- | --------------------------------------------- | ----- |
+| **id** | **str** | Identificador único da transação Pix no Asaas |
 
 ### Return type
 
@@ -415,22 +394,21 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

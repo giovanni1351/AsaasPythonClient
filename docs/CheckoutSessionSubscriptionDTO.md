@@ -4,11 +4,11 @@ Detalhes da assinatura, obrigatório se chargeTypes incluir `RECURRENT`
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**cycle** | [**CheckoutSessionSubscriptionCycle**](CheckoutSessionSubscriptionCycle.md) |  | [optional] 
-**end_date** | **date** | Data limite para vencimento das cobranças | [optional] 
-**next_due_date** | **date** | Vencimento do próximo pagamento a ser gerado | [optional] 
+| Name              | Type                                                                        | Description                                  | Notes      |
+| ----------------- | --------------------------------------------------------------------------- | -------------------------------------------- | ---------- |
+| **cycle**         | [**CheckoutSessionSubscriptionCycle**](CheckoutSessionSubscriptionCycle.md) |                                              | [optional] |
+| **end_date**      | **date**                                                                    | Data limite para vencimento das cobranças    | [optional] |
+| **next_due_date** | **date**                                                                    | Vencimento do próximo pagamento a ser gerado | [optional] |
 
 ## Example
 
@@ -27,6 +27,5 @@ checkout_session_subscription_dto_dict = checkout_session_subscription_dto_insta
 # create an instance of CheckoutSessionSubscriptionDTO from a dict
 checkout_session_subscription_dto_from_dict = CheckoutSessionSubscriptionDTO.from_dict(checkout_session_subscription_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

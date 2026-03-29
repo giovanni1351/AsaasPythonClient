@@ -1,12 +1,11 @@
 # CreditBureauReportSaveRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**customer** | **str** | Identificador único do cliente no Asaas | [optional] 
-**cpf_cnpj** | **str** | CPF ou CNPJ do cliente. Informe este campo caso seu cliente não esteja cadastrado no Asaas | [optional] 
+| Name         | Type    | Description                                                                                | Notes      |
+| ------------ | ------- | ------------------------------------------------------------------------------------------ | ---------- |
+| **customer** | **str** | Identificador único do cliente no Asaas                                                    | [optional] |
+| **cpf_cnpj** | **str** | CPF ou CNPJ do cliente. Informe este campo caso seu cliente não esteja cadastrado no Asaas | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ credit_bureau_report_save_request_dto_dict = credit_bureau_report_save_request_d
 # create an instance of CreditBureauReportSaveRequestDTO from a dict
 credit_bureau_report_save_request_dto_from_dict = CreditBureauReportSaveRequestDTO.from_dict(credit_bureau_report_save_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

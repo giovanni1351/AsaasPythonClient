@@ -1,11 +1,10 @@
 # FinanceBalanceResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**balance** | **float** | Saldo da conta | [optional] 
+| Name        | Type      | Description    | Notes      |
+| ----------- | --------- | -------------- | ---------- |
+| **balance** | **float** | Saldo da conta | [optional] |
 
 ## Example
 
@@ -24,6 +23,5 @@ finance_balance_response_dto_dict = finance_balance_response_dto_instance.to_dic
 # create an instance of FinanceBalanceResponseDTO from a dict
 finance_balance_response_dto_from_dict = FinanceBalanceResponseDTO.from_dict(finance_balance_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

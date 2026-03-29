@@ -4,20 +4,18 @@ Periodicidade da cobrança
 
 ## Enum
 
-* `WEEKLY` (value: `'WEEKLY'`)
+- `WEEKLY` (value: `'WEEKLY'`)
 
-* `BIWEEKLY` (value: `'BIWEEKLY'`)
+- `BIWEEKLY` (value: `'BIWEEKLY'`)
 
-* `MONTHLY` (value: `'MONTHLY'`)
+- `MONTHLY` (value: `'MONTHLY'`)
 
-* `BIMONTHLY` (value: `'BIMONTHLY'`)
+- `BIMONTHLY` (value: `'BIMONTHLY'`)
 
-* `QUARTERLY` (value: `'QUARTERLY'`)
+- `QUARTERLY` (value: `'QUARTERLY'`)
 
-* `SEMIANNUALLY` (value: `'SEMIANNUALLY'`)
+- `SEMIANNUALLY` (value: `'SEMIANNUALLY'`)
 
-* `YEARLY` (value: `'YEARLY'`)
+- `YEARLY` (value: `'YEARLY'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -4,12 +4,12 @@ Informações sobre o recebedor
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Nome do recebedor | [optional] 
-**financial_institution_name** | **str** | Nome da instituição de pagamento | [optional] 
-**cpf_cnpj** | **str** | CPF ou CNPJ do recebedor | [optional] 
-**pix_key** | **str** | Chave Pix do recebedor | [optional] 
+| Name                           | Type    | Description                      | Notes      |
+| ------------------------------ | ------- | -------------------------------- | ---------- |
+| **name**                       | **str** | Nome do recebedor                | [optional] |
+| **financial_institution_name** | **str** | Nome da instituição de pagamento | [optional] |
+| **cpf_cnpj**                   | **str** | CPF ou CNPJ do recebedor         | [optional] |
+| **pix_key**                    | **str** | Chave Pix do recebedor           | [optional] |
 
 ## Example
 
@@ -28,6 +28,5 @@ pix_recurring_transaction_external_account_dto_dict = pix_recurring_transaction_
 # create an instance of PixRecurringTransactionExternalAccountDTO from a dict
 pix_recurring_transaction_external_account_dto_from_dict = PixRecurringTransactionExternalAccountDTO.from_dict(pix_recurring_transaction_external_account_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

@@ -2,20 +2,20 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**cancelar_negativacao**](NegativaesApi.md#cancelar_negativacao) | **POST** /v3/paymentDunnings/{id}/cancel | Cancelar negativação
-[**criar_uma_negativacao**](NegativaesApi.md#criar_uma_negativacao) | **POST** /v3/paymentDunnings | Criar uma negativação
-[**listar_cobrancas_disponiveis_para_negativacao**](NegativaesApi.md#listar_cobrancas_disponiveis_para_negativacao) | **GET** /v3/paymentDunnings/paymentsAvailableForDunning | Listar cobranças disponíveis para negativação
-[**listar_historico_de_eventos**](NegativaesApi.md#listar_historico_de_eventos) | **GET** /v3/paymentDunnings/{id}/history | Listar histórico de eventos
-[**listar_negativacoes**](NegativaesApi.md#listar_negativacoes) | **GET** /v3/paymentDunnings | Listar negativações
-[**listar_pagamentos_recebidos**](NegativaesApi.md#listar_pagamentos_recebidos) | **GET** /v3/paymentDunnings/{id}/partialPayments | Listar pagamentos recebidos
-[**recuperar_uma_unica_negativacao**](NegativaesApi.md#recuperar_uma_unica_negativacao) | **GET** /v3/paymentDunnings/{id} | Recuperar uma única negativação
-[**reenviar_documentos**](NegativaesApi.md#reenviar_documentos) | **POST** /v3/paymentDunnings/{id}/documents | Reenviar documentos
-[**simular_uma_negativacao**](NegativaesApi.md#simular_uma_negativacao) | **POST** /v3/paymentDunnings/simulate | Simular uma negativação
-
+| Method                                                                                                              | HTTP request                                            | Description                                   |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------- |
+| [**cancelar_negativacao**](NegativaesApi.md#cancelar_negativacao)                                                   | **POST** /v3/paymentDunnings/{id}/cancel                | Cancelar negativação                          |
+| [**criar_uma_negativacao**](NegativaesApi.md#criar_uma_negativacao)                                                 | **POST** /v3/paymentDunnings                            | Criar uma negativação                         |
+| [**listar_cobrancas_disponiveis_para_negativacao**](NegativaesApi.md#listar_cobrancas_disponiveis_para_negativacao) | **GET** /v3/paymentDunnings/paymentsAvailableForDunning | Listar cobranças disponíveis para negativação |
+| [**listar_historico_de_eventos**](NegativaesApi.md#listar_historico_de_eventos)                                     | **GET** /v3/paymentDunnings/{id}/history                | Listar histórico de eventos                   |
+| [**listar_negativacoes**](NegativaesApi.md#listar_negativacoes)                                                     | **GET** /v3/paymentDunnings                             | Listar negativações                           |
+| [**listar_pagamentos_recebidos**](NegativaesApi.md#listar_pagamentos_recebidos)                                     | **GET** /v3/paymentDunnings/{id}/partialPayments        | Listar pagamentos recebidos                   |
+| [**recuperar_uma_unica_negativacao**](NegativaesApi.md#recuperar_uma_unica_negativacao)                             | **GET** /v3/paymentDunnings/{id}                        | Recuperar uma única negativação               |
+| [**reenviar_documentos**](NegativaesApi.md#reenviar_documentos)                                                     | **POST** /v3/paymentDunnings/{id}/documents             | Reenviar documentos                           |
+| [**simular_uma_negativacao**](NegativaesApi.md#simular_uma_negativacao)                                             | **POST** /v3/paymentDunnings/simulate                   | Simular uma negativação                       |
 
 # **cancelar_negativacao**
+
 > PaymentDunningCancelResponseDTO cancelar_negativacao(id, body=body)
 
 Cancelar negativação
@@ -26,7 +26,7 @@ Caso a negativação já tenha sido iniciada, ao solicitar o cancelamento a nega
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -67,15 +67,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NegativaesApi->cancelar_negativacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da negativação a ser cancelada. | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                                         | Notes      |
+| -------- | ---------- | --------------------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único da negativação a ser cancelada. |
+| **body** | **object** |                                                     | [optional] |
 
 ### Return type
 
@@ -83,34 +80,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **criar_uma_negativacao**
+
 > PaymentDunningShowResponseDTO criar_uma_negativacao(payment, type, customer_name, customer_cpf_cnpj, customer_primary_phone, customer_postal_code, customer_address, customer_address_number, customer_province, description=description, customer_secondary_phone=customer_secondary_phone, customer_complement=customer_complement, documents=documents)
 
 Criar uma negativação
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -141,7 +137,7 @@ with asaas.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = asaas.NegativaesApi(api_client)
     payment = 'payment_example' # str | Identificador único da cobrança a ser recuperada no Asaas
-    type = asaas.PaymentDunningSaveRequestPaymentDunningType() # PaymentDunningSaveRequestPaymentDunningType | 
+    type = asaas.PaymentDunningSaveRequestPaymentDunningType() # PaymentDunningSaveRequestPaymentDunningType |
     customer_name = 'customer_name_example' # str | Nome do cliente
     customer_cpf_cnpj = 'customer_cpf_cnpj_example' # str | CPF ou CNPJ do cliente
     customer_primary_phone = 'customer_primary_phone_example' # str | Telefone principal do cliente
@@ -163,26 +159,23 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NegativaesApi->criar_uma_negativacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **payment** | **str**| Identificador único da cobrança a ser recuperada no Asaas | 
- **type** | [**PaymentDunningSaveRequestPaymentDunningType**](PaymentDunningSaveRequestPaymentDunningType.md)|  | 
- **customer_name** | **str**| Nome do cliente | 
- **customer_cpf_cnpj** | **str**| CPF ou CNPJ do cliente | 
- **customer_primary_phone** | **str**| Telefone principal do cliente | 
- **customer_postal_code** | **str**| CEP do endereço do cliente | 
- **customer_address** | **str**| Logradouro do cliente | 
- **customer_address_number** | **str**| Número do endereço do cliente | 
- **customer_province** | **str**| Bairro do cliente | 
- **description** | **str**| Descrição do produto ou serviço prestado | [optional] 
- **customer_secondary_phone** | **str**| Telefone secundário do cliente | [optional] 
- **customer_complement** | **str**| Complemento do endereço do cliente | [optional] 
- **documents** | **bytes**| Nota fiscal e/ou contrato com firma reconhecida em cartório | [optional] 
+| Name                         | Type                                                                                              | Description                                                 | Notes      |
+| ---------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ---------- |
+| **payment**                  | **str**                                                                                           | Identificador único da cobrança a ser recuperada no Asaas   |
+| **type**                     | [**PaymentDunningSaveRequestPaymentDunningType**](PaymentDunningSaveRequestPaymentDunningType.md) |                                                             |
+| **customer_name**            | **str**                                                                                           | Nome do cliente                                             |
+| **customer_cpf_cnpj**        | **str**                                                                                           | CPF ou CNPJ do cliente                                      |
+| **customer_primary_phone**   | **str**                                                                                           | Telefone principal do cliente                               |
+| **customer_postal_code**     | **str**                                                                                           | CEP do endereço do cliente                                  |
+| **customer_address**         | **str**                                                                                           | Logradouro do cliente                                       |
+| **customer_address_number**  | **str**                                                                                           | Número do endereço do cliente                               |
+| **customer_province**        | **str**                                                                                           | Bairro do cliente                                           |
+| **description**              | **str**                                                                                           | Descrição do produto ou serviço prestado                    | [optional] |
+| **customer_secondary_phone** | **str**                                                                                           | Telefone secundário do cliente                              | [optional] |
+| **customer_complement**      | **str**                                                                                           | Complemento do endereço do cliente                          | [optional] |
+| **documents**                | **bytes**                                                                                         | Nota fiscal e/ou contrato com firma reconhecida em cartório | [optional] |
 
 ### Return type
 
@@ -190,24 +183,25 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
- - **Accept**: application/json
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_cobrancas_disponiveis_para_negativacao**
+
 > PaymentDunningPaymentsAvailableForDunningResponseDTO listar_cobrancas_disponiveis_para_negativacao(offset=offset, limit=limit)
 
 Listar cobranças disponíveis para negativação
@@ -216,7 +210,7 @@ Retorna uma lista paginada de cobranças possíveis de negativação em conjunto
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -257,15 +251,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NegativaesApi->listar_cobrancas_disponiveis_para_negativacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista | [optional] 
+| Name       | Type    | Description                  | Notes      |
+| ---------- | ------- | ---------------------------- | ---------- |
+| **offset** | **int** | Elemento inicial da lista    | [optional] |
+| **limit**  | **int** | Número de elementos da lista | [optional] |
 
 ### Return type
 
@@ -273,25 +264,26 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_historico_de_eventos**
+
 > PaymentDunningListHistoryResponseDTO listar_historico_de_eventos(id, offset=offset, limit=limit)
 
 Listar histórico de eventos
@@ -300,7 +292,7 @@ Retorna uma lista paginada com os eventos que ocorreram desde do início da nega
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -342,16 +334,13 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NegativaesApi->listar_historico_de_eventos: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da negativação no Asaas | 
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista | [optional] 
+| Name       | Type    | Description                                 | Notes      |
+| ---------- | ------- | ------------------------------------------- | ---------- |
+| **id**     | **str** | Identificador único da negativação no Asaas |
+| **offset** | **int** | Elemento inicial da lista                   | [optional] |
+| **limit**  | **int** | Número de elementos da lista                | [optional] |
 
 ### Return type
 
@@ -359,35 +348,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_negativacoes**
+
 > PaymentDunningListResponseDTO listar_negativacoes(offset=offset, limit=limit, status=status, type=type, payment=payment, request_start_date=request_start_date, request_end_date=request_end_date)
 
 Listar negativações
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -435,20 +423,17 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NegativaesApi->listar_negativacoes: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **status** | [**PaymentDunningListRequestPaymentDunningStatus**](.md)| Filtrar por status da negativação | [optional] 
- **type** | [**PaymentDunningListRequestPaymentDunningType**](.md)| Filtrar por tipo de negativação | [optional] 
- **payment** | **str**| Filtrar por negativações de uma determinada cobrança | [optional] 
- **request_start_date** | **str**| Filtrar a partir da data de solicitação inicial | [optional] 
- **request_end_date** | **str**| Filtrar a partir da data de solicitação final | [optional] 
+| Name                   | Type                                                     | Description                                          | Notes      |
+| ---------------------- | -------------------------------------------------------- | ---------------------------------------------------- | ---------- |
+| **offset**             | **int**                                                  | Elemento inicial da lista                            | [optional] |
+| **limit**              | **int**                                                  | Número de elementos da lista (max: 100)              | [optional] |
+| **status**             | [**PaymentDunningListRequestPaymentDunningStatus**](.md) | Filtrar por status da negativação                    | [optional] |
+| **type**               | [**PaymentDunningListRequestPaymentDunningType**](.md)   | Filtrar por tipo de negativação                      | [optional] |
+| **payment**            | **str**                                                  | Filtrar por negativações de uma determinada cobrança | [optional] |
+| **request_start_date** | **str**                                                  | Filtrar a partir da data de solicitação inicial      | [optional] |
+| **request_end_date**   | **str**                                                  | Filtrar a partir da data de solicitação final        | [optional] |
 
 ### Return type
 
@@ -456,25 +441,26 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **listar_pagamentos_recebidos**
+
 > PaymentDunningListPartialPaymentsResponseDTO listar_pagamentos_recebidos(id, offset=offset, limit=limit)
 
 Listar pagamentos recebidos
@@ -483,7 +469,7 @@ Retorna uma lista paginada com os pagamentos recebidos por meio da renegociaçã
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -525,16 +511,13 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NegativaesApi->listar_pagamentos_recebidos: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da negativação no Asaas | 
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista | [optional] 
+| Name       | Type    | Description                                 | Notes      |
+| ---------- | ------- | ------------------------------------------- | ---------- |
+| **id**     | **str** | Identificador único da negativação no Asaas |
+| **offset** | **int** | Elemento inicial da lista                   | [optional] |
+| **limit**  | **int** | Número de elementos da lista                | [optional] |
 
 ### Return type
 
@@ -542,35 +525,34 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **recuperar_uma_unica_negativacao**
+
 > PaymentDunningShowResponseDTO recuperar_uma_unica_negativacao(id)
 
 Recuperar uma única negativação
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -610,14 +592,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NegativaesApi->recuperar_uma_unica_negativacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da negativação no Asaas | 
+| Name   | Type    | Description                                 | Notes |
+| ------ | ------- | ------------------------------------------- | ----- |
+| **id** | **str** | Identificador único da negativação no Asaas |
 
 ### Return type
 
@@ -625,39 +604,40 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **reenviar_documentos**
+
 > PaymentDunningSaveDocumentsResponseDTO reenviar_documentos(id, documents)
 
 Reenviar documentos
 
 Permite o reenvio dos documentos de uma negativação em caso de negação.
 
- Utilize a propriedade `isNecessaryResendDocumentation` retornado no objeto de negativação para verificar se é preciso o reenvio da documentação.
+Utilize a propriedade `isNecessaryResendDocumentation` retornado no objeto de negativação para verificar se é preciso o reenvio da documentação.
 
- Após o reenvio sua negativação retornará para o status de `AWAITING_APPROVAL`.
+Após o reenvio sua negativação retornará para o status de `AWAITING_APPROVAL`.
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -698,15 +678,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NegativaesApi->reenviar_documentos: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da negativação no Asaas | 
- **documents** | **bytes**| Nota fiscal e/ou contrato com firma reconhecida em cartório | 
+| Name          | Type      | Description                                                 | Notes |
+| ------------- | --------- | ----------------------------------------------------------- | ----- |
+| **id**        | **str**   | Identificador único da negativação no Asaas                 |
+| **documents** | **bytes** | Nota fiscal e/ou contrato com firma reconhecida em cartório |
 
 ### Return type
 
@@ -714,34 +691,33 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
- - **Accept**: application/json
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)
 
 # **simular_uma_negativacao**
+
 > PaymentDunningSimulateResponseDTO simular_uma_negativacao(payment=payment, body=body)
 
 Simular uma negativação
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -782,15 +758,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling NegativaesApi->simular_uma_negativacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **payment** | **str**| Identificador único da cobrança a ser recuperada no Asaas | [optional] 
- **body** | **object**|  | [optional] 
+| Name        | Type       | Description                                               | Notes      |
+| ----------- | ---------- | --------------------------------------------------------- | ---------- |
+| **payment** | **str**    | Identificador único da cobrança a ser recuperada no Asaas | [optional] |
+| **body**    | **object** |                                                           | [optional] |
 
 ### Return type
 
@@ -798,20 +771,19 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[Authorization](../README.md#Authorization)
+[Authorization](index.md#Authorization)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
+[[Back to top]](#) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to Model list]](index.md#documentation-for-models) [[Back to README]](index.md)

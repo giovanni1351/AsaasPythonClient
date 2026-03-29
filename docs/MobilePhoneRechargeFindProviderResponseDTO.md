@@ -1,12 +1,11 @@
 # MobilePhoneRechargeFindProviderResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **str** | Nome da operadora do celular | [optional] 
-**values** | [**List[MobilePhoneRechargeFindProviderResponseValuesDTO]**](MobilePhoneRechargeFindProviderResponseValuesDTO.md) | Valores disponíveis para recarga | [optional] 
+| Name       | Type                                                                                                              | Description                      | Notes      |
+| ---------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------- |
+| **name**   | **str**                                                                                                           | Nome da operadora do celular     | [optional] |
+| **values** | [**List[MobilePhoneRechargeFindProviderResponseValuesDTO]**](MobilePhoneRechargeFindProviderResponseValuesDTO.md) | Valores disponíveis para recarga | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ mobile_phone_recharge_find_provider_response_dto_dict = mobile_phone_recharge_fi
 # create an instance of MobilePhoneRechargeFindProviderResponseDTO from a dict
 mobile_phone_recharge_find_provider_response_dto_from_dict = MobilePhoneRechargeFindProviderResponseDTO.from_dict(mobile_phone_recharge_find_provider_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

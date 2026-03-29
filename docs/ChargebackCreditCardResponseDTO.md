@@ -4,10 +4,10 @@ Informações do cartão de crédito
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**number** | **str** | Últimos 4 dígitos do cartão utilizado | [optional] 
-**brand** | [**ChargebackCreditCardResponseCreditCardBrand**](ChargebackCreditCardResponseCreditCardBrand.md) |  | [optional] 
+| Name       | Type                                                                                              | Description                           | Notes      |
+| ---------- | ------------------------------------------------------------------------------------------------- | ------------------------------------- | ---------- |
+| **number** | **str**                                                                                           | Últimos 4 dígitos do cartão utilizado | [optional] |
+| **brand**  | [**ChargebackCreditCardResponseCreditCardBrand**](ChargebackCreditCardResponseCreditCardBrand.md) |                                       | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ chargeback_credit_card_response_dto_dict = chargeback_credit_card_response_dto_i
 # create an instance of ChargebackCreditCardResponseDTO from a dict
 chargeback_credit_card_response_dto_from_dict = ChargebackCreditCardResponseDTO.from_dict(chargeback_credit_card_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

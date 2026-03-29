@@ -4,11 +4,11 @@ Lista de splits estornados, se houver
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único do split | [optional] 
-**value** | **float** | Valor estornado | [optional] 
-**done** | **bool** | Indica se o split foi estornado | [optional] 
+| Name      | Type      | Description                     | Notes      |
+| --------- | --------- | ------------------------------- | ---------- |
+| **id**    | **str**   | Identificador único do split    | [optional] |
+| **value** | **float** | Valor estornado                 | [optional] |
+| **done**  | **bool**  | Indica se o split foi estornado | [optional] |
 
 ## Example
 
@@ -27,6 +27,5 @@ payment_refunded_split_response_dto_dict = payment_refunded_split_response_dto_i
 # create an instance of PaymentRefundedSplitResponseDTO from a dict
 payment_refunded_split_response_dto_from_dict = PaymentRefundedSplitResponseDTO.from_dict(payment_refunded_split_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

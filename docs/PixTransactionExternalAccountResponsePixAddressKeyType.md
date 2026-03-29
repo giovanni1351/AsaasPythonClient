@@ -4,16 +4,14 @@ Tipo da chave Pix
 
 ## Enum
 
-* `CPF` (value: `'CPF'`)
+- `CPF` (value: `'CPF'`)
 
-* `CNPJ` (value: `'CNPJ'`)
+- `CNPJ` (value: `'CNPJ'`)
 
-* `EMAIL` (value: `'EMAIL'`)
+- `EMAIL` (value: `'EMAIL'`)
 
-* `PHONE` (value: `'PHONE'`)
+- `PHONE` (value: `'PHONE'`)
 
-* `EVP` (value: `'EVP'`)
+- `EVP` (value: `'EVP'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)

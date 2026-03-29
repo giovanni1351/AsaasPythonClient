@@ -4,11 +4,11 @@ Taxas de cartão de débito
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**operation_value** | **float** | Taxa operacional por cobrança | [optional] 
-**default_percentage** | **float** | Taxa percentual por cobrança | [optional] 
-**days_to_receive** | **int** | Dias para recebimento da cobrança | [optional] 
+| Name                   | Type      | Description                       | Notes      |
+| ---------------------- | --------- | --------------------------------- | ---------- |
+| **operation_value**    | **float** | Taxa operacional por cobrança     | [optional] |
+| **default_percentage** | **float** | Taxa percentual por cobrança      | [optional] |
+| **days_to_receive**    | **int**   | Dias para recebimento da cobrança | [optional] |
 
 ## Example
 
@@ -27,6 +27,5 @@ my_account_get_account_fees_payment_debit_card_dto_dict = my_account_get_account
 # create an instance of MyAccountGetAccountFeesPaymentDebitCardDTO from a dict
 my_account_get_account_fees_payment_debit_card_dto_from_dict = MyAccountGetAccountFeesPaymentDebitCardDTO.from_dict(my_account_get_account_fees_payment_debit_card_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
-
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)
