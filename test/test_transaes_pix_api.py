@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.transaes_pix_api import TransaesPixApi
+from asaas.api.transacoes_pix_api import TransaesPixApi
 
 
 class TestTransaesPixApi(unittest.TestCase):

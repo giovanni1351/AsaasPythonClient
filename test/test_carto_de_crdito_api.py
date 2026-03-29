@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.carto_de_crdito_api import CartoDeCrditoApi
+from asaas.api.cartao_de_credito_api import CartoDeCrditoApi
 
 
 class TestCartoDeCrditoApi(unittest.TestCase):

@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.pix_automtico_api import PixAutomticoApi
+from asaas.api.pix_automatico_api import PixAutomticoApi
 
 
 class TestPixAutomticoApi(unittest.TestCase):

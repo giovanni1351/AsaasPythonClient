@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.transferncias_api import TransfernciasApi
+from asaas.api.transferencias_api import TransfernciasApi
 
 
 class TestTransfernciasApi(unittest.TestCase):

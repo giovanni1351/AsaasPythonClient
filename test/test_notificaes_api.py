@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.notificaes_api import NotificaesApi
+from asaas.api.notificacoes_api import NotificaesApi
 
 
 class TestNotificaesApi(unittest.TestCase):

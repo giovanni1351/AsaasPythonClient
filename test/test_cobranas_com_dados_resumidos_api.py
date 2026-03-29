@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.cobranas_com_dados_resumidos_api import CobranasComDadosResumidosApi
+from asaas.api.cobrancas_com_dados_resumidos_api import CobranasComDadosResumidosApi
 
 
 class TestCobranasComDadosResumidosApi(unittest.TestCase):

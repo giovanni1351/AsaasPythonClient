@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.configuraes_de_webhooks_api import ConfiguraesDeWebhooksApi
+from asaas.api.configuracoes_de_webhooks_api import ConfiguraesDeWebhooksApi
 
 
 class TestConfiguraesDeWebhooksApi(unittest.TestCase):

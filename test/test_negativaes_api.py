@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.negativaes_api import NegativaesApi
+from asaas.api.negativacoes_api import NegativaesApi
 
 
 class TestNegativaesApi(unittest.TestCase):

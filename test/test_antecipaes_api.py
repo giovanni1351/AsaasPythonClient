@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.antecipaes_api import AntecipaesApi
+from asaas.api.antecipacoes_api import AntecipaesApi
 
 
 class TestAntecipaesApi(unittest.TestCase):

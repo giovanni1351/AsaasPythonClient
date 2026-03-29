@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.informaes_financeiras_api import InformaesFinanceirasApi
+from asaas.api.informacoes_financeiras_api import InformaesFinanceirasApi
 
 
 class TestInformaesFinanceirasApi(unittest.TestCase):

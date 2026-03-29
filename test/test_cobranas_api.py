@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.cobranas_api import CobranasApi
+from asaas.api.cobrancas_api import CobranasApi
 
 
 class TestCobranasApi(unittest.TestCase):

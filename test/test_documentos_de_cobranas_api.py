@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.documentos_de_cobranas_api import DocumentosDeCobranasApi
+from asaas.api.documentos_de_cobrancas_api import DocumentosDeCobranasApi
 
 
 class TestDocumentosDeCobranasApi(unittest.TestCase):

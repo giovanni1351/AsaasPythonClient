@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.informaes_e_personalizao_da_conta_api import InformaesEPersonalizaoDaContaApi
+from asaas.api.informacoes_e_personalizao_da_conta_api import InformaesEPersonalizaoDaContaApi
 
 
 class TestInformaesEPersonalizaoDaContaApi(unittest.TestCase):

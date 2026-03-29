@@ -14,7 +14,7 @@
 
 import unittest
 
-from asaas.api.informaes_fiscais_api import InformaesFiscaisApi
+from asaas.api.informacoes_fiscais_api import InformaesFiscaisApi
 
 
 class TestInformaesFiscaisApi(unittest.TestCase):
