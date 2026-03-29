@@ -1,12 +1,11 @@
 # AccountDocumentGetResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **str** | Identificador único do documento no Asaas | [optional] 
-**status** | [**AccountDocumentGetResponseAccountDocumentStatus**](AccountDocumentGetResponseAccountDocumentStatus.md) |  | [optional] 
+| Name       | Type                                                                                                      | Description                               | Notes      |
+| ---------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------- |
+| **id**     | **str**                                                                                                   | Identificador único do documento no Asaas | [optional] |
+| **status** | [**AccountDocumentGetResponseAccountDocumentStatus**](AccountDocumentGetResponseAccountDocumentStatus.md) |                                           | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ account_document_get_response_dto_dict = account_document_get_response_dto_insta
 # create an instance of AccountDocumentGetResponseDTO from a dict
 account_document_get_response_dto_from_dict = AccountDocumentGetResponseDTO.from_dict(account_document_get_response_dto_dict)
 ```
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

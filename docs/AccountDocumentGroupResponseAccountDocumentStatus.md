@@ -4,16 +4,14 @@ Status do grupo de documentos
 
 ## Enum
 
-* `NOT_SENT` (value: `'NOT_SENT'`)
+- `NOT_SENT` (value: `'NOT_SENT'`)
 
-* `PENDING` (value: `'PENDING'`)
+- `PENDING` (value: `'PENDING'`)
 
-* `APPROVED` (value: `'APPROVED'`)
+- `APPROVED` (value: `'APPROVED'`)
 
-* `REJECTED` (value: `'REJECTED'`)
+- `REJECTED` (value: `'REJECTED'`)
 
-* `IGNORED` (value: `'IGNORED'`)
+- `IGNORED` (value: `'IGNORED'`)
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

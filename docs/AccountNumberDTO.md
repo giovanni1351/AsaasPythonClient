@@ -4,11 +4,11 @@ Subaccount number in Asaas
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**agency** | **str** | Account agency | [optional] 
-**account** | **str** | Account number | [optional] 
-**account_digit** | **str** | Account digit | [optional] 
+| Name              | Type    | Description    | Notes      |
+| ----------------- | ------- | -------------- | ---------- |
+| **agency**        | **str** | Account agency | [optional] |
+| **account**       | **str** | Account number | [optional] |
+| **account_digit** | **str** | Account digit  | [optional] |
 
 ## Example
 
@@ -27,6 +27,5 @@ account_number_dto_dict = account_number_dto_instance.to_dict()
 # create an instance of AccountNumberDTO from a dict
 account_number_dto_from_dict = AccountNumberDTO.from_dict(account_number_dto_dict)
 ```
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

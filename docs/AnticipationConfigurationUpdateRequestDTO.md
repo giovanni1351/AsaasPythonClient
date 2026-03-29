@@ -1,11 +1,10 @@
 # AnticipationConfigurationUpdateRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**credit_card_automatic_enabled** | **bool** | Definir configuração de antecipação automática | [optional] 
+| Name                              | Type     | Description                                    | Notes      |
+| --------------------------------- | -------- | ---------------------------------------------- | ---------- |
+| **credit_card_automatic_enabled** | **bool** | Definir configuração de antecipação automática | [optional] |
 
 ## Example
 
@@ -24,6 +23,5 @@ anticipation_configuration_update_request_dto_dict = anticipation_configuration_
 # create an instance of AnticipationConfigurationUpdateRequestDTO from a dict
 anticipation_configuration_update_request_dto_from_dict = AnticipationConfigurationUpdateRequestDTO.from_dict(anticipation_configuration_update_request_dto_dict)
 ```
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

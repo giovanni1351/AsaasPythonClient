@@ -1,11 +1,10 @@
 # AnticipationConfigurationGetResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**credit_card_automatic_enabled** | **bool** | Indica se a antecipação automática de cartão de crédito está habilitada | [optional] 
+| Name                              | Type     | Description                                                             | Notes      |
+| --------------------------------- | -------- | ----------------------------------------------------------------------- | ---------- |
+| **credit_card_automatic_enabled** | **bool** | Indica se a antecipação automática de cartão de crédito está habilitada | [optional] |
 
 ## Example
 
@@ -24,6 +23,5 @@ anticipation_configuration_get_response_dto_dict = anticipation_configuration_ge
 # create an instance of AnticipationConfigurationGetResponseDTO from a dict
 anticipation_configuration_get_response_dto_from_dict = AnticipationConfigurationGetResponseDTO.from_dict(anticipation_configuration_get_response_dto_dict)
 ```
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

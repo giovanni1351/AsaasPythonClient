@@ -1,12 +1,11 @@
 # AnticipationLimitsResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**credit_card** | [**AnticipationLimitsInfoResponseDTO**](AnticipationLimitsInfoResponseDTO.md) |  | [optional] 
-**bank_slip** | [**AnticipationLimitsInfoResponseDTO**](AnticipationLimitsInfoResponseDTO.md) |  | [optional] 
+| Name            | Type                                                                          | Description | Notes      |
+| --------------- | ----------------------------------------------------------------------------- | ----------- | ---------- |
+| **credit_card** | [**AnticipationLimitsInfoResponseDTO**](AnticipationLimitsInfoResponseDTO.md) |             | [optional] |
+| **bank_slip**   | [**AnticipationLimitsInfoResponseDTO**](AnticipationLimitsInfoResponseDTO.md) |             | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ anticipation_limits_response_dto_dict = anticipation_limits_response_dto_instanc
 # create an instance of AnticipationLimitsResponseDTO from a dict
 anticipation_limits_response_dto_from_dict = AnticipationLimitsResponseDTO.from_dict(anticipation_limits_response_dto_dict)
 ```
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

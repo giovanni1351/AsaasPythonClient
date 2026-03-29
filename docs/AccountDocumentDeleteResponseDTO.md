@@ -1,12 +1,11 @@
 # AccountDocumentDeleteResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**deleted** | **bool** | Indica se o documento foi removido | [optional] 
-**id** | **str** | Identificador único do documento no Asaas | [optional] 
+| Name        | Type     | Description                               | Notes      |
+| ----------- | -------- | ----------------------------------------- | ---------- |
+| **deleted** | **bool** | Indica se o documento foi removido        | [optional] |
+| **id**      | **str**  | Identificador único do documento no Asaas | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ account_document_delete_response_dto_dict = account_document_delete_response_dto
 # create an instance of AccountDocumentDeleteResponseDTO from a dict
 account_document_delete_response_dto_from_dict = AccountDocumentDeleteResponseDTO.from_dict(account_document_delete_response_dto_dict)
 ```
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

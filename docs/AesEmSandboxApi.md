@@ -2,13 +2,13 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**confirmar_pagamento**](AesEmSandboxApi.md#confirmar_pagamento) | **POST** /v3/sandbox/payment/{id}/confirm | (Apenas sandbox) Confirmar o pagamento
-[**forcar_vencimento**](AesEmSandboxApi.md#forcar_vencimento) | **POST** /v3/sandbox/payment/{id}/overdue | (Apenas sandbox) Forçar o vencimento de uma cobrança
-
+| Method                                                            | HTTP request                              | Description                                          |
+| ----------------------------------------------------------------- | ----------------------------------------- | ---------------------------------------------------- |
+| [**confirmar_pagamento**](AesEmSandboxApi.md#confirmar_pagamento) | **POST** /v3/sandbox/payment/{id}/confirm | (Apenas sandbox) Confirmar o pagamento               |
+| [**forcar_vencimento**](AesEmSandboxApi.md#forcar_vencimento)     | **POST** /v3/sandbox/payment/{id}/overdue | (Apenas sandbox) Forçar o vencimento de uma cobrança |
 
 # **confirmar_pagamento**
+
 > PaymentGetResponseDTO confirmar_pagamento(id, body=body)
 
 (Apenas sandbox) Confirmar o pagamento
@@ -17,7 +17,7 @@ Esse endpoint confirma o pagamento de uma cobrança no ambiente sandbox.
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -58,15 +58,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling AesEmSandboxApi->confirmar_pagamento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da cobrança no Asaas | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                              | Notes      |
+| -------- | ---------- | ---------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único da cobrança no Asaas |
+| **body** | **object** |                                          | [optional] |
 
 ### Return type
 
@@ -78,21 +75,22 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **forcar_vencimento**
+
 > PaymentGetResponseDTO forcar_vencimento(id, body=body)
 
 (Apenas sandbox) Forçar o vencimento de uma cobrança
@@ -101,7 +99,7 @@ Esse endpoint força o vencimento de uma cobrança no ambiente sandbox.
 
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -142,15 +140,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling AesEmSandboxApi->forcar_vencimento: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da cobrança no Asaas | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                              | Notes      |
+| -------- | ---------- | ---------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único da cobrança no Asaas |
+| **body** | **object** |                                          | [optional] |
 
 ### Return type
 
@@ -162,17 +157,16 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

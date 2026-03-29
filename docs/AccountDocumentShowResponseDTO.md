@@ -1,12 +1,11 @@
 # AccountDocumentShowResponseDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**reject_reasons** | **str** | Razão pela qual a aprovação da conta foi rejeitada | [optional] 
-**data** | [**List[AccountDocumentGroupResponseDTO]**](AccountDocumentGroupResponseDTO.md) | Lista de objetos | [optional] 
+| Name               | Type                                                                            | Description                                        | Notes      |
+| ------------------ | ------------------------------------------------------------------------------- | -------------------------------------------------- | ---------- |
+| **reject_reasons** | **str**                                                                         | Razão pela qual a aprovação da conta foi rejeitada | [optional] |
+| **data**           | [**List[AccountDocumentGroupResponseDTO]**](AccountDocumentGroupResponseDTO.md) | Lista de objetos                                   | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ account_document_show_response_dto_dict = account_document_show_response_dto_ins
 # create an instance of AccountDocumentShowResponseDTO from a dict
 account_document_show_response_dto_from_dict = AccountDocumentShowResponseDTO.from_dict(account_document_show_response_dto_dict)
 ```
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

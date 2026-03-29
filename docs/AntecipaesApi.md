@@ -2,28 +2,26 @@
 
 All URIs are relative to *https://api-sandbox.asaas.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**atualizar_status_da_antecipacao_automatica**](AntecipaesApi.md#atualizar_status_da_antecipacao_automatica) | **PUT** /v3/anticipations/configurations | Atualizar status da antecipação automática
-[**cancelar_antecipacao**](AntecipaesApi.md#cancelar_antecipacao) | **POST** /v3/anticipations/{id}/cancel | Cancelar antecipação
-[**listar_antecipacoes**](AntecipaesApi.md#listar_antecipacoes) | **GET** /v3/anticipations | Listar antecipações
-[**recuperar_limites_de_antecipacoes**](AntecipaesApi.md#recuperar_limites_de_antecipacoes) | **GET** /v3/anticipations/limits | Recuperar limites de antecipações
-[**recuperar_status_da_antecipacao_automatica**](AntecipaesApi.md#recuperar_status_da_antecipacao_automatica) | **GET** /v3/anticipations/configurations | Recuperar status da antecipação automática
-[**recuperar_uma_unica_antecipacao**](AntecipaesApi.md#recuperar_uma_unica_antecipacao) | **GET** /v3/anticipations/{id} | Recuperar uma única antecipação
-[**simular_antecipao**](AntecipaesApi.md#simular_antecipao) | **POST** /v3/anticipations/simulate | Simular antecipação
-[**solicitar_antecipacao**](AntecipaesApi.md#solicitar_antecipacao) | **POST** /v3/anticipations | Solicitar antecipação
-
+| Method                                                                                                        | HTTP request                             | Description                                |
+| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------ |
+| [**atualizar_status_da_antecipacao_automatica**](AntecipaesApi.md#atualizar_status_da_antecipacao_automatica) | **PUT** /v3/anticipations/configurations | Atualizar status da antecipação automática |
+| [**cancelar_antecipacao**](AntecipaesApi.md#cancelar_antecipacao)                                             | **POST** /v3/anticipations/{id}/cancel   | Cancelar antecipação                       |
+| [**listar_antecipacoes**](AntecipaesApi.md#listar_antecipacoes)                                               | **GET** /v3/anticipations                | Listar antecipações                        |
+| [**recuperar_limites_de_antecipacoes**](AntecipaesApi.md#recuperar_limites_de_antecipacoes)                   | **GET** /v3/anticipations/limits         | Recuperar limites de antecipações          |
+| [**recuperar_status_da_antecipacao_automatica**](AntecipaesApi.md#recuperar_status_da_antecipacao_automatica) | **GET** /v3/anticipations/configurations | Recuperar status da antecipação automática |
+| [**recuperar_uma_unica_antecipacao**](AntecipaesApi.md#recuperar_uma_unica_antecipacao)                       | **GET** /v3/anticipations/{id}           | Recuperar uma única antecipação            |
+| [**simular_antecipao**](AntecipaesApi.md#simular_antecipao)                                                   | **POST** /v3/anticipations/simulate      | Simular antecipação                        |
+| [**solicitar_antecipacao**](AntecipaesApi.md#solicitar_antecipacao)                                           | **POST** /v3/anticipations               | Solicitar antecipação                      |
 
 # **atualizar_status_da_antecipacao_automatica**
+
 > AnticipationConfigurationGetResponseDTO atualizar_status_da_antecipacao_automatica(anticipation_configuration_update_request_dto=anticipation_configuration_update_request_dto)
 
 Atualizar status da antecipação automática
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -64,14 +62,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling AntecipaesApi->atualizar_status_da_antecipacao_automatica: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **anticipation_configuration_update_request_dto** | [**AnticipationConfigurationUpdateRequestDTO**](AnticipationConfigurationUpdateRequestDTO.md)|  | [optional] 
+| Name                                              | Type                                                                                          | Description | Notes      |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| **anticipation_configuration_update_request_dto** | [**AnticipationConfigurationUpdateRequestDTO**](AnticipationConfigurationUpdateRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -83,29 +78,28 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **cancelar_antecipacao**
+
 > AnticipationGetResponseDTO cancelar_antecipacao(id, body=body)
 
 Cancelar antecipação
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -146,15 +140,12 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling AntecipaesApi->cancelar_antecipacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da antecipação no Asaas | 
- **body** | **object**|  | [optional] 
+| Name     | Type       | Description                                 | Notes      |
+| -------- | ---------- | ------------------------------------------- | ---------- |
+| **id**   | **str**    | Identificador único da antecipação no Asaas |
+| **body** | **object** |                                             | [optional] |
 
 ### Return type
 
@@ -166,30 +157,29 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **404**     | Not found    | -                |
+| **400**     | Bad Request  | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **listar_antecipacoes**
+
 > AnticipationListResponseDTO listar_antecipacoes(offset=offset, limit=limit, payment=payment, installment=installment, status=status)
 
 Listar antecipações
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -234,18 +224,15 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling AntecipaesApi->listar_antecipacoes: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **offset** | **int**| Elemento inicial da lista | [optional] 
- **limit** | **int**| Número de elementos da lista (max: 100) | [optional] 
- **payment** | **str**| Filtrar antecipações de uma cobrança | [optional] 
- **installment** | **str**| Filtrar antecipações de um parcelamento | [optional] 
- **status** | [**AnticipationListRequestAnticipationStatus**](.md)| Filtrar por status | [optional] 
+| Name            | Type                                                 | Description                             | Notes      |
+| --------------- | ---------------------------------------------------- | --------------------------------------- | ---------- |
+| **offset**      | **int**                                              | Elemento inicial da lista               | [optional] |
+| **limit**       | **int**                                              | Número de elementos da lista (max: 100) | [optional] |
+| **payment**     | **str**                                              | Filtrar antecipações de uma cobrança    | [optional] |
+| **installment** | **str**                                              | Filtrar antecipações de um parcelamento | [optional] |
+| **status**      | [**AnticipationListRequestAnticipationStatus**](.md) | Filtrar por status                      | [optional] |
 
 ### Return type
 
@@ -257,30 +244,29 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **recuperar_limites_de_antecipacoes**
+
 > AnticipationLimitsResponseDTO recuperar_limites_de_antecipacoes()
 
 Recuperar limites de antecipações
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -319,8 +305,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling AntecipaesApi->recuperar_limites_de_antecipacoes: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -335,30 +319,29 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **recuperar_status_da_antecipacao_automatica**
+
 > AnticipationConfigurationGetResponseDTO recuperar_status_da_antecipacao_automatica()
 
 Recuperar status da antecipação automática
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -397,8 +380,6 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling AntecipaesApi->recuperar_status_da_antecipacao_automatica: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
 This endpoint does not need any parameter.
@@ -413,30 +394,29 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **recuperar_uma_unica_antecipacao**
+
 > AnticipationGetResponseDTO recuperar_uma_unica_antecipacao(id)
 
 Recuperar uma única antecipação
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -476,14 +456,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling AntecipaesApi->recuperar_uma_unica_antecipacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **str**| Identificador único da antecipação no Asaas | 
+| Name   | Type    | Description                                 | Notes |
+| ------ | ------- | ------------------------------------------- | ----- |
+| **id** | **str** | Identificador único da antecipação no Asaas |
 
 ### Return type
 
@@ -495,31 +472,30 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**403** | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. |  -  |
-**404** | Not found |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description                                                                                                       | Response headers |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **200**     | Ok                                                                                                                | -                |
+| **401**     | Unauthorized                                                                                                      | -                |
+| **403**     | Forbidden. Ocorre quando o body da requisição está preenchido, chamadas de método GET precisam ter um body vazio. | -                |
+| **404**     | Not found                                                                                                         | -                |
+| **400**     | Bad Request                                                                                                       | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **simular_antecipao**
+
 > AnticipationSimulateResponseDTO simular_antecipao(anticipation_simulate_request_dto=anticipation_simulate_request_dto)
 
 Simular antecipação
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -560,14 +536,11 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling AntecipaesApi->simular_antecipao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **anticipation_simulate_request_dto** | [**AnticipationSimulateRequestDTO**](AnticipationSimulateRequestDTO.md)|  | [optional] 
+| Name                                  | Type                                                                    | Description | Notes      |
+| ------------------------------------- | ----------------------------------------------------------------------- | ----------- | ---------- |
+| **anticipation_simulate_request_dto** | [**AnticipationSimulateRequestDTO**](AnticipationSimulateRequestDTO.md) |             | [optional] |
 
 ### Return type
 
@@ -579,29 +552,28 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **solicitar_antecipacao**
+
 > AnticipationGetResponseDTO solicitar_antecipacao(installment=installment, payment=payment, documents=documents)
 
 Solicitar antecipação
 
-
-
 ### Example
 
-* Api Key Authentication (Authorization):
+- Api Key Authentication (Authorization):
 
 ```python
 import asaas
@@ -643,16 +615,13 @@ with asaas.ApiClient(configuration) as api_client:
         print("Exception when calling AntecipaesApi->solicitar_antecipacao: %s\n" % e)
 ```
 
-
-
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **installment** | **str**| ID do parcelamento a ser antecipado | [optional] 
- **payment** | **str**| ID da cobrança a ser antecipada | [optional] 
- **documents** | **bytes**| Arquivo | [optional] 
+| Name            | Type      | Description                         | Notes      |
+| --------------- | --------- | ----------------------------------- | ---------- |
+| **installment** | **str**   | ID do parcelamento a ser antecipado | [optional] |
+| **payment**     | **str**   | ID da cobrança a ser antecipada     | [optional] |
+| **documents**   | **bytes** | Arquivo                             | [optional] |
 
 ### Return type
 
@@ -664,16 +633,15 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
- - **Accept**: application/json
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
 
 ### HTTP response details
 
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Ok |  -  |
-**401** | Unauthorized |  -  |
-**400** | Bad Request |  -  |
+| Status code | Description  | Response headers |
+| ----------- | ------------ | ---------------- |
+| **200**     | Ok           | -                |
+| **401**     | Unauthorized | -                |
+| **400**     | Bad Request  | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

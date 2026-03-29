@@ -4,10 +4,10 @@ Limites de antecipação de cartão de crédito
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**total** | **float** | Limite de antecipação liberado na conta | [optional] 
-**available** | **float** | Limite disponível para antecipar | [optional] 
+| Name          | Type      | Description                             | Notes      |
+| ------------- | --------- | --------------------------------------- | ---------- |
+| **total**     | **float** | Limite de antecipação liberado na conta | [optional] |
+| **available** | **float** | Limite disponível para antecipar        | [optional] |
 
 ## Example
 
@@ -26,6 +26,5 @@ anticipation_limits_info_response_dto_dict = anticipation_limits_info_response_d
 # create an instance of AnticipationLimitsInfoResponseDTO from a dict
 anticipation_limits_info_response_dto_from_dict = AnticipationLimitsInfoResponseDTO.from_dict(anticipation_limits_info_response_dto_dict)
 ```
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

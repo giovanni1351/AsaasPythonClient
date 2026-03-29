@@ -4,60 +4,58 @@ Sigla do Estado (SP, RJ, SC, ...)
 
 ## Enum
 
-* `AC` (value: `'AC'`)
+- `AC` (value: `'AC'`)
 
-* `AL` (value: `'AL'`)
+- `AL` (value: `'AL'`)
 
-* `AP` (value: `'AP'`)
+- `AP` (value: `'AP'`)
 
-* `AM` (value: `'AM'`)
+- `AM` (value: `'AM'`)
 
-* `BA` (value: `'BA'`)
+- `BA` (value: `'BA'`)
 
-* `CE` (value: `'CE'`)
+- `CE` (value: `'CE'`)
 
-* `DF` (value: `'DF'`)
+- `DF` (value: `'DF'`)
 
-* `ES` (value: `'ES'`)
+- `ES` (value: `'ES'`)
 
-* `GO` (value: `'GO'`)
+- `GO` (value: `'GO'`)
 
-* `MA` (value: `'MA'`)
+- `MA` (value: `'MA'`)
 
-* `MT` (value: `'MT'`)
+- `MT` (value: `'MT'`)
 
-* `MS` (value: `'MS'`)
+- `MS` (value: `'MS'`)
 
-* `MG` (value: `'MG'`)
+- `MG` (value: `'MG'`)
 
-* `PA` (value: `'PA'`)
+- `PA` (value: `'PA'`)
 
-* `PB` (value: `'PB'`)
+- `PB` (value: `'PB'`)
 
-* `PR` (value: `'PR'`)
+- `PR` (value: `'PR'`)
 
-* `PE` (value: `'PE'`)
+- `PE` (value: `'PE'`)
 
-* `PI` (value: `'PI'`)
+- `PI` (value: `'PI'`)
 
-* `RR` (value: `'RR'`)
+- `RR` (value: `'RR'`)
 
-* `RO` (value: `'RO'`)
+- `RO` (value: `'RO'`)
 
-* `RJ` (value: `'RJ'`)
+- `RJ` (value: `'RJ'`)
 
-* `RN` (value: `'RN'`)
+- `RN` (value: `'RN'`)
 
-* `RS` (value: `'RS'`)
+- `RS` (value: `'RS'`)
 
-* `SC` (value: `'SC'`)
+- `SC` (value: `'SC'`)
 
-* `SP` (value: `'SP'`)
+- `SP` (value: `'SP'`)
 
-* `SE` (value: `'SE'`)
+- `SE` (value: `'SE'`)
 
-* `TO` (value: `'TO'`)
+- `TO` (value: `'TO'`)
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

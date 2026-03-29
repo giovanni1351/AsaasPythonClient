@@ -4,13 +4,13 @@ Dados do pagamento relacionados a boleto
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identification_field** | **str** | Linha digitável do boleto | [optional] 
-**nosso_numero** | **str** | Número de identificação do boleto | [optional] 
-**bar_code** | **str** | Código de barras do boleto | [optional] 
-**bank_slip_url** | **str** | URL para download do boleto | [optional] 
-**days_after_due_date_to_registration_cancellation** | **int** | Dias após o vencimento para cancelamento do registro (somente para boleto bancário) | [optional] 
+| Name                                                 | Type    | Description                                                                         | Notes      |
+| ---------------------------------------------------- | ------- | ----------------------------------------------------------------------------------- | ---------- |
+| **identification_field**                             | **str** | Linha digitável do boleto                                                           | [optional] |
+| **nosso_numero**                                     | **str** | Número de identificação do boleto                                                   | [optional] |
+| **bar_code**                                         | **str** | Código de barras do boleto                                                          | [optional] |
+| **bank_slip_url**                                    | **str** | URL para download do boleto                                                         | [optional] |
+| **days_after_due_date_to_registration_cancellation** | **int** | Dias após o vencimento para cancelamento do registro (somente para boleto bancário) | [optional] |
 
 ## Example
 
@@ -29,6 +29,5 @@ bank_slip_billing_info_response_dto_dict = bank_slip_billing_info_response_dto_i
 # create an instance of BankSlipBillingInfoResponseDTO from a dict
 bank_slip_billing_info_response_dto_from_dict = BankSlipBillingInfoResponseDTO.from_dict(bank_slip_billing_info_response_dto_dict)
 ```
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

@@ -1,12 +1,11 @@
 # AnticipationSimulateRequestDTO
 
-
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**installment** | **str** | ID do parcelamento a ser antecipado | [optional] 
-**payment** | **str** | ID da cobrança a ser antecipada | [optional] 
+| Name            | Type    | Description                         | Notes      |
+| --------------- | ------- | ----------------------------------- | ---------- |
+| **installment** | **str** | ID do parcelamento a ser antecipado | [optional] |
+| **payment**     | **str** | ID da cobrança a ser antecipada     | [optional] |
 
 ## Example
 
@@ -25,6 +24,5 @@ anticipation_simulate_request_dto_dict = anticipation_simulate_request_dto_insta
 # create an instance of AnticipationSimulateRequestDTO from a dict
 anticipation_simulate_request_dto_from_dict = AnticipationSimulateRequestDTO.from_dict(anticipation_simulate_request_dto_dict)
 ```
+
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

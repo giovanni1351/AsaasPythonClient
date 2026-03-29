@@ -4,14 +4,12 @@ Situação da conta
 
 ## Enum
 
-* `APPROVED` (value: `'APPROVED'`)
+- `APPROVED` (value: `'APPROVED'`)
 
-* `AWAITING_ACTION_AUTHORIZATION` (value: `'AWAITING_ACTION_AUTHORIZATION'`)
+- `AWAITING_ACTION_AUTHORIZATION` (value: `'AWAITING_ACTION_AUTHORIZATION'`)
 
-* `DENIED` (value: `'DENIED'`)
+- `DENIED` (value: `'DENIED'`)
 
-* `PENDING` (value: `'PENDING'`)
+- `PENDING` (value: `'PENDING'`)
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
