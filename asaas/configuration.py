@@ -202,7 +202,7 @@ conf = asaas.Configuration(
 
     def __init__(
         self,
-        host: Optional[str]=None,
+        host: Optional[Union[Literal["https://api-sandbox.asaas.com"],Literal["https://api.asaas.com"]]]=None,
         api_key: Optional[Dict[str, str]]=None,
         api_key_prefix: Optional[Dict[str, str]]=None,
         username: Optional[str]=None,
