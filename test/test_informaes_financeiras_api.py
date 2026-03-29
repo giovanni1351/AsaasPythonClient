@@ -14,14 +14,14 @@
 
 import unittest
 
-from asaas.api.informacoes_financeiras_api import InformaesFinanceirasApi
+from asaas.api.informacoes_financeiras_api import InformacoesFinanceirasApi
 
 
 class TestInformaesFinanceirasApi(unittest.TestCase):
     """InformaesFinanceirasApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = InformaesFinanceirasApi()
+        self.api = InformacoesFinanceirasApi()
 
     def tearDown(self) -> None:
         pass

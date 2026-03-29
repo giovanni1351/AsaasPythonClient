@@ -14,14 +14,14 @@
 
 import unittest
 
-from asaas.api.pix_automatico_api import PixAutomticoApi
+from asaas.api.pix_automatico_api import PixAutomaticoApi
 
 
 class TestPixAutomticoApi(unittest.TestCase):
     """PixAutomticoApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = PixAutomticoApi()
+        self.api = PixAutomaticoApi()
 
     def tearDown(self) -> None:
         pass

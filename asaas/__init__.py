@@ -19,38 +19,38 @@ __version__ = "1.0.0"
 # Define package exports
 __all__ = [
     "AesEmSandboxApi",
-    "AntecipaesApi",
+    "AntecipacoesApi",
     "AssinaturasApi",
-    "CartoDeCrditoApi",
+    "CartaoDeCreditoApi",
     "ChargebackApi",
     "CheckoutApi",
     "ClientesApi",
-    "CobranasApi",
-    "CobranasComDadosResumidosApi",
+    "CobrancasApi",
+    "CobrancasComDadosResumidosApi",
     "ConfiguraesDeWebhooksApi",
     "ConsultaSerasaApi",
     "ContaEscrowApi",
-    "DocumentosDeCobranasApi",
+    "DocumentosDeCobrancasApi",
     "EnvioDeDocumentosWhiteLabelApi",
     "EstornosApi",
     "ExtratoApi",
-    "InformaesEPersonalizaoDaContaApi",
-    "InformaesFinanceirasApi",
-    "InformaesFiscaisApi",
+    "InformacoesEPersonalizacaoDaContaApi",
+    "InformacoesFinanceirasApi",
+    "InformacoesFiscaisApi",
     "LinkDePagamentosApi",
-    "NegativaesApi",
+    "NegativacoesApi",
     "NotasFiscaisApi",
-    "NotificaesApi",
+    "NotificacoesApi",
     "PagamentoDeContasApi",
     "ParcelamentosApi",
     "PixApi",
-    "PixAutomticoApi",
+    "PixAutomaticoApi",
     "PixRecorrenteApi",
     "RecargasDeCelularApi",
     "SplitsApi",
     "SubcontasAsaasApi",
-    "TransaesPixApi",
-    "TransfernciasApi",
+    "TransacoesPixApi",
+    "TransferenciasApi",
     "ApiResponse",
     "ApiClient",
     "Configuration",
@@ -501,38 +501,38 @@ __all__ = [
 
 # import apis into sdk package
 from asaas.api.aes_em_sandbox_api import AesEmSandboxApi as AesEmSandboxApi
-from asaas.api.antecipacoes_api import AntecipaesApi as AntecipaesApi
+from asaas.api.antecipacoes_api import AntecipacoesApi as AntecipacoesApi
 from asaas.api.assinaturas_api import AssinaturasApi as AssinaturasApi
-from asaas.api.cartao_de_credito_api import CartoDeCrditoApi as CartoDeCrditoApi
+from asaas.api.cartao_de_credito_api import CartaoDeCreditoApi as CartaoDeCreditoApi
 from asaas.api.chargeback_api import ChargebackApi as ChargebackApi
 from asaas.api.checkout_api import CheckoutApi as CheckoutApi
 from asaas.api.clientes_api import ClientesApi as ClientesApi
-from asaas.api.cobrancas_api import CobranasApi as CobranasApi
-from asaas.api.cobrancas_com_dados_resumidos_api import CobranasComDadosResumidosApi as CobranasComDadosResumidosApi
+from asaas.api.cobrancas_api import CobrancasApi as CobrancasApi
+from asaas.api.cobrancas_com_dados_resumidos_api import CobrancasComDadosResumidosApi as CobrancasComDadosResumidosApi
 from asaas.api.configuracoes_de_webhooks_api import ConfiguraesDeWebhooksApi as ConfiguraesDeWebhooksApi
 from asaas.api.consulta_serasa_api import ConsultaSerasaApi as ConsultaSerasaApi
 from asaas.api.conta_escrow_api import ContaEscrowApi as ContaEscrowApi
-from asaas.api.documentos_de_cobrancas_api import DocumentosDeCobranasApi as DocumentosDeCobranasApi
+from asaas.api.documentos_de_cobrancas_api import DocumentosDeCobrancasApi as DocumentosDeCobrancasApi
 from asaas.api.envio_de_documentos_white_label_api import EnvioDeDocumentosWhiteLabelApi as EnvioDeDocumentosWhiteLabelApi
 from asaas.api.estornos_api import EstornosApi as EstornosApi
 from asaas.api.extrato_api import ExtratoApi as ExtratoApi
-from asaas.api.informacoes_e_personalizao_da_conta_api import InformaesEPersonalizaoDaContaApi as InformaesEPersonalizaoDaContaApi
-from asaas.api.informacoes_financeiras_api import InformaesFinanceirasApi as InformaesFinanceirasApi
-from asaas.api.informacoes_fiscais_api import InformaesFiscaisApi as InformaesFiscaisApi
+from asaas.api.informacoes_e_personalizacao_da_conta_api import InformacoesEPersonalizacaoDaContaApi as InformacoesEPersonalizacaoDaContaApi
+from asaas.api.informacoes_financeiras_api import InformacoesFinanceirasApi as InformacoesFinanceirasApi
+from asaas.api.informacoes_fiscais_api import InformacoesFiscaisApi as InformacoesFiscaisApi
 from asaas.api.link_de_pagamentos_api import LinkDePagamentosApi as LinkDePagamentosApi
-from asaas.api.negativacoes_api import NegativaesApi as NegativaesApi
+from asaas.api.negativacoes_api import NegativacoesApi as NegativacoesApi
 from asaas.api.notas_fiscais_api import NotasFiscaisApi as NotasFiscaisApi
-from asaas.api.notificacoes_api import NotificaesApi as NotificaesApi
+from asaas.api.notificacoes_api import NotificacoesApi as NotificacoesApi
 from asaas.api.pagamento_de_contas_api import PagamentoDeContasApi as PagamentoDeContasApi
 from asaas.api.parcelamentos_api import ParcelamentosApi as ParcelamentosApi
 from asaas.api.pix_api import PixApi as PixApi
-from asaas.api.pix_automatico_api import PixAutomticoApi as PixAutomticoApi
+from asaas.api.pix_automatico_api import PixAutomaticoApi as PixAutomaticoApi
 from asaas.api.pix_recorrente_api import PixRecorrenteApi as PixRecorrenteApi
 from asaas.api.recargas_de_celular_api import RecargasDeCelularApi as RecargasDeCelularApi
 from asaas.api.splits_api import SplitsApi as SplitsApi
 from asaas.api.subcontas_asaas_api import SubcontasAsaasApi as SubcontasAsaasApi
-from asaas.api.transacoes_pix_api import TransaesPixApi as TransaesPixApi
-from asaas.api.transferencias_api import TransfernciasApi as TransfernciasApi
+from asaas.api.transacoes_pix_api import TransacoesPixApi as TransacoesPixApi
+from asaas.api.transferencias_api import TransferenciasApi as TransferenciasApi
 
 # import ApiClient
 from asaas.api_response import ApiResponse as ApiResponse

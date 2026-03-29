@@ -14,14 +14,14 @@
 
 import unittest
 
-from asaas.api.transacoes_pix_api import TransaesPixApi
+from asaas.api.transacoes_pix_api import TransacoesPixApi
 
 
 class TestTransaesPixApi(unittest.TestCase):
     """TransaesPixApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = TransaesPixApi()
+        self.api = TransacoesPixApi()
 
     def tearDown(self) -> None:
         pass

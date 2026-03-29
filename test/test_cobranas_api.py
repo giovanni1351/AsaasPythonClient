@@ -14,14 +14,14 @@
 
 import unittest
 
-from asaas.api.cobrancas_api import CobranasApi
+from asaas.api.cobrancas_api import CobrancasApi
 
 
 class TestCobranasApi(unittest.TestCase):
     """CobranasApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = CobranasApi()
+        self.api = CobrancasApi()
 
     def tearDown(self) -> None:
         pass

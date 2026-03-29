@@ -14,14 +14,14 @@
 
 import unittest
 
-from asaas.api.informacoes_e_personalizao_da_conta_api import InformaesEPersonalizaoDaContaApi
+from asaas.api.informacoes_e_personalizao_da_conta_api import InformacoesEPersonalizacaoDaContaApi
 
 
 class TestInformaesEPersonalizaoDaContaApi(unittest.TestCase):
     """InformaesEPersonalizaoDaContaApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = InformaesEPersonalizaoDaContaApi()
+        self.api = InformacoesEPersonalizacaoDaContaApi()
 
     def tearDown(self) -> None:
         pass

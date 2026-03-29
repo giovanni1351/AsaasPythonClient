@@ -14,14 +14,14 @@
 
 import unittest
 
-from asaas.api.transferencias_api import TransfernciasApi
+from asaas.api.transferencias_api import TransferenciasApi
 
 
 class TestTransfernciasApi(unittest.TestCase):
     """TransfernciasApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = TransfernciasApi()
+        self.api = TransferenciasApi()
 
     def tearDown(self) -> None:
         pass

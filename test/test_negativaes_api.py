@@ -14,14 +14,14 @@
 
 import unittest
 
-from asaas.api.negativacoes_api import NegativaesApi
+from asaas.api.negativacoes_api import NegativacoesApi
 
 
 class TestNegativaesApi(unittest.TestCase):
     """NegativaesApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = NegativaesApi()
+        self.api = NegativacoesApi()
 
     def tearDown(self) -> None:
         pass

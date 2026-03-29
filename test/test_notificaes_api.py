@@ -14,14 +14,14 @@
 
 import unittest
 
-from asaas.api.notificacoes_api import NotificaesApi
+from asaas.api.notificacoes_api import NotificacoesApi
 
 
 class TestNotificaesApi(unittest.TestCase):
     """NotificaesApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = NotificaesApi()
+        self.api = NotificacoesApi()
 
     def tearDown(self) -> None:
         pass

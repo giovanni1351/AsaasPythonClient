@@ -14,14 +14,14 @@
 
 import unittest
 
-from asaas.api.antecipacoes_api import AntecipaesApi
+from asaas.api.antecipacoes_api import AntecipacoesApi
 
 
 class TestAntecipaesApi(unittest.TestCase):
     """AntecipaesApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = AntecipaesApi()
+        self.api = AntecipacoesApi()
 
     def tearDown(self) -> None:
         pass

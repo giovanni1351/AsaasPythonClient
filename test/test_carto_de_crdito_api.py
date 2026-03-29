@@ -14,14 +14,14 @@
 
 import unittest
 
-from asaas.api.cartao_de_credito_api import CartoDeCrditoApi
+from asaas.api.cartao_de_credito_api import CartaoDeCreditoApi
 
 
 class TestCartoDeCrditoApi(unittest.TestCase):
     """CartoDeCrditoApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = CartoDeCrditoApi()
+        self.api = CartaoDeCreditoApi()
 
     def tearDown(self) -> None:
         pass
